@@ -72,7 +72,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner carousel-zoom">
                 <div class="carousel-item active">
-                    <div class="slider-thumb bg-cover" style="background-image: url(<?php echo $domain ?>assets/img/banner/10.jpg);"></div>
+                    <div class="slider-thumb bg-cover" style="background-image: url(<?php echo $domain ?>assets/img/7.jpg);"></div>
                     <div class="box-table">
                         <div class="box-cell shadow dark">
                             <div class="container">
@@ -91,7 +91,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="slider-thumb bg-cover" style="background-image: url(<?php echo $domain ?>assets/img/banner/13.jpg);"></div>
+                    <div class="slider-thumb bg-cover" style="background-image: url(<?php echo $domain ?>assets/img/8.jpg);"></div>
                     <div class="box-table">
                         <div class="box-cell shadow dark">
                             <div class="container">
@@ -127,7 +127,7 @@
                         <h4> <i class="fas fa-bolt"></i> Popular Causes</h4>
                         <div class="item">
                             <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/causes/11.jpg" alt="Thumb">
+                                <img src="<?php echo $domain ?>assets/img/school-4.jpg" alt="Thumb">
                             </div>
                             <div class="info">
                                 <span class="cats">
@@ -171,7 +171,7 @@
                             </div>
                             <div class="info">
                                 <span class="cats">
-                                    Food
+                                    Housing
                                 </span>
                                 <h4>
                                     <a href="#">Housing</a>
