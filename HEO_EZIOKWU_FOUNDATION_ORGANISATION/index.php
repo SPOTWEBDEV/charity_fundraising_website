@@ -349,7 +349,7 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/donation/1.jpg" alt="Thumb">
+                                    <img src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
                                     <span class="overlay">
                                         <strong>Created : </strong> Nov 7, 2020
                                     </span>
@@ -379,7 +379,7 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/donation/2.jpg" alt="Thumb">
+                                    <img src="<?php echo $domain ?>assets/img/football-5.jpg" alt="Thumb">
                                     <div class="trend">
                                         <i class="fas fa-bolt"></i> Trend
                                     </div>
@@ -412,7 +412,7 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/donation/3.jpg" alt="Thumb">
+                                    <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
                                     <span class="overlay">
                                         <strong>Created : </strong> Dec 26, 2020
                                     </span>
@@ -502,7 +502,7 @@
                 <!-- Single Item  -->
                 <div class="item">
                     <div class="thumb">
-                        <img src="<?php echo $domain ?>assets/img/event/1.jpg" alt="Thumb">
+                        <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
                         <div class="date">
                             12 <strong>Aug</strong>
                         </div>
@@ -522,7 +522,7 @@
                 <!-- Single Item  -->
                 <div class="item">
                     <div class="thumb">
-                        <img src="<?php echo $domain ?>assets/img/event/2.jpg" alt="Thumb">
+                        <img src="<?php echo $domain ?>assets/img/football-4.jpg" alt="Thumb">
                         <div class="date">
                             25 <strong>Dec</strong>
                         </div>
@@ -542,7 +542,7 @@
                 <!-- Single Item  -->
                 <div class="item">
                     <div class="thumb">
-                        <img src="<?php echo $domain ?>assets/img/event/3.jpg" alt="Thumb">
+                        <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
                         <div class="date">
                             18 <strong>Jul</strong>
                         </div>
@@ -682,7 +682,7 @@
                         <div class="item">
                             <div class="info">
                                 <div class="top-info">
-                                    <i class="flaticon-left-quote-1"></i>
+                                    <i class="fas fa-quote-left"></i>
                                     <div class="provider">
                                         <h4>Jeckey Pura</h4>
                                         <span>Volunteer</span>
@@ -698,7 +698,7 @@
                         <div class="item">
                             <div class="info">
                                 <div class="top-info">
-                                    <i class="flaticon-left-quote-1"></i>
+                                    <i class="fas fa-quote-left"></i>
                                     <div class="provider">
                                         <h4>Benil Sraw</h4>
                                         <span>Volunteer</span>
@@ -714,7 +714,7 @@
                         <div class="item">
                             <div class="info">
                                 <div class="top-info">
-                                    <i class="flaticon-left-quote-1"></i>
+                                    <i class="fas fa-quote-left"></i>
                                     <div class="provider">
                                         <h4>Adam Blaur</h4>
                                         <span>Volunteer</span>
@@ -764,73 +764,73 @@
                                 <div id="portfolio-grid" class="gallery-items colums-3">
                                     <div class="pf-item">
                                         <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/gallery/11.jpg" alt="Thumb" />
+                                            <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb" />
                                             <div class="overlay">
                                                 <h4><a href="#">Food Served</a></h4>
                                                 <span class="cats">Poor</span>
                                             </div>
                                             <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/gallery/11.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                <a href="<?php echo $domain ?>assets/img/2.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="pf-item wide">
                                         <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/gallery/77.jpg" alt="Thumb" />
+                                            <img src="<?php echo $domain ?>assets/img/school-2.jpg" alt="Thumb" />
                                             <div class="overlay">
                                                 <h4><a href="#">Water Collect</a></h4>
                                                 <span class="cats">Poor</span>
                                             </div>
                                             <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/gallery/77.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                <a href="<?php echo $domain ?>assets/img/football-3.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="pf-item">
                                         <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/gallery/33.jpg" alt="Thumb" />
+                                            <img src="<?php echo $domain ?>assets/img/football-3.jpg" alt="Thumb" />
                                             <div class="overlay">
                                                 <h4><a href="#">Blood Donate</a></h4>
                                                 <span class="cats">Poor</span>
                                             </div>
                                             <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/gallery/33.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                <a href="<?php echo $domain ?>assets/img/3.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="pf-item">
                                         <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/gallery/44.jpg" alt="Thumb" />
+                                            <img src="<?php echo $domain ?>assets/img/8.jpg" alt="Thumb" />
                                             <div class="overlay">
                                                 <h4><a href="#">Child Education</a></h4>
                                                 <span class="cats">Poor</span>
                                             </div>
                                             <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/gallery/44.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                <a href="<?php echo $domain ?>assets/img/12.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="pf-item">
                                         <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/gallery/55.jpg" alt="Thumb" />
+                                            <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb" />
                                             <div class="overlay">
                                                 <h4><a href="#">Help Homeless</a></h4>
                                                 <span class="cats">Poor</span>
                                             </div>
                                             <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/gallery/55.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                <a href="<?php echo $domain ?>assets/img/football-4.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="pf-item">
                                         <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/gallery/66.jpg" alt="Thumb" />
+                                            <img src="<?php echo $domain ?>assets/img/football-4.jpg" alt="Thumb" />
                                             <div class="overlay">
                                                 <h4><a href="#">Rebuild Home</a></h4>
                                                 <span class="cats">Poor</span>
                                             </div>
                                             <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/gallery/66.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                <a href="<?php echo $domain ?>assets/img/football-6.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
