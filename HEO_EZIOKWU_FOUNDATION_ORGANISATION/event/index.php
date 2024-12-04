@@ -55,7 +55,7 @@
 
     <!-- Start Breadcrumb 
     ============================================= -->
-    <div class="breadcrumb-area text-center shadow dark bg-fixed padding-xl text-light" style="background-image: url(<?php echo $domain ?>assets/img/banner/9.jpg);">
+    <div class="breadcrumb-area text-center shadow dark bg-fixed padding-xl text-light" style="background-image: url(<?php echo $domain ?>assets/img/2.jpg);">
         <div class="container">
             <div class="breadcrumb-items">
                 <div class="row">
@@ -81,7 +81,7 @@
                 <!-- Single Item  -->
                 <div class="item">
                     <div class="row">
-                        <div class="thumb col-lg-5" style="background-image: url(<?php echo $domain ?>assets/img/event/1.jpg);">
+                        <div class="thumb col-lg-5" style="background-image: url(<?php echo $domain ?>assets/img/school-5.jpg);">
                             <div class="date">
                                 12 <strong>Aug</strong>
                             </div>
@@ -108,7 +108,7 @@
                 <!-- Single Item  -->
                 <div class="item">
                     <div class="row">
-                        <div class="thumb col-lg-5" style="background-image: url(<?php echo $domain ?>assets/img/event/2.jpg);">
+                        <div class="thumb col-lg-5" style="background-image: url(<?php echo $domain ?>assets/img/6.jpg);">
                             <div class="date">
                                 05 <strong>Sep</strong>
                             </div>
@@ -135,7 +135,7 @@
                 <!-- Single Item  -->
                 <div class="item">
                     <div class="row">
-                        <div class="thumb col-lg-5" style="background-image: url(<?php echo $domain ?>assets/img/event/3.jpg);">
+                        <div class="thumb col-lg-5" style="background-image: url(<?php echo $domain ?>assets/img/football-3.jpg);">
                             <div class="date">
                                 29 <strong>Dec</strong>
                             </div>
