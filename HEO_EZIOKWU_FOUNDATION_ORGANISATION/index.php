@@ -79,8 +79,9 @@
                                 <div class="row">
                                     <div class="col-lg-9">
                                         <div class="content">
-                                            <h4 data-animation="animated slideInDown">Get started today</h4>
-                                            <h2 data-animation="animated slideInRight">Join with us and <strong>save the world</strong></h2>
+                                            <h4 data-animation="animated slideInDown">HEO EZIOKWU FOUNDATION ORGANIZATION</h4>
+                                            <p data-animation="animated slideInRight">Was Founded on the 12th of June 2011, by High Chief Okoh Emmanuel Henry,who's from Ako-Nike Community in Enugu State, Nigeria, 
+                                            Heo Eziokwu Foundation is a dedicated non-profit organization committed to uplifting and empowering underprivileged families.</p>
                                             <a data-animation="animated fadeInUp" class="btn circle btn-theme border btn-md" href="#">Discover More</a>
                                         </div>
                                     </div>
@@ -98,7 +99,8 @@
                                     <div class="col-lg-9">
                                         <div class="content">
                                             <h4 data-animation="animated slideInDown">Get started today</h4>
-                                            <h2 data-animation="animated slideInRight">Help us to save <strong>Homeless People</strong></h2>
+                                            <p data-animation="animated slideInRight">Guided by the principles of compassion and empowerment, we work to create meaningful, positive impacts by providing essential support in three key areas: Education, Healthcare, and Housing.
+                                            </p>
                                             <a data-animation="animated fadeInUp" class="btn circle btn-theme border btn-md" href="#">Discover More</a>
                                         </div>
                                     </div>
@@ -149,10 +151,10 @@
                             </div>
                             <div class="info">
                                 <span class="cats">
-                                    Water
+                                    HealthcareHealthcare
                                 </span>
                                 <h4>
-                                    <a href="#">Water For All Children</a>
+                                    <a href="#">Healthcare For All People</a>
                                 </h4>
                                 <div class="progress-box">
                                     <p>Raised : $970 <span class="float-right">Goal : $1,800</span></p>
@@ -172,7 +174,7 @@
                                     Food
                                 </span>
                                 <h4>
-                                    <a href="#">Healthy Food</a>
+                                    <a href="#">Housing</a>
                                 </h4>
                                 <div class="progress-box">
                                     <p>Raised : $2,400 <span class="float-right">Goal : $4,300</span></p>
@@ -189,26 +191,24 @@
                 <div class="col-lg-6 info">
                     <h5>About Us</h5>
                     <h2 class="text-blur">About</h2>
-                    <h2 class="area-title">We’re worldwide non-profit charity ogranization.</h2>
+                    <h2 class="area-title">HEO Eziokwu Foundation organisation </h2>
                     <p>
-                        Principles travelling frequently far delightful its especially acceptance. Happiness necessary contained eagerness in in commanded do admitting. Favourable continuing difficulty had her solicitude far. Nor doubt off widow all death aware offer. We will
-                        up able in both do sing.
+                    is dedicated to bridging the opportunity gap for less privileged communities, offering hope and resources that enable individuals to thrive. By addressing critical needs, we aim to create a foundation of support that empowers families to pursue better and more dignified lives. Our initiatives are tailored to connect families with the resources they deserve, ultimately strengthening entire communities and fostering long-term resilience.
+
                     </p>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nesciunt ad suscipit iusto dolorum quae recusandae quo illum libero excepturi, provident facere. Delectus possimus cupiditate voluptatum sapiente eos, vitae, repellat.
-                    </p>
+                    
                     <ul>
                         <li>
                             <h5>168K</h5>
-                            <span>Plants Protected</span>
+                            <span>Education</span>
                         </li>
                         <li>
                             <h5>5M Ton </h5>
-                            <span>Water Conserved</span>
+                            <span>Healthcare</span>
                         </li>
                         <li>
                             <h5>37K Sqmi.</h5>
-                            <span>Ocean Proteced</span>
+                            <span>Housing</span>
                         </li>
                     </ul>
                     <a class="btn circle btn-theme border btn-md" href="#">become a volunteer</a>
@@ -226,10 +226,11 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h5>What we do</h5>
+                        <h5>What</h5>
                         <h2>
-                            We Donate to charity causes <br> around the world.
+                        HEO Eziokwu Foundation <br> organisation 
                         </h2>
+                        <h5>can offer</h5> <br>
                         <div class="heading-divider"></div>
                     </div>
                 </div>
@@ -239,45 +240,41 @@
             <div class="wedo-items text-center">
                 <div class="row">
                     <!-- Single Item -->
-                    <div class="single-item col-lg-3 col-md-6">
+                    <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
-                            <i class="flaticon-water-bottle"></i>
-                            <h4>Water Delivery</h4>
+                            <i style="color: #3bcf93;" class="fas fa-graduation-cap"></i>
+                            <h4>Education empowerment</h4>
                             <p>
-                                Always length letter adieus add number moment she. Promise few compass.
+                            Supporting the education of over 500,000 students, from primary to university level, by covering tuition fees and supplying critical learning resources such as textbooks, exercise books, classroom furniture, smart boards, and other essential materials. Our aim is to ensure that every child has the resources needed to excel academically and reach their full potential.
+
                             </p>
                         </div>
                     </div>
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div class="single-item col-lg-3 col-md-6">
+                    
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
-                            <i class="flaticon-pharmacy"></i>
-                            <h4>Medicine Help</h4>
+                            <i class="fas fa-heartbeat"></i>
+                            <h4>Healthcare Assistance </h4>
                             <p>
-                                Always length letter adieus add number moment she. Promise few compass.
+                            Providing financial support to cover essential medical expenses, helping underprivileged individuals and families access the healthcare services they need to lead healthy, fulfilling lives.
+
                             </p>
                         </div>
                     </div>
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div class="single-item col-lg-3 col-md-6">
+                    <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
-                            <i class="flaticon-planet-earth"></i>
-                            <h4>Save Plants</h4>
+                            <i style="color: #3bcf93;" class="fas fa-house-user"></i>
+                            <h4>Housing Support</h4>
                             <p>
-                                Always length letter adieus add number moment she. Promise few compass.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-3 col-md-6">
-                        <div class="item">
-                            <i class="flaticon-home"></i>
-                            <h4>We Build & Create</h4>
-                            <p>
-                                Always length letter adieus add number moment she. Promise few compass.
+                             Offering safe and stable housing solutions for vulnerable members of our community, including widows and widowers. By providing secure living environments, we enable individuals to rebuild their lives with dignity and hope.
+
+
                             </p>
                         </div>
                     </div>
@@ -311,14 +308,11 @@
                     <h2 class="text-blur">Mission</h2>
                     <h2 class="area-title">We believe that we can save more lifes with you.</h2>
                     <p>
-                        Their end whole might began her. Behaved the comfort another fifteen eat. Partiality had his themselves ask pianoforte increasing discovered. So mr delay at since place whole above miles.
+                    Our mission is to empower disadvantaged families by providing essential resources and sustained support in education, healthcare, and housing. Heo Eziokwu Foundation organisation is dedicated to building a society in Africa where everyone, regardless of their background, has a fair chance to succeed and a brighter future to look forward to.
+
                     </p>
-                    <h4>Our strategic priorities up to 2020 are:</h4>
-                    <ul>
-                        <li>Protecting charities from abuse or mismanagement</li>
-                        <li>Enabling trustees to run their charities effectively </li>
-                        <li>Encouraging greater transparency and accountability</li>
-                    </ul>
+                    
+                    
                     <a class="btn circle btn-theme border btn-md" href="#">Join With Us</a>
                 </div>
             </div>

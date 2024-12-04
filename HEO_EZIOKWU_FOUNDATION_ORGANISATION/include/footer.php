@@ -52,11 +52,12 @@
                                     </li>
                                     <li>
                                         <strong>Email:</strong>
-                                        <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                                        <a href="<?php echo $siteemail ?>"><?php echo $siteemail ?></a>
                                     </li>
                                     <li>
                                         <strong>Phone:</strong>
-                                        <a href="tel:2151234567">+123 34598768</a>
+                                        <a href="<?php echo $sitenumber ?>"><?php echo $sitenumber ?></a> <br>
+                                        <a href="<?php echo $sitenumberF ?>"><?php echo $sitenumber ?></a>
                                     </li>
                                 </ul>
                             </div>
