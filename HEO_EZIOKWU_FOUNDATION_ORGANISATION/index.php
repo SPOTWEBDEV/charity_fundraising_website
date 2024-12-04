@@ -147,7 +147,7 @@
                         </div>
                         <div class="item">
                             <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/causes/22.jpg" alt="Thumb">
+                                <img src="<?php echo $domain ?>assets/img/football-10.jpg" alt="Thumb">
                             </div>
                             <div class="info">
                                 <span class="cats">
@@ -167,7 +167,7 @@
                         </div>
                         <div class="item">
                             <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/causes/33.jpg" alt="Thumb">
+                                <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb">
                             </div>
                             <div class="info">
                                 <span class="cats">
@@ -293,10 +293,10 @@
                 <div class="col-lg-6 thumb-box">
                     <div class="thumb">
                         <div class="thumb-1">
-                            <img src="<?php echo $domain ?>assets/img/about/1.jpg" alt="Thumb">
+                            <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
                         </div>
                         <div class="thumb-2">
-                            <img src="<?php echo $domain ?>assets/img/about/2.jpg" alt="Thumb">
+                            <img src="<?php echo $domain ?>assets/img/2.jpg" alt="Thumb">
                             <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube light video-play-button item-center">
                                 <i class="fa fa-play"></i>
                             </a>
