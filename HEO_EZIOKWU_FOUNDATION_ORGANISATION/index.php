@@ -1,3 +1,5 @@
+
+<?php include('./server/connection.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,31 +11,32 @@
     <meta name="description" content="Poora - Fundraising & Charity Template">
 
     <!-- ========== Page Title ========== -->
-    <title>Poora - Fundraising & Charity Template</title>
+    <title><?php echo $siteshort ?> || Home Page</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo $domain ?>assets/img/favicon.png" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="assets/css/themify-icons.css" rel="stylesheet" />
-    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
-    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="assets/css/animate.css" rel="stylesheet" />
-    <link href="assets/css/bootsnav.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="<?php echo $domain ?>assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="<?php echo $domain ?>assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="<?php echo $domain ?>assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="<?php echo $domain ?>assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="<?php echo $domain ?>assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="<?php echo $domain ?>assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="<?php echo $domain ?>assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="<?php echo $domain ?>assets/css/animate.css" rel="stylesheet" />
+    <link href="<?php echo $domain ?>assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="<?php echo $domain ?>assets/css/style.css" rel="stylesheet">
+    <link href="<?php echo $domain ?>assets/css/responsive.css" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="assets/js/html5/html5shiv.min.js"></script>
-      <script src="assets/js/html5/respond.min.js"></script>
+      <script src="<?php echo $domain ?>assets/js/html5/html5shiv.min.js"></script>
+      <script src="<?php echo $domain ?>assets/js/html5/respond.min.js"></script>
     <![endif]-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!-- ========== Google Fonts ========== -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
@@ -44,21 +47,11 @@
 
     <!-- Preloader Start -->
     <div class="se-pre-con"></div>
-    <!-- Preloader Ends -->
-
-    <!-- Start Header Top 
-    ============================================= -->
-    
-    <!-- End Header Top -->
+     
+    <?php include('./include/nav.php') ?>
 
 
-    <!-- Header 
-    ============================================= -->
-    
-    <!-- End Header -->
 
-    <!-- Start Banner 
-    ============================================= -->
     <div class="banner-area inc-shape inc-indicator content-less text-large">
         <div id="bootcarousel" class="carousel text-light slide carousel-fade animate_text" data-ride="carousel">
 
@@ -79,7 +72,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner carousel-zoom">
                 <div class="carousel-item active">
-                    <div class="slider-thumb bg-cover" style="background-image: url(assets/img/banner/10.jpg);"></div>
+                    <div class="slider-thumb bg-cover" style="background-image: url(<?php echo $domain ?>assets/img/banner/10.jpg);"></div>
                     <div class="box-table">
                         <div class="box-cell shadow dark">
                             <div class="container">
@@ -97,7 +90,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="slider-thumb bg-cover" style="background-image: url(assets/img/banner/13.jpg);"></div>
+                    <div class="slider-thumb bg-cover" style="background-image: url(<?php echo $domain ?>assets/img/banner/13.jpg);"></div>
                     <div class="box-table">
                         <div class="box-cell shadow dark">
                             <div class="container">
@@ -132,7 +125,7 @@
                         <h4> <i class="fas fa-bolt"></i> Popular Causes</h4>
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/causes/11.jpg" alt="Thumb">
+                                <img src="<?php echo $domain ?>assets/img/causes/11.jpg" alt="Thumb">
                             </div>
                             <div class="info">
                                 <span class="cats">
@@ -152,7 +145,7 @@
                         </div>
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/causes/22.jpg" alt="Thumb">
+                                <img src="<?php echo $domain ?>assets/img/causes/22.jpg" alt="Thumb">
                             </div>
                             <div class="info">
                                 <span class="cats">
@@ -172,7 +165,7 @@
                         </div>
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/causes/33.jpg" alt="Thumb">
+                                <img src="<?php echo $domain ?>assets/img/causes/33.jpg" alt="Thumb">
                             </div>
                             <div class="info">
                                 <span class="cats">
@@ -303,10 +296,10 @@
                 <div class="col-lg-6 thumb-box">
                     <div class="thumb">
                         <div class="thumb-1">
-                            <img src="assets/img/about/1.jpg" alt="Thumb">
+                            <img src="<?php echo $domain ?>assets/img/about/1.jpg" alt="Thumb">
                         </div>
                         <div class="thumb-2">
-                            <img src="assets/img/about/2.jpg" alt="Thumb">
+                            <img src="<?php echo $domain ?>assets/img/about/2.jpg" alt="Thumb">
                             <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube light video-play-button item-center">
                                 <i class="fa fa-play"></i>
                             </a>
@@ -362,7 +355,7 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="assets/img/donation/1.jpg" alt="Thumb">
+                                    <img src="<?php echo $domain ?>assets/img/donation/1.jpg" alt="Thumb">
                                     <span class="overlay">
                                         <strong>Created : </strong> Nov 7, 2020
                                     </span>
@@ -392,7 +385,7 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="assets/img/donation/2.jpg" alt="Thumb">
+                                    <img src="<?php echo $domain ?>assets/img/donation/2.jpg" alt="Thumb">
                                     <div class="trend">
                                         <i class="fas fa-bolt"></i> Trend
                                     </div>
@@ -425,7 +418,7 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="assets/img/donation/3.jpg" alt="Thumb">
+                                    <img src="<?php echo $domain ?>assets/img/donation/3.jpg" alt="Thumb">
                                     <span class="overlay">
                                         <strong>Created : </strong> Dec 26, 2020
                                     </span>
@@ -461,7 +454,7 @@
     <div class="volunteer-area text-center default-padding">
         <!-- Fixed Shape -->
         <div class="shape-bottom">
-            <img src="assets/img/shape/7.png" alt="Shape">
+            <img src="<?php echo $domain ?>assets/img/shape/7.png" alt="Shape">
         </div>
         <!-- Fixed Shape -->
         <div class="container">
@@ -489,7 +482,7 @@
     <div class="event-area carousel-shadow default-padding bg-gray">
         <!-- Fixed Shape -->
         <div class="shape-bottom-left">
-            <img src="assets/img/shape/8.png" alt="Shape">
+            <img src="<?php echo $domain ?>assets/img/shape/8.png" alt="Shape">
         </div>
         <!-- Fixed Shape -->
         <div class="container">
@@ -515,7 +508,7 @@
                 <!-- Single Item  -->
                 <div class="item">
                     <div class="thumb">
-                        <img src="assets/img/event/1.jpg" alt="Thumb">
+                        <img src="<?php echo $domain ?>assets/img/event/1.jpg" alt="Thumb">
                         <div class="date">
                             12 <strong>Aug</strong>
                         </div>
@@ -535,7 +528,7 @@
                 <!-- Single Item  -->
                 <div class="item">
                     <div class="thumb">
-                        <img src="assets/img/event/2.jpg" alt="Thumb">
+                        <img src="<?php echo $domain ?>assets/img/event/2.jpg" alt="Thumb">
                         <div class="date">
                             25 <strong>Dec</strong>
                         </div>
@@ -555,7 +548,7 @@
                 <!-- Single Item  -->
                 <div class="item">
                     <div class="thumb">
-                        <img src="assets/img/event/3.jpg" alt="Thumb">
+                        <img src="<?php echo $domain ?>assets/img/event/3.jpg" alt="Thumb">
                         <div class="date">
                             18 <strong>Jul</strong>
                         </div>
@@ -581,7 +574,7 @@
     ============================================= -->
     <div class="donation-area text-light bg-gray default-padding">
         <!-- Fixed BG-->
-        <div class="fixed-bg" style="background-image: url(assets/img/banner/12.jpg);"></div>
+        <div class="fixed-bg" style="background-image: url(<?php echo $domain ?>assets/img/banner/12.jpg);"></div>
         <!-- End Fixed BG-->
         <div class="container">
             <div class="row align-center">
@@ -777,73 +770,73 @@
                                 <div id="portfolio-grid" class="gallery-items colums-3">
                                     <div class="pf-item">
                                         <div class="item-inner">
-                                            <img src="assets/img/gallery/11.jpg" alt="Thumb" />
+                                            <img src="<?php echo $domain ?>assets/img/gallery/11.jpg" alt="Thumb" />
                                             <div class="overlay">
                                                 <h4><a href="#">Food Served</a></h4>
                                                 <span class="cats">Poor</span>
                                             </div>
                                             <div class="view">
-                                                <a href="assets/img/gallery/11.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                <a href="<?php echo $domain ?>assets/img/gallery/11.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="pf-item wide">
                                         <div class="item-inner">
-                                            <img src="assets/img/gallery/77.jpg" alt="Thumb" />
+                                            <img src="<?php echo $domain ?>assets/img/gallery/77.jpg" alt="Thumb" />
                                             <div class="overlay">
                                                 <h4><a href="#">Water Collect</a></h4>
                                                 <span class="cats">Poor</span>
                                             </div>
                                             <div class="view">
-                                                <a href="assets/img/gallery/77.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                <a href="<?php echo $domain ?>assets/img/gallery/77.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="pf-item">
                                         <div class="item-inner">
-                                            <img src="assets/img/gallery/33.jpg" alt="Thumb" />
+                                            <img src="<?php echo $domain ?>assets/img/gallery/33.jpg" alt="Thumb" />
                                             <div class="overlay">
                                                 <h4><a href="#">Blood Donate</a></h4>
                                                 <span class="cats">Poor</span>
                                             </div>
                                             <div class="view">
-                                                <a href="assets/img/gallery/33.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                <a href="<?php echo $domain ?>assets/img/gallery/33.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="pf-item">
                                         <div class="item-inner">
-                                            <img src="assets/img/gallery/44.jpg" alt="Thumb" />
+                                            <img src="<?php echo $domain ?>assets/img/gallery/44.jpg" alt="Thumb" />
                                             <div class="overlay">
                                                 <h4><a href="#">Child Education</a></h4>
                                                 <span class="cats">Poor</span>
                                             </div>
                                             <div class="view">
-                                                <a href="assets/img/gallery/44.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                <a href="<?php echo $domain ?>assets/img/gallery/44.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="pf-item">
                                         <div class="item-inner">
-                                            <img src="assets/img/gallery/55.jpg" alt="Thumb" />
+                                            <img src="<?php echo $domain ?>assets/img/gallery/55.jpg" alt="Thumb" />
                                             <div class="overlay">
                                                 <h4><a href="#">Help Homeless</a></h4>
                                                 <span class="cats">Poor</span>
                                             </div>
                                             <div class="view">
-                                                <a href="assets/img/gallery/55.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                <a href="<?php echo $domain ?>assets/img/gallery/55.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="pf-item">
                                         <div class="item-inner">
-                                            <img src="assets/img/gallery/66.jpg" alt="Thumb" />
+                                            <img src="<?php echo $domain ?>assets/img/gallery/66.jpg" alt="Thumb" />
                                             <div class="overlay">
                                                 <h4><a href="#">Rebuild Home</a></h4>
                                                 <span class="cats">Poor</span>
                                             </div>
                                             <div class="view">
-                                                <a href="assets/img/gallery/66.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                <a href="<?php echo $domain ?>assets/img/gallery/66.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -881,7 +874,7 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="blog-single-with-sidebar.html">
-                                    <img src="assets/img/blog/1.jpg" alt="Thumb">
+                                    <img src="<?php echo $domain ?>assets/img/blog/1.jpg" alt="Thumb">
                                     <span class="date">
                                         24 <strong>Aug</strong>
                                     </span>
@@ -910,7 +903,7 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="blog-single-with-sidebar.html">
-                                    <img src="assets/img/blog/2.jpg" alt="Thumb">
+                                    <img src="<?php echo $domain ?>assets/img/blog/2.jpg" alt="Thumb">
                                     <span class="date">
                                         18 <strong>Sep</strong>
                                     </span>
@@ -939,7 +932,7 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="blog-single-with-sidebar.html">
-                                    <img src="assets/img/blog/3.jpg" alt="Thumb">
+                                    <img src="<?php echo $domain ?>assets/img/blog/3.jpg" alt="Thumb">
                                     <span class="date">
                                         05 <strong>Jul</strong>
                                     </span>
@@ -967,33 +960,25 @@
             </div>
         </div>
     </div>
-    <!-- End Blog Area -->
-
-    <!-- Start Footer 
-    ============================================= -->
-   
-    <!-- End Footer -->
-
-    <!-- jQuery Frameworks
-    ============================================= -->
-    <script src="assets/js/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/equal-height.min.js"></script>
-    <script src="assets/js/jquery.appear.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/modernizr.custom.13711.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/progress-bar.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/count-to.js"></script>
-    <script src="assets/js/YTPlayer.min.js"></script>
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <script src="assets/js/bootsnav.js"></script>
-    <script src="assets/js/main.js"></script>
+    <?php include('./include/footer.php') ?>
+    <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/popper.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/bootstrap.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/equal-height.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/jquery.appear.js"></script>
+    <script src="<?php echo $domain ?>assets/js/jquery.easing.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/modernizr.custom.13711.js"></script>
+    <script src="<?php echo $domain ?>assets/js/owl.carousel.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/wow.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/progress-bar.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/isotope.pkgd.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/count-to.js"></script>
+    <script src="<?php echo $domain ?>assets/js/YTPlayer.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/jquery.nice-select.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/bootsnav.js"></script>
+    <script src="<?php echo $domain ?>assets/js/main.js"></script>
 
 </body>
 
