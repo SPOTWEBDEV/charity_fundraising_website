@@ -56,7 +56,7 @@
 
     <!-- Start Breadcrumb 
     ============================================= -->
-    <div class="breadcrumb-area text-center shadow dark bg-cover padding-xl text-light" style="background-image: url(<?php echo $domain ?>assets/img/banner/23.jpg);">
+    <div class="breadcrumb-area text-center shadow dark bg-cover padding-xl text-light" style="background-image: url(<?php echo $domain ?>assets/img/2.jpg);">
         <div class="container">
             <div class="breadcrumb-items">
                 <div class="row">

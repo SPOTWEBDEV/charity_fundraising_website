@@ -50,7 +50,7 @@
 
     <!-- Start Header Top 
     ============================================= -->
-  <?php include('../include/nav.php') ?>
+    <?php include('../include/nav.php') ?>
     <!-- End Header -->
 
     <!-- Start Breadcrumb 
@@ -81,17 +81,17 @@
                 <!-- Single Item  -->
                 <div class="item">
                     <div class="row">
-                        <div class="thumb col-lg-5" style="background-image: url(<?php echo $domain ?>assets/img/school-5.jpg);">
+                        <div class="thumb col-lg-5" style="background-image: url(<?php echo $domain ?>assets/img/school-3.jpg);">
                             <div class="date">
                                 12 <strong>Aug</strong>
                             </div>
                         </div>
                         <div class="info col-lg-7">
                             <h4>
-                                <a href="#">Healty Food For Poor People</a>
+                                <a href="#">Educational Empowerment</a>
                             </h4>
                             <p>
-                                Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she no he several excited am. peculiar families sensible.
+                                The HEO Eziokwu Foundation is hosting an event to support educational initiatives. The foundation is focused on providing access to education for underprivileged children and empowering them with skills that will shape their future.
                             </p>
                             <ul class="date">
                                 <li>
@@ -115,14 +115,14 @@
                         </div>
                         <div class="info col-lg-7">
                             <h4>
-                                <a href="#">Medical Facilities for People</a>
+                                <a href="#">Health Care for Vulnerable Communities</a>
                             </h4>
                             <p>
-                                Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she no he several excited am. peculiar families sensible.
+                                The HEO Eziokwu Foundation is providing medical services to underserved populations, ensuring that everyone has access to essential health care, regardless of their background or financial status.
                             </p>
                             <ul class="date">
                                 <li>
-                                    <i class="fas fa-clock"></i> 08:30 AM - 17:045 PM
+                                    <i class="fas fa-clock"></i> 08:30 AM - 17:45 PM
                                 </li>
                                 <li>
                                     <i class="fas fa-calendar-alt"></i> 800 Loring Ave, Estancia
@@ -142,10 +142,10 @@
                         </div>
                         <div class="info col-lg-7">
                             <h4>
-                                <a href="#">Lifeskills for Children in South Africa</a>
+                                <a href="#">Football for Youth Development</a>
                             </h4>
                             <p>
-                                Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she no he several excited am. peculiar families sensible.
+                                The HEO Eziokwu Foundation is hosting a football event for youth development. This initiative aims to teach life skills through sports, empowering the youth with values such as teamwork, discipline, and leadership.
                             </p>
                             <ul class="date">
                                 <li>
@@ -179,11 +179,13 @@
             <!-- End Paginatin -->
         </div>
     </div>
+
+
     <!-- End Event Area -->
 
     <!-- Start Footer 
     ============================================= -->
-   <?php include('../include/footer.php') ?>
+    <?php include('../include/footer.php') ?>
     <!-- End Footer -->
 
     <!-- jQuery Frameworks
