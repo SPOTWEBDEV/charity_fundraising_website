@@ -1,4 +1,3 @@
-
 <?php include('./server/connection.php') ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +46,7 @@
 
     <!-- Preloader Start -->
     <div class="se-pre-con"></div>
-     
+
     <?php include('./include/nav.php') ?>
 
 
@@ -80,8 +79,8 @@
                                     <div class="col-lg-9">
                                         <div class="content">
                                             <h4 data-animation="animated slideInDown">HEO EZIOKWU FOUNDATION ORGANIZATION</h4>
-                                            <p data-animation="animated slideInRight">Was Founded on the 12th of June 2011, by High Chief Okoh Emmanuel Henry,who's from Ako-Nike Community in Enugu State, Nigeria, 
-                                            Heo Eziokwu Foundation is a dedicated non-profit organization committed to uplifting and empowering underprivileged families.</p>
+                                            <p data-animation="animated slideInRight">Was Founded on the 12th of June 2011, by High Chief Okoh Emmanuel Henry,who's from Ako-Nike Community in Enugu State, Nigeria,
+                                                Heo Eziokwu Foundation is a dedicated non-profit organization committed to uplifting and empowering underprivileged families.</p>
                                             <a data-animation="animated fadeInUp" class="btn circle btn-theme border btn-md" href="#">Discover More</a>
                                         </div>
                                     </div>
@@ -134,35 +133,35 @@
                                     Education
                                 </span>
                                 <h4>
-                                    <a href="#">Give Education To Africa</a>
+                                    <a href="#">Empower Education in Africa</a>
                                 </h4>
-                                <div class="progress-box">
-                                    <p>Raised : $6,230 <span class="float-right">Goal : $8,400</span></p>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" data-width="87"></div>
-                                    </div>
-                                    <span>Fund collect : 87%</span>
+                                <!-- <div class="progress-box">
+                                <p>Raised : $6,230 <span class="float-right">Goal : $8,400</span></p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" data-width="87"></div>
                                 </div>
+                                <span>Fund collected: 87%</span>
+                            </div> -->
                             </div>
                         </div>
                         <div class="item">
                             <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/football-10.jpg" alt="Thumb">
+                                <img src="<?php echo $domain ?>assets/img/9.jpg" alt="Thumb">
                             </div>
                             <div class="info">
                                 <span class="cats">
-                                    HealthcareHealthcare
+                                    Healthcare
                                 </span>
                                 <h4>
-                                    <a href="#">Healthcare For All People</a>
+                                    <a href="#">Affordable Healthcare for All</a>
                                 </h4>
-                                <div class="progress-box">
-                                    <p>Raised : $970 <span class="float-right">Goal : $1,800</span></p>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" data-width="55"></div>
-                                    </div>
-                                    <span>Fund collect : 55%</span>
+                                <!-- <div class="progress-box">
+                                <p>Raised : $970 <span class="float-right">Goal : $1,800</span></p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" data-width="55"></div>
                                 </div>
+                                <span>Fund collected: 55%</span>
+                            </div> -->
                             </div>
                         </div>
                         <div class="item">
@@ -174,15 +173,15 @@
                                     Housing
                                 </span>
                                 <h4>
-                                    <a href="#">Housing</a>
+                                    <a href="#">Safe Housing for Vulnerable Families</a>
                                 </h4>
-                                <div class="progress-box">
-                                    <p>Raised : $2,400 <span class="float-right">Goal : $4,300</span></p>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" data-width="77"></div>
-                                    </div>
-                                    <span>Fund collect : 77%</span>
+                                <!-- <div class="progress-box">
+                                <p>Raised : $2,400 <span class="float-right">Goal : $4,300</span></p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" data-width="77"></div>
                                 </div>
+                                <span>Fund collected: 77%</span>
+                            </div> -->
                             </div>
                         </div>
                     </div>
@@ -191,32 +190,32 @@
                 <div class="col-lg-6 info">
                     <h5>About Us</h5>
                     <h2 class="text-blur">About</h2>
-                    <h2 class="area-title">HEO Eziokwu Foundation organisation </h2>
+                    <h2 class="area-title">HEO Eziokwu Foundation Organization</h2>
                     <p>
-                    is dedicated to bridging the opportunity gap for less privileged communities, offering hope and resources that enable individuals to thrive. By addressing critical needs, we aim to create a foundation of support that empowers families to pursue better and more dignified lives. Our initiatives are tailored to connect families with the resources they deserve, ultimately strengthening entire communities and fostering long-term resilience.
-
+                        HEO Eziokwu Foundation is committed to bridging the opportunity gap for underprivileged communities, offering hope and essential resources to help individuals thrive. By addressing the critical needs in education, healthcare, and housing, we aim to create a solid foundation of support that empowers families to pursue better and more dignified lives. Our initiatives are designed to connect families with the resources they deserve, strengthening entire communities and fostering long-term resilience.
                     </p>
-                    
+
                     <ul>
                         <li>
                             <h5>168K</h5>
-                            <span>Education</span>
+                            <span>People Educated</span>
                         </li>
                         <li>
-                            <h5>5M Ton </h5>
-                            <span>Healthcare</span>
+                            <h5>5M Ton</h5>
+                            <span>Healthcare Aid Provided</span>
                         </li>
                         <li>
                             <h5>37K Sqmi.</h5>
-                            <span>Housing</span>
+                            <span>Housing for Families</span>
                         </li>
                     </ul>
-                    <a class="btn circle btn-theme border btn-md" href="#">become a volunteer</a>
+                    <a class="btn circle btn-theme border btn-md" href="#">Become a Volunteer</a>
                 </div>
 
             </div>
         </div>
     </div>
+
     <!-- End About Area -->
 
     <!-- Start What We Do 
@@ -228,7 +227,7 @@
                     <div class="site-heading text-center">
                         <h5>What</h5>
                         <h2>
-                        HEO Eziokwu Foundation <br> organisation 
+                            HEO Eziokwu Foundation <br> organisation
                         </h2>
                         <h5>can offer</h5> <br>
                         <div class="heading-divider"></div>
@@ -245,14 +244,14 @@
                             <i style="color: #3bcf93;" class="fas fa-graduation-cap"></i>
                             <h4>Education empowerment</h4>
                             <p>
-                            Supporting the education of over 500,000 students, from primary to university level, by covering tuition fees and supplying critical learning resources such as textbooks, exercise books, classroom furniture, smart boards, and other essential materials. Our aim is to ensure that every child has the resources needed to excel academically and reach their full potential.
+                                Supporting the education of over 500,000 students, from primary to university level, by covering tuition fees and supplying critical learning resources such as textbooks, exercise books, classroom furniture, smart boards, and other essential materials. Our aim is to ensure that every child has the resources needed to excel academically and reach their full potential.
 
                             </p>
                         </div>
                     </div>
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    
+
                     <!-- End Single Item -->
                     <!-- Single Item -->
                     <div class="single-item col-lg-4 col-md-6">
@@ -260,7 +259,7 @@
                             <i class="fas fa-heartbeat"></i>
                             <h4>Healthcare Assistance </h4>
                             <p>
-                            Providing financial support to cover essential medical expenses, helping underprivileged individuals and families access the healthcare services they need to lead healthy, fulfilling lives.
+                                Providing financial support to cover essential medical expenses, helping underprivileged individuals and families access the healthcare services they need to lead healthy, fulfilling lives.
 
                             </p>
                         </div>
@@ -272,7 +271,7 @@
                             <i style="color: #3bcf93;" class="fas fa-house-user"></i>
                             <h4>Housing Support</h4>
                             <p>
-                             Offering safe and stable housing solutions for vulnerable members of our community, including widows and widowers. By providing secure living environments, we enable individuals to rebuild their lives with dignity and hope.
+                                Offering safe and stable housing solutions for vulnerable members of our community, including widows and widowers. By providing secure living environments, we enable individuals to rebuild their lives with dignity and hope.
 
 
                             </p>
@@ -308,11 +307,11 @@
                     <h2 class="text-blur">Mission</h2>
                     <h2 class="area-title">We believe that we can save more lifes with you.</h2>
                     <p>
-                    Our mission is to empower disadvantaged families by providing essential resources and sustained support in education, healthcare, and housing. Heo Eziokwu Foundation organisation is dedicated to building a society in Africa where everyone, regardless of their background, has a fair chance to succeed and a brighter future to look forward to.
+                        Our mission is to empower disadvantaged families by providing essential resources and sustained support in education, healthcare, and housing. Heo Eziokwu Foundation organisation is dedicated to building a society in Africa where everyone, regardless of their background, has a fair chance to succeed and a brighter future to look forward to.
 
                     </p>
-                    
-                    
+
+
                     <a class="btn circle btn-theme border btn-md" href="#">Join With Us</a>
                 </div>
             </div>
@@ -329,16 +328,17 @@
                     <div class="col-lg-6 left-info">
                         <h5>Recent Causes</h5>
                         <h2>
-                            Donate to charity causes around the world.
+                            Donate to empower communities in need across the globe.
                         </h2>
                     </div>
                     <div class="col-lg-6 right-info">
                         <p>
-                            Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression.
+                            Join us in supporting vital causes that provide education, healthcare, and housing to underprivileged families, helping them build better futures.
                         </p>
                         <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#">View All <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
+
             </div>
         </div>
         <div class="container">
@@ -350,26 +350,24 @@
                             <div class="thumb">
                                 <a href="#">
                                     <img src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
-                                    <span class="overlay">
-                                        <strong>Created : </strong> Nov 7, 2020
-                                    </span>
+
                                 </a>
                             </div>
                             <div class="info">
                                 <h4>
-                                    <a href="#">Home for homeless</a>
+                                    <a href="#">Education empowerment</a>
                                 </h4>
                                 <p>
-                                    Especially do at he possession insensible manner sympathize boisterous it.
+                                    Our mission is to provide quality education to underserved communities, empowering individuals to break the cycle of poverty and achieve their full potential.
                                 </p>
-                                <div class="progress-box">
+                                <!-- <div class="progress-box">
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" data-width="50">
                                             <span>50%</span>
                                         </div>
                                     </div>
                                     <p>Raised : $4200 <span>Goal : $8400</span></p>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -383,26 +381,18 @@
                                     <div class="trend">
                                         <i class="fas fa-bolt"></i> Trend
                                     </div>
-                                    <span class="overlay">
-                                        <strong>Created : </strong> Jul 15, 2020
-                                    </span>
+
                                 </a>
                             </div>
                             <div class="info">
                                 <h4>
-                                    <a href="#">Water For All Children</a>
+                                    <a href="#">Housing Support for Vulnerable Families</a>
                                 </h4>
                                 <p>
-                                    Especially do at he possession insensible manner sympathize boisterous it.
+                                    Helping to provide safe and stable housing for vulnerable families, including widows and orphans, enabling them to rebuild their lives with dignity and security.
                                 </p>
-                                <div class="progress-box">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" data-width="69">
-                                            <span>69%</span>
-                                        </div>
-                                    </div>
-                                    <p>Raised : $6230 <span>Goal : $8400</span></p>
-                                </div>
+
+
                             </div>
                         </div>
                     </div>
@@ -413,566 +403,559 @@
                             <div class="thumb">
                                 <a href="#">
                                     <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
-                                    <span class="overlay">
-                                        <strong>Created : </strong> Dec 26, 2020
-                                    </span>
+
                                 </a>
                             </div>
                             <div class="info">
                                 <h4>
-                                    <a href="#">Food for Syrian</a>
+                                    <a href="#">Healthcare Assistance for All</a>
                                 </h4>
                                 <p>
-                                    Especially do at he possession insensible manner sympathize boisterous it.
+                                    Providing essential medical support and healthcare services to underprivileged communities, ensuring everyone has access to the care they need to lead healthy lives.
                                 </p>
+
                                 <div class="progress-box">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" data-width="45">
-                                            <span>45%</span>
-                                        </div>
-                                    </div>
-                                    <p>Raised : $4230 <span>Goal : $8400</span></p>
+
                                 </div>
                             </div>
                         </div>
+                        <!-- End Single Item -->
                     </div>
-                    <!-- End Single Item -->
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Causes -->
+        <!-- End Causes -->
 
-    <!-- Start Volunteer 
+        <!-- Start Volunteer 
     ============================================= -->
-    <div class="volunteer-area text-center default-padding">
-        <!-- Fixed Shape -->
-        <div class="shape-bottom">
-            <img src="<?php echo $domain ?>assets/img/shape/7.png" alt="Shape">
-        </div>
-        <!-- Fixed Shape -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <h5>Become a Volunteer</h5>
-                    <h2 class="text-blur">Volunteer</h2>
-                    <h2 class="area-title">We’ve funded 120,00 charity projects for 20M people around the world.</h2>
-                    <p>
-                        Replied joy age visitor nothing cottage. Mrs door paid led loud sure easy read. Hastily at perhaps as neither or ye fertile tedious visitor. Use fine bed none call busy dull when. Quiet ought match my right by table means. Principles up do in me favourable
-                        affronting. Twenty mother denied effect we to do on.
-                    </p>
-                    <form action="#">
-                        <input type="email" placeholder="Your Email" class="form-control" name="email">
-                        <button type="submit"> Join Now</button>
-                    </form>
-                </div>
+        <div class="volunteer-area text-center default-padding">
+            <!-- Fixed Shape -->
+            <div class="shape-bottom">
+                <img src="<?php echo $domain ?>assets/img/shape/7.png" alt="Shape">
             </div>
-        </div>
-    </div>
-    <!-- End Volunteer -->
-
-    <!-- Start Event Area 
-    ============================================= -->
-    <div class="event-area carousel-shadow default-padding bg-gray">
-        <!-- Fixed Shape -->
-        <div class="shape-bottom-left">
-            <img src="<?php echo $domain ?>assets/img/shape/8.png" alt="Shape">
-        </div>
-        <!-- Fixed Shape -->
-        <div class="container">
-            <div class="heading-left">
+            <!-- Fixed Shape -->
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 left-info">
-                        <h5>Upcoming Events</h5>
-                        <h2>
-                            Join to our upcoming event and get involved
-                        </h2>
-                    </div>
-                    <div class="col-lg-6 right-info">
+                    <div class="col-lg-8 offset-lg-2">
+                        <h5>Become a Volunteer</h5>
+                        <h2 class="text-blur">Volunteer with Us</h2>
+                        <h2 class="area-title">Join us in empowering communities through education, healthcare, and housing support.</h2>
                         <p>
-                            Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression.
+                            Your support can help us create lasting change. By becoming a volunteer, you’ll be contributing to the well-being of underprivileged families around the world.
                         </p>
-                        <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#">View All <i class="fas fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="event-items event-carousel owl-carousel owl-theme">
-                <!-- Single Item  -->
-                <div class="item">
-                    <div class="thumb">
-                        <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
-                        <div class="date">
-                            12 <strong>Aug</strong>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="time"><i class="fas fa-clock"></i> 8:00 am - 16:00 pm</div>
-                        <h4>
-                            <a href="#">Healty Food For Poor People</a>
-                        </h4>
-                        <p>
-                            Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she no he several excited am. peculiar families sensible.
-                        </p>
-                        <a class="btn circle btn-theme border btn-md" href="#">Know More</a>
-                    </div>
-                </div>
-                <!-- End Single Item  -->
-                <!-- Single Item  -->
-                <div class="item">
-                    <div class="thumb">
-                        <img src="<?php echo $domain ?>assets/img/football-4.jpg" alt="Thumb">
-                        <div class="date">
-                            25 <strong>Dec</strong>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="time"><i class="fas fa-clock"></i> 10:00 am - 17:30 pm</div>
-                        <h4>
-                            <a href="#">Water Facilities for People</a>
-                        </h4>
-                        <p>
-                            Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she no he several excited am. peculiar families sensible.
-                        </p>
-                        <a class="btn circle btn-theme border btn-md" href="#">Know More</a>
-                    </div>
-                </div>
-                <!-- End Single Item  -->
-                <!-- Single Item  -->
-                <div class="item">
-                    <div class="thumb">
-                        <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
-                        <div class="date">
-                            18 <strong>Jul</strong>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="time"><i class="fas fa-clock"></i> 8:30 am - 16:45 pm</div>
-                        <h4>
-                            <a href="#">Lifeskills for Children in South Africa</a>
-                        </h4>
-                        <p>
-                            Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she no he several excited am. peculiar families sensible.
-                        </p>
-                        <a class="btn circle btn-theme border btn-md" href="#">Know More</a>
-                    </div>
-                </div>
-                <!-- End Single Item  -->
-            </div>
-        </div>
-    </div>
-    <!-- End Event Area -->
-
-    <!-- Start Donation 
-    ============================================= -->
-    <div class="donation-area text-light bg-gray default-padding">
-        <!-- Fixed BG-->
-        <div class="fixed-bg" style="background-image: url(<?php echo $domain ?>assets/img/banner/12.jpg);"></div>
-        <!-- End Fixed BG-->
-        <div class="container">
-            <div class="row align-center">
-                <div class="col-lg-6 info">
-                    <h5>Donate Today</h5>
-                    <h2 class="area-title">Donate today and get involved to save the world</h2>
-                    <p>
-                        Drawings sir gay together landlord had law smallest. Formerly welcomed attended declared met say unlocked. Jennings outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves. For looking
-                        two cousins regular amongst.
-                    </p>
-                    <div class="question">
-                        <div class="icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="info">
-                            <h5>Have any question about donation? </h5>
-                            <span>Call Now: +123 3456789</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 donation-form">
-                    <div class="form-box">
                         <form action="#">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="Amount">Amount</label>
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" id="Amount" placeholder="$129.00" required>
-                                            <span class="input-group-addon"><i class="fas fa-dollar-sign"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="donateType">Frequency</label>
-                                        <select id="donateType" class="form-control">
-                                            <option value="once">Once</option>
-                                            <option value="weekly">Weekly</option>
-                                            <option value="Fortnightly">Fortnightly</option>
-                                            <option value="Monthly">Monthly</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="cardNumber">Card Number</label>
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number" required>
-                                            <span class="input-group-addon"><i class="fas fa-credit-card"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-sm-7 col-xs-8">
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <label for="expMonth">Expiration Date</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                                <input type="text" class="form-control" id="expMonth" placeholder="MM" required data-stripe="exp_month" />
-                                            </div>
-                                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                                <input type="text" class="form-control" name="expYear" placeholder="YY" required data-stripe="exp_year" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-5 col-sm-5 col-xs-4 pull-right">
-                                    <div class="form-group">
-                                        <label for="cvCode">CV Code</label>
-                                        <input type="password" class="form-control" id="cvCode" placeholder="CV" required data-stripe="cvc" />
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <button class="btn btn-theme effect btn-md" type="submit">Donate Now</button>
-                                </div>
-                            </div>
+                            <input type="email" placeholder="Your Email" class="form-control" name="email">
+                            <button type="submit">Join Now</button>
                         </form>
                     </div>
-
                 </div>
+
             </div>
         </div>
-    </div>
-    <!-- End Donation Area -->
+        <!-- End Volunteer -->
 
-    <!-- Start Testimonials 
+        <!-- Start Event Area 
     ============================================= -->
-    <div class="testimonials-area carousel-shadow bg-gray default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h5>Testimonials</h5>
-                        <h2>
-                            What people say <br> About Poora
-                        </h2>
-                        <div class="heading-divider"></div>
+        <div class="event-area carousel-shadow default-padding bg-gray">
+            <!-- Fixed Shape -->
+            <div class="shape-bottom-left">
+                <img src="<?php echo $domain ?>assets/img/shape/8.png" alt="Shape">
+            </div>
+            <!-- Fixed Shape -->
+            <div class="container">
+                <div class="heading-left">
+                    <div class="row">
+                        <div class="col-lg-6 left-info">
+                            <!-- <h5>Upcoming Events</h5> -->
+                            <h2>
+                                Join to our upcoming event and get involved
+                            </h2>
+                        </div>
+                        <div class="col-lg-6 right-info">
+                            <p>
+                                Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression.
+                            </p>
+                            <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#">View All <i class="fas fa-angle-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="testimonial-items testimonial-carousel owl-carousel owl-theme">
-                        <!-- Single Item  -->
-                        <div class="item">
-                            <div class="info">
-                                <div class="top-info">
-                                    <i class="fas fa-quote-left"></i>
-                                    <div class="provider">
-                                        <h4>Jeckey Pura</h4>
-                                        <span>Volunteer</span>
-                                    </div>
-                                </div>
-                                <p>
-                                    Numerous indulged distance old law you. Total state as merit court green decay he. Steepest sex bachelor the may delicate its yourself. As he instantly on discovery concluded to. Open draw far pure miss felt say yet few sigh.
-                                </p>
+            <div class="container">
+                <div class="event-items event-carousel owl-carousel owl-theme">
+                    <!-- Single Item  -->
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
+                            <div class="date">
+                                12 <strong>Aug</strong>
                             </div>
                         </div>
-                        <!-- End Single Item  -->
-                        <!-- Single Item  -->
-                        <div class="item">
-                            <div class="info">
-                                <div class="top-info">
-                                    <i class="fas fa-quote-left"></i>
-                                    <div class="provider">
-                                        <h4>Benil Sraw</h4>
-                                        <span>Volunteer</span>
-                                    </div>
-                                </div>
-                                <p>
-                                    Numerous indulged distance old law you. Total state as merit court green decay he. Steepest sex bachelor the may delicate its yourself. As he instantly on discovery concluded to. Open draw far pure miss felt say yet few sigh.
-                                </p>
-                            </div>
+                        <div class="info">
+                            <div class="time"><i class="fas fa-clock"></i> 8:00 am - 16:00 pm</div>
+                            <h4>
+                                <a href="#">Healty Food For Poor People</a>
+                            </h4>
+                            <p>
+                                Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she no he several excited am. peculiar families sensible.
+                            </p>
+                            <a class="btn circle btn-theme border btn-md" href="#">Know More</a>
                         </div>
-                        <!-- End Single Item  -->
-                        <!-- Single Item  -->
-                        <div class="item">
-                            <div class="info">
-                                <div class="top-info">
-                                    <i class="fas fa-quote-left"></i>
-                                    <div class="provider">
-                                        <h4>Adam Blaur</h4>
-                                        <span>Volunteer</span>
-                                    </div>
-                                </div>
-                                <p>
-                                    Numerous indulged distance old law you. Total state as merit court green decay he. Steepest sex bachelor the may delicate its yourself. As he instantly on discovery concluded to. Open draw far pure miss felt say yet few sigh.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- End Single Item  -->
                     </div>
+                    <!-- End Single Item  -->
+                    <!-- Single Item  -->
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="<?php echo $domain ?>assets/img/football-4.jpg" alt="Thumb">
+                            <div class="date">
+                                25 <strong>Dec</strong>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="time"><i class="fas fa-clock"></i> 10:00 am - 17:30 pm</div>
+                            <h4>
+                                <a href="#">Water Facilities for People</a>
+                            </h4>
+                            <p>
+                                Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she no he several excited am. peculiar families sensible.
+                            </p>
+                            <a class="btn circle btn-theme border btn-md" href="#">Know More</a>
+                        </div>
+                    </div>
+                    <!-- End Single Item  -->
+                    <!-- Single Item  -->
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+                            <div class="date">
+                                18 <strong>Jul</strong>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="time"><i class="fas fa-clock"></i> 8:30 am - 16:45 pm</div>
+                            <h4>
+                                <a href="#">Lifeskills for Children in South Africa</a>
+                            </h4>
+                            <p>
+                                Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she no he several excited am. peculiar families sensible.
+                            </p>
+                            <a class="btn circle btn-theme border btn-md" href="#">Know More</a>
+                        </div>
+                    </div>
+                    <!-- End Single Item  -->
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Testimonials Area -->
+        <!-- End Event Area -->
 
-    <!-- Start Gallery 
+        <!-- Start Donation 
     ============================================= -->
-    <div class="gallery-area default-padding">
-        <div class="container">
-            <div class="heading-left">
-                <div class="row">
-                    <div class="col-lg-6 left-info">
-                        <h5>What We Did</h5>
-                        <h2>
-                            Featured projects from <br> our latest causes
-                        </h2>
-                    </div>
-                    <div class="col-lg-6 right-info">
+        <div class="donation-area text-light bg-gray default-padding">
+            <!-- Fixed BG-->
+            <div class="fixed-bg" style="background-image: url(<?php echo $domain ?>assets/img/banner/12.jpg);"></div>
+            <!-- End Fixed BG-->
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-lg-6 info">
+                        <h5>Donate Today</h5>
+                        <h2 class="area-title">Donate today and get involved to save the world</h2>
                         <p>
-                            Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression.
+                            Drawings sir gay together landlord had law smallest. Formerly welcomed attended declared met say unlocked. Jennings outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves. For looking
+                            two cousins regular amongst.
                         </p>
-                        <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#">View All <i class="fas fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="gallery-items-area inner-title">
-                        <div class="gallery-content">
-
-                            <div class="magnific-mix-gallery masonary">
-                                <div id="portfolio-grid" class="gallery-items colums-3">
-                                    <div class="pf-item">
-                                        <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Food Served</a></h4>
-                                                <span class="cats">Poor</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/2.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf-item wide">
-                                        <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/school-2.jpg" alt="Thumb" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Water Collect</a></h4>
-                                                <span class="cats">Poor</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/football-3.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf-item">
-                                        <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/football-3.jpg" alt="Thumb" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Blood Donate</a></h4>
-                                                <span class="cats">Poor</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/3.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf-item">
-                                        <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/8.jpg" alt="Thumb" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Child Education</a></h4>
-                                                <span class="cats">Poor</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/12.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf-item">
-                                        <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Help Homeless</a></h4>
-                                                <span class="cats">Poor</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/football-4.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf-item">
-                                        <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/football-4.jpg" alt="Thumb" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Rebuild Home</a></h4>
-                                                <span class="cats">Poor</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/football-6.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="question">
+                            <div class="icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info">
+                                <h5>Have any question about donation? </h5>
+                                <span>Call Now: +123 3456789</span>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-6 donation-form">
+                        <div class="form-box">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="Amount">Amount</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="Amount" placeholder="$129.00" required>
+                                                <span class="input-group-addon"><i class="fas fa-dollar-sign"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="donateType">Frequency</label>
+                                            <select id="donateType" class="form-control">
+                                                <option value="once">Once</option>
+                                                <option value="weekly">Weekly</option>
+                                                <option value="Fortnightly">Fortnightly</option>
+                                                <option value="Monthly">Monthly</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="cardNumber">Card Number</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number" required>
+                                                <span class="input-group-addon"><i class="fas fa-credit-card"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7 col-xs-8">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label for="expMonth">Expiration Date</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <input type="text" class="form-control" id="expMonth" placeholder="MM" required data-stripe="exp_month" />
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <input type="text" class="form-control" name="expYear" placeholder="YY" required data-stripe="exp_year" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-5 col-xs-4 pull-right">
+                                        <div class="form-group">
+                                            <label for="cvCode">CV Code</label>
+                                            <input type="password" class="form-control" id="cvCode" placeholder="CV" required data-stripe="cvc" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button class="btn btn-theme effect btn-md" type="submit">Donate Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Gallery Area -->
+        <!-- End Donation Area -->
 
-    <!-- Start Blog 
+        <!-- Start Testimonials 
     ============================================= -->
-    <div class="blog-area default-padding bottom-less bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h5>Latest News</h5>
-                        <h2>
-                            Stay Update with Us from <br> latest & popular News
-                        </h2>
-                        <div class="heading-divider"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="blog-items">
+        <div class="testimonials-area carousel-shadow bg-gray default-padding">
+            <div class="container">
                 <div class="row">
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="blog-single-with-sidebar.html">
-                                    <img src="<?php echo $domain ?>assets/img/blog/1.jpg" alt="Thumb">
-                                    <span class="date">
-                                        24 <strong>Aug</strong>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <h4>
-                                    <a href="blog-single-with-sidebar.html">Advantage frankness to concluded unwilling. </a>
-                                </h4>
-                                <div class="meta">
-                                    <ul>
-                                        <li>By <a href="#">Jones</a></li>
-                                        <li><a href="#"><i class="fas fa-comments"></i> 12 Comments</a></li>
-                                    </ul>
-                                </div>
-                                <p>
-                                    Court in of leave again as am. Greater sixteen to forming colonel no on be. So an advice hardly barton process.
-                                </p>
-                                <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
-                            </div>
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center">
+                            <h5>Testimonials</h5>
+                            <h2>
+                                What people say <br> About Poora
+                            </h2>
+                            <div class="heading-divider"></div>
                         </div>
                     </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="blog-single-with-sidebar.html">
-                                    <img src="<?php echo $domain ?>assets/img/blog/2.jpg" alt="Thumb">
-                                    <span class="date">
-                                        18 <strong>Sep</strong>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <h4>
-                                    <a href="blog-single-with-sidebar.html">Extremely depending he gentleman improving.</a>
-                                </h4>
-                                <div class="meta">
-                                    <ul>
-                                        <li>By <a href="#">Spark</a></li>
-                                        <li><a href="#"><i class="fas fa-comments"></i> 26 Comments</a></li>
-                                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="testimonial-items testimonial-carousel owl-carousel owl-theme">
+                            <!-- Single Item  -->
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Jeckey Pura</h4>
+                                            <span>Volunteer</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Numerous indulged distance old law you. Total state as merit court green decay he. Steepest sex bachelor the may delicate its yourself. As he instantly on discovery concluded to. Open draw far pure miss felt say yet few sigh.
+                                    </p>
                                 </div>
-                                <p>
-                                    Court in of leave again as am. Greater sixteen to forming colonel no on be. So an advice hardly barton process.
-                                </p>
-                                <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
                             </div>
+                            <!-- End Single Item  -->
+                            <!-- Single Item  -->
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Benil Sraw</h4>
+                                            <span>Volunteer</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Numerous indulged distance old law you. Total state as merit court green decay he. Steepest sex bachelor the may delicate its yourself. As he instantly on discovery concluded to. Open draw far pure miss felt say yet few sigh.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Single Item  -->
+                            <!-- Single Item  -->
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Adam Blaur</h4>
+                                            <span>Volunteer</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Numerous indulged distance old law you. Total state as merit court green decay he. Steepest sex bachelor the may delicate its yourself. As he instantly on discovery concluded to. Open draw far pure miss felt say yet few sigh.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Single Item  -->
                         </div>
                     </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="blog-single-with-sidebar.html">
-                                    <img src="<?php echo $domain ?>assets/img/blog/3.jpg" alt="Thumb">
-                                    <span class="date">
-                                        05 <strong>Jul</strong>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <h4>
-                                    <a href="blog-single-with-sidebar.html">Going as by do known noise he wrote round.</a>
-                                </h4>
-                                <div class="meta">
-                                    <ul>
-                                        <li>By <a href="#">Mohin</a></li>
-                                        <li><a href="#"><i class="fas fa-comments"></i> 05 Comments</a></li>
-                                    </ul>
-                                </div>
-                                <p>
-                                    Court in of leave again as am. Greater sixteen to forming colonel no on be. So an advice hardly barton process.
-                                </p>
-                                <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
                 </div>
             </div>
         </div>
-    </div>
-    <?php include('./include/footer.php') ?>
-    <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/popper.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/bootstrap.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/equal-height.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/jquery.appear.js"></script>
-    <script src="<?php echo $domain ?>assets/js/jquery.easing.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/modernizr.custom.13711.js"></script>
-    <script src="<?php echo $domain ?>assets/js/owl.carousel.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/wow.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/progress-bar.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/isotope.pkgd.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/count-to.js"></script>
-    <script src="<?php echo $domain ?>assets/js/YTPlayer.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/jquery.nice-select.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/bootsnav.js"></script>
-    <script src="<?php echo $domain ?>assets/js/main.js"></script>
+        <!-- End Testimonials Area -->
+
+        <!-- Start Gallery 
+    ============================================= -->
+        <div class="gallery-area default-padding">
+            <div class="container">
+                <div class="heading-left">
+                    <div class="row">
+                        <div class="col-lg-6 left-info">
+                            <h5>What We Did</h5>
+                            <h2>
+                                Featured projects from <br> our latest causes
+                            </h2>
+                        </div>
+                        <div class="col-lg-6 right-info">
+                            <p>
+                                Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression.
+                            </p>
+                            <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#">View All <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="gallery-items-area inner-title">
+                            <div class="gallery-content">
+
+                                <div class="magnific-mix-gallery masonary">
+                                    <div id="portfolio-grid" class="gallery-items colums-3">
+                                        <div class="pf-item">
+                                            <div class="item-inner">
+                                                <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Food Served</a></h4>
+                                                    <span class="cats">Poor</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="<?php echo $domain ?>assets/img/2.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pf-item wide">
+                                            <div class="item-inner">
+                                                <img src="<?php echo $domain ?>assets/img/school-2.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Water Collect</a></h4>
+                                                    <span class="cats">Poor</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="<?php echo $domain ?>assets/img/football-3.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pf-item">
+                                            <div class="item-inner">
+                                                <img src="<?php echo $domain ?>assets/img/football-3.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Blood Donate</a></h4>
+                                                    <span class="cats">Poor</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="<?php echo $domain ?>assets/img/3.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pf-item">
+                                            <div class="item-inner">
+                                                <img src="<?php echo $domain ?>assets/img/8.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Child Education</a></h4>
+                                                    <span class="cats">Poor</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="<?php echo $domain ?>assets/img/12.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pf-item">
+                                            <div class="item-inner">
+                                                <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Help Homeless</a></h4>
+                                                    <span class="cats">Poor</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="<?php echo $domain ?>assets/img/football-4.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pf-item">
+                                            <div class="item-inner">
+                                                <img src="<?php echo $domain ?>assets/img/football-4.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Rebuild Home</a></h4>
+                                                    <span class="cats">Poor</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="<?php echo $domain ?>assets/img/football-6.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Gallery Area -->
+
+        <!-- Start Blog 
+    ============================================= -->
+        <div class="blog-area default-padding bottom-less bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center">
+                            <h5>Latest News</h5>
+                            <h2>
+                                Stay Update with Us from <br> latest & popular News
+                            </h2>
+                            <div class="heading-divider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="blog-items">
+                    <div class="row">
+                        <!-- Single Item -->
+                        <div class="single-item col-lg-4 col-md-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="blog-single-with-sidebar.html">
+                                        <img src="<?php echo $domain ?>assets/img/blog/1.jpg" alt="Thumb">
+                                        <span class="date">
+                                            24 <strong>Aug</strong>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <h4>
+                                        <a href="blog-single-with-sidebar.html">Advantage frankness to concluded unwilling. </a>
+                                    </h4>
+                                    <div class="meta">
+                                        <ul>
+                                            <li>By <a href="#">Jones</a></li>
+                                            <li><a href="#"><i class="fas fa-comments"></i> 12 Comments</a></li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                        Court in of leave again as am. Greater sixteen to forming colonel no on be. So an advice hardly barton process.
+                                    </p>
+                                    <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="single-item col-lg-4 col-md-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="blog-single-with-sidebar.html">
+                                        <img src="<?php echo $domain ?>assets/img/blog/2.jpg" alt="Thumb">
+                                        <span class="date">
+                                            18 <strong>Sep</strong>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <h4>
+                                        <a href="blog-single-with-sidebar.html">Extremely depending he gentleman improving.</a>
+                                    </h4>
+                                    <div class="meta">
+                                        <ul>
+                                            <li>By <a href="#">Spark</a></li>
+                                            <li><a href="#"><i class="fas fa-comments"></i> 26 Comments</a></li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                        Court in of leave again as am. Greater sixteen to forming colonel no on be. So an advice hardly barton process.
+                                    </p>
+                                    <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="single-item col-lg-4 col-md-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="blog-single-with-sidebar.html">
+                                        <img src="<?php echo $domain ?>assets/img/blog/3.jpg" alt="Thumb">
+                                        <span class="date">
+                                            05 <strong>Jul</strong>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <h4>
+                                        <a href="blog-single-with-sidebar.html">Going as by do known noise he wrote round.</a>
+                                    </h4>
+                                    <div class="meta">
+                                        <ul>
+                                            <li>By <a href="#">Mohin</a></li>
+                                            <li><a href="#"><i class="fas fa-comments"></i> 05 Comments</a></li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                        Court in of leave again as am. Greater sixteen to forming colonel no on be. So an advice hardly barton process.
+                                    </p>
+                                    <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php include('./include/footer.php') ?>
+        <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/popper.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/bootstrap.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/equal-height.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/jquery.appear.js"></script>
+        <script src="<?php echo $domain ?>assets/js/jquery.easing.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/modernizr.custom.13711.js"></script>
+        <script src="<?php echo $domain ?>assets/js/owl.carousel.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/wow.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/progress-bar.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/isotope.pkgd.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/count-to.js"></script>
+        <script src="<?php echo $domain ?>assets/js/YTPlayer.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/jquery.nice-select.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/bootsnav.js"></script>
+        <script src="<?php echo $domain ?>assets/js/main.js"></script>
 
 </body>
 
