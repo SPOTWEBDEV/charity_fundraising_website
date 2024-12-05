@@ -459,21 +459,21 @@
         <div class="event-area carousel-shadow default-padding bg-gray">
             <!-- Fixed Shape -->
             <div class="shape-bottom-left">
-                <img src="<?php echo $domain ?>assets/img/shape/8.png" alt="Shape">
+                <img src="<?php echo $domain ?>assets/img/8.jpg" alt="Shape">
             </div>
             <!-- Fixed Shape -->
             <div class="container">
                 <div class="heading-left">
                     <div class="row">
                         <div class="col-lg-6 left-info">
-                            <!-- <h5>Upcoming Events</h5> -->
+                            <h5>Upcoming Events</h5>
                             <h2>
-                                Join to our upcoming event and get involved
+                                Be part of life-changing events making a difference worldwide.
                             </h2>
                         </div>
                         <div class="col-lg-6 right-info">
                             <p>
-                                Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression.
+                                Explore opportunities to create impact through events focused on healthcare, sports, and education. Together, we can uplift lives and transform communities.
                             </p>
                             <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#">View All <i class="fas fa-angle-right"></i></a>
                         </div>
@@ -485,7 +485,7 @@
                     <!-- Single Item  -->
                     <div class="item">
                         <div class="thumb">
-                            <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
+                            <img src="<?php echo $domain ?>assets/img/7.jpg" alt="Thumb">
                             <div class="date">
                                 12 <strong>Aug</strong>
                             </div>
@@ -493,10 +493,10 @@
                         <div class="info">
                             <div class="time"><i class="fas fa-clock"></i> 8:00 am - 16:00 pm</div>
                             <h4>
-                                <a href="#">Healty Food For Poor People</a>
+                                <a href="#">Healthcare Camps</a>
                             </h4>
                             <p>
-                                Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she no he several excited am. peculiar families sensible.
+                                Join us in offering free healthcare services to communities in need, ensuring they have access to essential medical care.
                             </p>
                             <a class="btn circle btn-theme border btn-md" href="#">Know More</a>
                         </div>
@@ -513,10 +513,10 @@
                         <div class="info">
                             <div class="time"><i class="fas fa-clock"></i> 10:00 am - 17:30 pm</div>
                             <h4>
-                                <a href="#">Water Facilities for People</a>
+                                <a href="#">Charity Football Matches</a>
                             </h4>
                             <p>
-                                Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she no he several excited am. peculiar families sensible.
+                                Participate in thrilling football matches where every goal contributes to supporting housing and educational projects.
                             </p>
                             <a class="btn circle btn-theme border btn-md" href="#">Know More</a>
                         </div>
@@ -525,7 +525,7 @@
                     <!-- Single Item  -->
                     <div class="item">
                         <div class="thumb">
-                            <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+                            <img src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
                             <div class="date">
                                 18 <strong>Jul</strong>
                             </div>
@@ -533,10 +533,10 @@
                         <div class="info">
                             <div class="time"><i class="fas fa-clock"></i> 8:30 am - 16:45 pm</div>
                             <h4>
-                                <a href="#">Lifeskills for Children in South Africa</a>
+                                <a href="#">Educational Empowerment Workshops</a>
                             </h4>
                             <p>
-                                Called though excuse length ye needed it he having. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she no he several excited am. peculiar families sensible.
+                                Empower young minds through workshops aimed at improving access to quality education and life skills training.
                             </p>
                             <a class="btn circle btn-theme border btn-md" href="#">Know More</a>
                         </div>
@@ -545,29 +545,29 @@
                 </div>
             </div>
         </div>
+
         <!-- End Event Area -->
 
         <!-- Start Donation 
     ============================================= -->
         <div class="donation-area text-light bg-gray default-padding">
             <!-- Fixed BG-->
-            <div class="fixed-bg" style="background-image: url(<?php echo $domain ?>assets/img/banner/12.jpg);"></div>
+            <div class="fixed-bg" style="background-image: url(<?php echo $domain ?>assets/img/9.jpg);"></div>
             <!-- End Fixed BG-->
             <div class="container">
                 <div class="row align-center">
                     <div class="col-lg-6 info">
                         <h5>Donate Today</h5>
-                        <h2 class="area-title">Donate today and get involved to save the world</h2>
+                        <h2 class="area-title">Your donations bring hope and change lives</h2>
                         <p>
-                            Drawings sir gay together landlord had law smallest. Formerly welcomed attended declared met say unlocked. Jennings outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves. For looking
-                            two cousins regular amongst.
+                            Your generosity fuels projects that provide healthcare, education, and safe housing for those in need. Together, we can create a brighter future and uplift communities across the globe.
                         </p>
                         <div class="question">
                             <div class="icon">
                                 <i class="fas fa-phone"></i>
                             </div>
                             <div class="info">
-                                <h5>Have any question about donation? </h5>
+                                <h5>Have questions about donating?</h5>
                                 <span>Call Now: +123 3456789</span>
                             </div>
                         </div>
@@ -580,7 +580,7 @@
                                         <div class="form-group">
                                             <label for="Amount">Amount</label>
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="Amount" placeholder="$129.00" required>
+                                                <input type="text" class="form-control" id="Amount" placeholder="$50.00" required>
                                                 <span class="input-group-addon"><i class="fas fa-dollar-sign"></i></span>
                                             </div>
                                         </div>
@@ -589,10 +589,10 @@
                                         <div class="form-group">
                                             <label for="donateType">Frequency</label>
                                             <select id="donateType" class="form-control">
-                                                <option value="once">Once</option>
+                                                <option value="once">One-Time</option>
                                                 <option value="weekly">Weekly</option>
-                                                <option value="Fortnightly">Fortnightly</option>
-                                                <option value="Monthly">Monthly</option>
+                                                <option value="fortnightly">Bi-Weekly</option>
+                                                <option value="monthly">Monthly</option>
                                             </select>
                                         </div>
                                     </div>
@@ -600,7 +600,7 @@
                                         <div class="form-group">
                                             <label for="cardNumber">Card Number</label>
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number" required>
+                                                <input type="text" class="form-control" id="cardNumber" placeholder="Enter your card number" required>
                                                 <span class="input-group-addon"><i class="fas fa-credit-card"></i></span>
                                             </div>
                                         </div>
@@ -614,10 +614,10 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                                    <input type="text" class="form-control" id="expMonth" placeholder="MM" required data-stripe="exp_month" />
+                                                    <input type="text" class="form-control" id="expMonth" placeholder="MM" required />
                                                 </div>
                                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                                    <input type="text" class="form-control" name="expYear" placeholder="YY" required data-stripe="exp_year" />
+                                                    <input type="text" class="form-control" name="expYear" placeholder="YY" required />
                                                 </div>
                                             </div>
                                         </div>
@@ -625,7 +625,7 @@
                                     <div class="col-md-5 col-sm-5 col-xs-4 pull-right">
                                         <div class="form-group">
                                             <label for="cvCode">CV Code</label>
-                                            <input type="password" class="form-control" id="cvCode" placeholder="CV" required data-stripe="cvc" />
+                                            <input type="password" class="form-control" id="cvCode" placeholder="CVC" required />
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -639,6 +639,7 @@
                 </div>
             </div>
         </div>
+
         <!-- End Donation Area -->
 
         <!-- Start Testimonials 
@@ -650,7 +651,7 @@
                         <div class="site-heading text-center">
                             <h5>Testimonials</h5>
                             <h2>
-                                What people say <br> About Poora
+                                What People Say <br> About HEO Eziokwu Foundation
                             </h2>
                             <div class="heading-divider"></div>
                         </div>
@@ -667,12 +668,12 @@
                                     <div class="top-info">
                                         <i class="fas fa-quote-left"></i>
                                         <div class="provider">
-                                            <h4>Jeckey Pura</h4>
-                                            <span>Volunteer</span>
+                                            <h4>Grace Okafor</h4>
+                                            <span>Beneficiary</span>
                                         </div>
                                     </div>
                                     <p>
-                                        Numerous indulged distance old law you. Total state as merit court green decay he. Steepest sex bachelor the may delicate its yourself. As he instantly on discovery concluded to. Open draw far pure miss felt say yet few sigh.
+                                        HEO Eziokwu Foundation has been a blessing to me and my children. With their support, my kids are now in school, and we no longer worry about basic needs. I am forever grateful for their kindness and compassion.
                                     </p>
                                 </div>
                             </div>
@@ -683,12 +684,12 @@
                                     <div class="top-info">
                                         <i class="fas fa-quote-left"></i>
                                         <div class="provider">
-                                            <h4>Benil Sraw</h4>
+                                            <h4>Chinedu Eze</h4>
                                             <span>Volunteer</span>
                                         </div>
                                     </div>
                                     <p>
-                                        Numerous indulged distance old law you. Total state as merit court green decay he. Steepest sex bachelor the may delicate its yourself. As he instantly on discovery concluded to. Open draw far pure miss felt say yet few sigh.
+                                        Volunteering with the foundation has been a life-changing experience. Seeing the smiles on the faces of families we've helped reminds me of the importance of giving back and being part of something bigger.
                                     </p>
                                 </div>
                             </div>
@@ -699,12 +700,12 @@
                                     <div class="top-info">
                                         <i class="fas fa-quote-left"></i>
                                         <div class="provider">
-                                            <h4>Adam Blaur</h4>
-                                            <span>Volunteer</span>
+                                            <h4>Mariam Bello</h4>
+                                            <span>Community Leader</span>
                                         </div>
                                     </div>
                                     <p>
-                                        Numerous indulged distance old law you. Total state as merit court green decay he. Steepest sex bachelor the may delicate its yourself. As he instantly on discovery concluded to. Open draw far pure miss felt say yet few sigh.
+                                        HEO Eziokwu Foundation has transformed our community through education and healthcare support. They are truly making a difference and helping us build a brighter future for everyone.
                                     </p>
                                 </div>
                             </div>
@@ -714,6 +715,7 @@
                 </div>
             </div>
         </div>
+
         <!-- End Testimonials Area -->
 
         <!-- Start Gallery 
@@ -723,16 +725,16 @@
                 <div class="heading-left">
                     <div class="row">
                         <div class="col-lg-6 left-info">
-                            <h5>What We Did</h5>
+                            <h5>Our Impact</h5>
                             <h2>
-                                Featured projects from <br> our latest causes
+                                Transforming Lives Through <br> Our Key Projects
                             </h2>
                         </div>
                         <div class="col-lg-6 right-info">
                             <p>
-                                Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression.
+                                See how our efforts are making a difference. From providing meals to building homes, we're committed to creating lasting change in communities.
                             </p>
-                            <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#">View All <i class="fas fa-angle-right"></i></a>
+                            <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#">Explore All Projects <i class="fas fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -742,15 +744,14 @@
                     <div class="col-lg-12">
                         <div class="gallery-items-area inner-title">
                             <div class="gallery-content">
-
                                 <div class="magnific-mix-gallery masonary">
                                     <div id="portfolio-grid" class="gallery-items colums-3">
                                         <div class="pf-item">
                                             <div class="item-inner">
-                                                <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb" />
+                                                <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Food Served" />
                                                 <div class="overlay">
-                                                    <h4><a href="#">Food Served</a></h4>
-                                                    <span class="cats">Poor</span>
+                                                    <h4><a href="#">Nourishing Lives</a></h4>
+                                                    <span class="cats">Meal Programs</span>
                                                 </div>
                                                 <div class="view">
                                                     <a href="<?php echo $domain ?>assets/img/2.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
@@ -759,10 +760,10 @@
                                         </div>
                                         <div class="pf-item wide">
                                             <div class="item-inner">
-                                                <img src="<?php echo $domain ?>assets/img/school-2.jpg" alt="Thumb" />
+                                                <img src="<?php echo $domain ?>assets/img/school-2.jpg" alt="Water Access" />
                                                 <div class="overlay">
-                                                    <h4><a href="#">Water Collect</a></h4>
-                                                    <span class="cats">Poor</span>
+                                                    <h4><a href="#">Access to Clean Water</a></h4>
+                                                    <span class="cats">Water Initiatives</span>
                                                 </div>
                                                 <div class="view">
                                                     <a href="<?php echo $domain ?>assets/img/football-3.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
@@ -771,10 +772,10 @@
                                         </div>
                                         <div class="pf-item">
                                             <div class="item-inner">
-                                                <img src="<?php echo $domain ?>assets/img/football-3.jpg" alt="Thumb" />
+                                                <img src="<?php echo $domain ?>assets/img/football-3.jpg" alt="Blood Donation" />
                                                 <div class="overlay">
-                                                    <h4><a href="#">Blood Donate</a></h4>
-                                                    <span class="cats">Poor</span>
+                                                    <h4><a href="#">Blood Donation Drive</a></h4>
+                                                    <span class="cats">Health Support</span>
                                                 </div>
                                                 <div class="view">
                                                     <a href="<?php echo $domain ?>assets/img/3.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
@@ -783,10 +784,10 @@
                                         </div>
                                         <div class="pf-item">
                                             <div class="item-inner">
-                                                <img src="<?php echo $domain ?>assets/img/8.jpg" alt="Thumb" />
+                                                <img src="<?php echo $domain ?>assets/img/8.jpg" alt="Education for Children" />
                                                 <div class="overlay">
-                                                    <h4><a href="#">Child Education</a></h4>
-                                                    <span class="cats">Poor</span>
+                                                    <h4><a href="#">Empowering Education</a></h4>
+                                                    <span class="cats">For Future Generations</span>
                                                 </div>
                                                 <div class="view">
                                                     <a href="<?php echo $domain ?>assets/img/12.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
@@ -795,10 +796,10 @@
                                         </div>
                                         <div class="pf-item">
                                             <div class="item-inner">
-                                                <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb" />
+                                                <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Helping the Homeless" />
                                                 <div class="overlay">
-                                                    <h4><a href="#">Help Homeless</a></h4>
-                                                    <span class="cats">Poor</span>
+                                                    <h4><a href="#">Helping the Homeless</a></h4>
+                                                    <span class="cats">Shelter Projects</span>
                                                 </div>
                                                 <div class="view">
                                                     <a href="<?php echo $domain ?>assets/img/football-4.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
@@ -807,10 +808,10 @@
                                         </div>
                                         <div class="pf-item">
                                             <div class="item-inner">
-                                                <img src="<?php echo $domain ?>assets/img/football-4.jpg" alt="Thumb" />
+                                                <img src="<?php echo $domain ?>assets/img/football-4.jpg" alt="Home Rebuilding" />
                                                 <div class="overlay">
-                                                    <h4><a href="#">Rebuild Home</a></h4>
-                                                    <span class="cats">Poor</span>
+                                                    <h4><a href="#">Rebuilding Homes</a></h4>
+                                                    <span class="cats">For Stronger Communities</span>
                                                 </div>
                                                 <div class="view">
                                                     <a href="<?php echo $domain ?>assets/img/football-6.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
@@ -825,6 +826,7 @@
                 </div>
             </div>
         </div>
+
         <!-- End Gallery Area -->
 
         <!-- Start Blog 
@@ -836,7 +838,7 @@
                         <div class="site-heading text-center">
                             <h5>Latest News</h5>
                             <h2>
-                                Stay Update with Us from <br> latest & popular News
+                                Stay Updated with Us on the Latest & Popular Causes by HEO Eziokwu Foundation
                             </h2>
                             <div class="heading-divider"></div>
                         </div>
@@ -859,16 +861,16 @@
                                 </div>
                                 <div class="info">
                                     <h4>
-                                        <a href="blog-single-with-sidebar.html">Advantage frankness to concluded unwilling. </a>
+                                        <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation Partners with Local Communities</a>
                                     </h4>
                                     <div class="meta">
                                         <ul>
-                                            <li>By <a href="#">Jones</a></li>
+                                            <li>By <a href="#">HEO Foundation</a></li>
                                             <li><a href="#"><i class="fas fa-comments"></i> 12 Comments</a></li>
                                         </ul>
                                     </div>
                                     <p>
-                                        Court in of leave again as am. Greater sixteen to forming colonel no on be. So an advice hardly barton process.
+                                        We are making strides towards a brighter future, collaborating with local communities to promote educational opportunities and better living conditions.
                                     </p>
                                     <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
                                 </div>
@@ -888,16 +890,16 @@
                                 </div>
                                 <div class="info">
                                     <h4>
-                                        <a href="blog-single-with-sidebar.html">Extremely depending he gentleman improving.</a>
+                                        <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation's Water Access Project</a>
                                     </h4>
                                     <div class="meta">
                                         <ul>
-                                            <li>By <a href="#">Spark</a></li>
+                                            <li>By <a href="#">HEO Foundation</a></li>
                                             <li><a href="#"><i class="fas fa-comments"></i> 26 Comments</a></li>
                                         </ul>
                                     </div>
                                     <p>
-                                        Court in of leave again as am. Greater sixteen to forming colonel no on be. So an advice hardly barton process.
+                                        Our Water Access initiative is helping underprivileged areas gain reliable access to clean drinking water, improving overall health and well-being.
                                     </p>
                                     <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
                                 </div>
@@ -917,16 +919,16 @@
                                 </div>
                                 <div class="info">
                                     <h4>
-                                        <a href="blog-single-with-sidebar.html">Going as by do known noise he wrote round.</a>
+                                        <a href="blog-single-with-sidebar.html">Empowering the Next Generation: Education for All</a>
                                     </h4>
                                     <div class="meta">
                                         <ul>
-                                            <li>By <a href="#">Mohin</a></li>
+                                            <li>By <a href="#">HEO Foundation</a></li>
                                             <li><a href="#"><i class="fas fa-comments"></i> 05 Comments</a></li>
                                         </ul>
                                     </div>
                                     <p>
-                                        Court in of leave again as am. Greater sixteen to forming colonel no on be. So an advice hardly barton process.
+                                        Join us in the fight to ensure that every child receives quality education, as we work towards providing free learning resources in underserved regions.
                                     </p>
                                     <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
                                 </div>
@@ -937,6 +939,7 @@
                 </div>
             </div>
         </div>
+
         <?php include('./include/footer.php') ?>
         <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
         <script src="<?php echo $domain ?>assets/js/popper.min.js"></script>
