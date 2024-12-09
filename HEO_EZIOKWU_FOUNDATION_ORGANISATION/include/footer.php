@@ -20,28 +20,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 item">
-                    <div class="f-item link">
-                        <h4 class="widget-title">Explore</h4>
-                        <ul>
-                            <li>
-                                <a href="#">Our Causes</a>
-                            </li>
-                            <li>
-                                <a href="#">New Campaign</a>
-                            </li>
-                            <li>
-                                <a href="#">Site Map</a>
-                            </li>
-                            <li>
-                                <a href="#">Donate</a>
-                            </li>
-                            <li>
-                                <a href="#">Terms</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                
 
                 <div class="col-lg-3 col-md-6 item">
                     <div class="f-item">
@@ -65,19 +44,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 item">
-                    <div class="f-item recent-post">
-                        <h4 class="widget-title">Latest News</h4>
-                        <div class="item">
-                            <a href="#">Delighted prevailed supported too not remainder perpetual.</a>
-                            <span><i class="fas fa-calendar-alt"></i> 22 Aug, 2020 - <a href="#">Admin</a></span>
-                        </div>
-                        <div class="item">
-                            <a href="#">Speaking trifling an to unpacked moderate debating learnin management. </a>
-                            <span><i class="fas fa-calendar-alt"></i> 15 Nov, 2020 - <a href="#">User</a></span>
-                        </div>
-                    </div>
-                </div>
+               
 
             </div>
         </div>
