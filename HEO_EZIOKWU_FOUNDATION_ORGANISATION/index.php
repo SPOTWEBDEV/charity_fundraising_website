@@ -1,4 +1,14 @@
-<?php include('./server/connection.php') ?>
+<?php 
+
+include('./server/connection.php');
+include('./server/model.php');
+include('./server/payment/index.php');
+
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -443,7 +453,7 @@
                         <p>
                             Your support can help us create lasting change. By becoming a volunteer, you’ll be contributing to the well-being of underprivileged families around the world.
                         </p>
-                        <form action="#">
+                        <form method="POST">
                             <input type="email" placeholder="Your Email" class="form-control" name="email">
                             <button type="submit">Join Now</button>
                         </form>
@@ -547,7 +557,7 @@
         </div>
 
         <!-- End Event Area -->
-        
+
 
         <!-- Start Donation 
     ============================================= -->
@@ -575,17 +585,13 @@
                     </div>
                     <div class="col-lg-6 donation-form">
                         <div class="form-box">
-                            <form action="POST">
-      
-                                
+                        <!-- <script src="https://js.paystack.co/v2/inline.js"> -->
+                            <form method="POST">
                                 <div class="row">
-                                   
-
                                     <div class="col-md-12">
                                         <div class="form-group">
-                    
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="cardNumber" placeholder="Name" name="name" required>
+                                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required />
                                                 <span class="input-group-addon"><i class="fas fa-user"></i></span>
                                             </div>
                                         </div>
@@ -593,9 +599,26 @@
 
                                     <div class="col-md-12">
                                         <div class="form-group">
-                    
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="cardNumber" name="email" placeholder="Email" required>
+                                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required />
+                                                <span class="input-group-addon"><i class="fas fa-user"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" required />
+                                                <span class="input-group-addon"><i class="fas fa-phone"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
                                                 <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
                                             </div>
                                         </div>
@@ -603,358 +626,356 @@
 
                                     <div class="col-md-12">
                                         <div class="form-group">
-                    
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="cardNumber" name="phone" placeholder="Phonenumber" required>
-                                                <span class="input-group-addon"><i class="fas fa-phone"></i></span>
+                                                <input type="text" class="form-control" id="country" name="country" placeholder="Country" required />
+                                                <span class="input-group-addon"><i class="fas fa-flag"></i></span>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-12">
+                                    <div class="col-md-12">
                                         <div class="form-group">
-                                           
                                             <div class="input-group">
-                                                <input type="text" class="form-control" name="amount" id="Amount" placeholder="Amount" required>
+                                                <input type="number" class="form-control" id="amount" name="amount" placeholder="Amount to be Donated" required />
                                                 <span class="input-group-addon"><i class="fas fa-dollar-sign"></i></span>
                                             </div>
                                         </div>
                                     </div>
-                           
-           
 
                                 </div>
+
                                 <div class="col-md-12">
                                     <button class="btn btn-theme effect btn-md" name="donate_btn" type="submit">Donate Now</button>
                                 </div>
-                        </div>
-                        </form>
-                    </div>
 
+                            </form>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- End Donation Area -->
+        <!-- End Donation Area -->
 
-    <!-- Start Testimonials 
+        <!-- Start Testimonials 
     ============================================= -->
-    <div class="testimonials-area carousel-shadow bg-gray default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h5>Testimonials</h5>
-                        <h2>
-                            What People Say <br> About HEO Eziokwu Foundation
-                        </h2>
-                        <div class="heading-divider"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="testimonial-items testimonial-carousel owl-carousel owl-theme">
-                        <!-- Single Item  -->
-                        <div class="item">
-                            <div class="info">
-                                <div class="top-info">
-                                    <i class="fas fa-quote-left"></i>
-                                    <div class="provider">
-                                        <h4>Grace Okafor</h4>
-                                        <span>Beneficiary</span>
-                                    </div>
-                                </div>
-                                <p>
-                                    HEO Eziokwu Foundation has been a blessing to me and my children. With their support, my kids are now in school, and we no longer worry about basic needs. I am forever grateful for their kindness and compassion.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- End Single Item  -->
-                        <!-- Single Item  -->
-                        <div class="item">
-                            <div class="info">
-                                <div class="top-info">
-                                    <i class="fas fa-quote-left"></i>
-                                    <div class="provider">
-                                        <h4>Chinedu Eze</h4>
-                                        <span>Volunteer</span>
-                                    </div>
-                                </div>
-                                <p>
-                                    Volunteering with the foundation has been a life-changing experience. Seeing the smiles on the faces of families we've helped reminds me of the importance of giving back and being part of something bigger.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- End Single Item  -->
-                        <!-- Single Item  -->
-                        <div class="item">
-                            <div class="info">
-                                <div class="top-info">
-                                    <i class="fas fa-quote-left"></i>
-                                    <div class="provider">
-                                        <h4>Mariam Bello</h4>
-                                        <span>Community Leader</span>
-                                    </div>
-                                </div>
-                                <p>
-                                    HEO Eziokwu Foundation has transformed our community through education and healthcare support. They are truly making a difference and helping us build a brighter future for everyone.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- End Single Item  -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- End Testimonials Area -->
-
-    <!-- Start Gallery 
-    ============================================= -->
-    <div class="gallery-area default-padding">
-        <div class="container">
-            <div class="heading-left">
+        <div class="testimonials-area carousel-shadow bg-gray default-padding">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 left-info">
-                        <h5>Our Impact</h5>
-                        <h2>
-                            Transforming Lives Through <br> Our Key Projects
-                        </h2>
-                    </div>
-                    <div class="col-lg-6 right-info">
-                        <p>
-                            See how our efforts are making a difference. From providing meals to building homes, we're committed to creating lasting change in communities.
-                        </p>
-                        <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#">Explore All Projects <i class="fas fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="gallery-items-area inner-title">
-                        <div class="gallery-content">
-                            <div class="magnific-mix-gallery masonary">
-                                <div id="portfolio-grid" class="gallery-items colums-3">
-                                    <div class="pf-item">
-                                        <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Food Served" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Nourishing Lives</a></h4>
-                                                <span class="cats">Meal Programs</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/2.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf-item wide">
-                                        <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/school-2.jpg" alt="Water Access" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Access to Clean Water</a></h4>
-                                                <span class="cats">Water Initiatives</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/football-3.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf-item">
-                                        <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/football-3.jpg" alt="Blood Donation" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Blood Donation Drive</a></h4>
-                                                <span class="cats">Health Support</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/3.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf-item">
-                                        <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/8.jpg" alt="Education for Children" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Empowering Education</a></h4>
-                                                <span class="cats">For Future Generations</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/12.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf-item">
-                                        <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Helping the Homeless" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Helping the Homeless</a></h4>
-                                                <span class="cats">Shelter Projects</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/football-4.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf-item">
-                                        <div class="item-inner">
-                                            <img src="<?php echo $domain ?>assets/img/football-4.jpg" alt="Home Rebuilding" />
-                                            <div class="overlay">
-                                                <h4><a href="#">Rebuilding Homes</a></h4>
-                                                <span class="cats">For Stronger Communities</span>
-                                            </div>
-                                            <div class="view">
-                                                <a href="<?php echo $domain ?>assets/img/football-6.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center">
+                            <h5>Testimonials</h5>
+                            <h2>
+                                What People Say <br> About HEO Eziokwu Foundation
+                            </h2>
+                            <div class="heading-divider"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- End Gallery Area -->
-
-    <!-- Start Blog 
-    ============================================= -->
-    <div class="blog-area default-padding bottom-less bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h5>Latest News</h5>
-                        <h2>
-                            Stay Updated with Us on the Latest & Popular Causes by HEO Eziokwu Foundation
-                        </h2>
-                        <div class="heading-divider"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="blog-items">
+            <div class="container">
                 <div class="row">
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="blog-single-with-sidebar.html">
-                                    <img src="<?php echo $domain ?>assets/img/blog/1.jpg" alt="Thumb">
-                                    <span class="date">
-                                        24 <strong>Aug</strong>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <h4>
-                                    <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation Partners with Local Communities</a>
-                                </h4>
-                                <div class="meta">
-                                    <ul>
-                                        <li>By <a href="#">HEO Foundation</a></li>
-                                        <li><a href="#"><i class="fas fa-comments"></i> 12 Comments</a></li>
-                                    </ul>
+                    <div class="col-lg-12">
+                        <div class="testimonial-items testimonial-carousel owl-carousel owl-theme">
+                            <!-- Single Item  -->
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Grace Okafor</h4>
+                                            <span>Beneficiary</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        HEO Eziokwu Foundation has been a blessing to me and my children. With their support, my kids are now in school, and we no longer worry about basic needs. I am forever grateful for their kindness and compassion.
+                                    </p>
                                 </div>
-                                <p>
-                                    We are making strides towards a brighter future, collaborating with local communities to promote educational opportunities and better living conditions.
-                                </p>
-                                <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
                             </div>
+                            <!-- End Single Item  -->
+                            <!-- Single Item  -->
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Chinedu Eze</h4>
+                                            <span>Volunteer</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Volunteering with the foundation has been a life-changing experience. Seeing the smiles on the faces of families we've helped reminds me of the importance of giving back and being part of something bigger.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Single Item  -->
+                            <!-- Single Item  -->
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Mariam Bello</h4>
+                                            <span>Community Leader</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        HEO Eziokwu Foundation has transformed our community through education and healthcare support. They are truly making a difference and helping us build a brighter future for everyone.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Single Item  -->
                         </div>
                     </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="blog-single-with-sidebar.html">
-                                    <img src="<?php echo $domain ?>assets/img/blog/2.jpg" alt="Thumb">
-                                    <span class="date">
-                                        18 <strong>Sep</strong>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <h4>
-                                    <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation's Water Access Project</a>
-                                </h4>
-                                <div class="meta">
-                                    <ul>
-                                        <li>By <a href="#">HEO Foundation</a></li>
-                                        <li><a href="#"><i class="fas fa-comments"></i> 26 Comments</a></li>
-                                    </ul>
-                                </div>
-                                <p>
-                                    Our Water Access initiative is helping underprivileged areas gain reliable access to clean drinking water, improving overall health and well-being.
-                                </p>
-                                <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="blog-single-with-sidebar.html">
-                                    <img src="<?php echo $domain ?>assets/img/blog/3.jpg" alt="Thumb">
-                                    <span class="date">
-                                        05 <strong>Jul</strong>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <h4>
-                                    <a href="blog-single-with-sidebar.html">Empowering the Next Generation: Education for All</a>
-                                </h4>
-                                <div class="meta">
-                                    <ul>
-                                        <li>By <a href="#">HEO Foundation</a></li>
-                                        <li><a href="#"><i class="fas fa-comments"></i> 05 Comments</a></li>
-                                    </ul>
-                                </div>
-                                <p>
-                                    Join us in the fight to ensure that every child receives quality education, as we work towards providing free learning resources in underserved regions.
-                                </p>
-                                <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
                 </div>
             </div>
         </div>
-    </div>
 
-    <?php include('./include/footer.php') ?>
-    <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/popper.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/bootstrap.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/equal-height.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/jquery.appear.js"></script>
-    <script src="<?php echo $domain ?>assets/js/jquery.easing.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/modernizr.custom.13711.js"></script>
-    <script src="<?php echo $domain ?>assets/js/owl.carousel.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/wow.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/progress-bar.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/isotope.pkgd.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/count-to.js"></script>
-    <script src="<?php echo $domain ?>assets/js/YTPlayer.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/jquery.nice-select.min.js"></script>
-    <script src="<?php echo $domain ?>assets/js/bootsnav.js"></script>
-    <script src="<?php echo $domain ?>assets/js/main.js"></script>
+        <!-- End Testimonials Area -->
+
+        <!-- Start Gallery 
+    ============================================= -->
+        <div class="gallery-area default-padding">
+            <div class="container">
+                <div class="heading-left">
+                    <div class="row">
+                        <div class="col-lg-6 left-info">
+                            <h5>Our Impact</h5>
+                            <h2>
+                                Transforming Lives Through <br> Our Key Projects
+                            </h2>
+                        </div>
+                        <div class="col-lg-6 right-info">
+                            <p>
+                                See how our efforts are making a difference. From providing meals to building homes, we're committed to creating lasting change in communities.
+                            </p>
+                            <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#">Explore All Projects <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="gallery-items-area inner-title">
+                            <div class="gallery-content">
+                                <div class="magnific-mix-gallery masonary">
+                                    <div id="portfolio-grid" class="gallery-items colums-3">
+                                        <div class="pf-item">
+                                            <div class="item-inner">
+                                                <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Food Served" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Nourishing Lives</a></h4>
+                                                    <span class="cats">Meal Programs</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="<?php echo $domain ?>assets/img/2.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pf-item wide">
+                                            <div class="item-inner">
+                                                <img src="<?php echo $domain ?>assets/img/school-2.jpg" alt="Water Access" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Access to Clean Water</a></h4>
+                                                    <span class="cats">Water Initiatives</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="<?php echo $domain ?>assets/img/football-3.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pf-item">
+                                            <div class="item-inner">
+                                                <img src="<?php echo $domain ?>assets/img/football-3.jpg" alt="Blood Donation" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Blood Donation Drive</a></h4>
+                                                    <span class="cats">Health Support</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="<?php echo $domain ?>assets/img/3.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pf-item">
+                                            <div class="item-inner">
+                                                <img src="<?php echo $domain ?>assets/img/8.jpg" alt="Education for Children" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Empowering Education</a></h4>
+                                                    <span class="cats">For Future Generations</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="<?php echo $domain ?>assets/img/12.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pf-item">
+                                            <div class="item-inner">
+                                                <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Helping the Homeless" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Helping the Homeless</a></h4>
+                                                    <span class="cats">Shelter Projects</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="<?php echo $domain ?>assets/img/football-4.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pf-item">
+                                            <div class="item-inner">
+                                                <img src="<?php echo $domain ?>assets/img/football-4.jpg" alt="Home Rebuilding" />
+                                                <div class="overlay">
+                                                    <h4><a href="#">Rebuilding Homes</a></h4>
+                                                    <span class="cats">For Stronger Communities</span>
+                                                </div>
+                                                <div class="view">
+                                                    <a href="<?php echo $domain ?>assets/img/football-6.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Gallery Area -->
+
+        <!-- Start Blog 
+    ============================================= -->
+        <div class="blog-area default-padding bottom-less bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center">
+                            <h5>Latest News</h5>
+                            <h2>
+                                Stay Updated with Us on the Latest & Popular Causes by HEO Eziokwu Foundation
+                            </h2>
+                            <div class="heading-divider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="blog-items">
+                    <div class="row">
+                        <!-- Single Item -->
+                        <div class="single-item col-lg-4 col-md-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="blog-single-with-sidebar.html">
+                                        <img src="<?php echo $domain ?>assets/img/blog/1.jpg" alt="Thumb">
+                                        <span class="date">
+                                            24 <strong>Aug</strong>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <h4>
+                                        <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation Partners with Local Communities</a>
+                                    </h4>
+                                    <div class="meta">
+                                        <ul>
+                                            <li>By <a href="#">HEO Foundation</a></li>
+                                            <li><a href="#"><i class="fas fa-comments"></i> 12 Comments</a></li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                        We are making strides towards a brighter future, collaborating with local communities to promote educational opportunities and better living conditions.
+                                    </p>
+                                    <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="single-item col-lg-4 col-md-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="blog-single-with-sidebar.html">
+                                        <img src="<?php echo $domain ?>assets/img/blog/2.jpg" alt="Thumb">
+                                        <span class="date">
+                                            18 <strong>Sep</strong>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <h4>
+                                        <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation's Water Access Project</a>
+                                    </h4>
+                                    <div class="meta">
+                                        <ul>
+                                            <li>By <a href="#">HEO Foundation</a></li>
+                                            <li><a href="#"><i class="fas fa-comments"></i> 26 Comments</a></li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                        Our Water Access initiative is helping underprivileged areas gain reliable access to clean drinking water, improving overall health and well-being.
+                                    </p>
+                                    <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="single-item col-lg-4 col-md-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="blog-single-with-sidebar.html">
+                                        <img src="<?php echo $domain ?>assets/img/blog/3.jpg" alt="Thumb">
+                                        <span class="date">
+                                            05 <strong>Jul</strong>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <h4>
+                                        <a href="blog-single-with-sidebar.html">Empowering the Next Generation: Education for All</a>
+                                    </h4>
+                                    <div class="meta">
+                                        <ul>
+                                            <li>By <a href="#">HEO Foundation</a></li>
+                                            <li><a href="#"><i class="fas fa-comments"></i> 05 Comments</a></li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                        Join us in the fight to ensure that every child receives quality education, as we work towards providing free learning resources in underserved regions.
+                                    </p>
+                                    <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <?php include('./include/footer.php') ?>
+        <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/popper.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/bootstrap.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/equal-height.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/jquery.appear.js"></script>
+        <script src="<?php echo $domain ?>assets/js/jquery.easing.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/modernizr.custom.13711.js"></script>
+        <script src="<?php echo $domain ?>assets/js/owl.carousel.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/wow.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/progress-bar.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/isotope.pkgd.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/count-to.js"></script>
+        <script src="<?php echo $domain ?>assets/js/YTPlayer.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/jquery.nice-select.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/bootsnav.js"></script>
+        <script src="<?php echo $domain ?>assets/js/main.js"></script>
 
 </body>
 

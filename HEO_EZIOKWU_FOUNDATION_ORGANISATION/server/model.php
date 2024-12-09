@@ -1,7 +1,9 @@
-<script src="<?php echo $domain ?>client/assets/js/pages/notifications.init.js"></script>
-    <script src="<?php echo $domain ?>client/assets/libs/toastify-js/src/toastify.js"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css
+" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="<?php echo $domain ?>client/assets/js/datatables/jquery-3.7.0.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
 
 
 
@@ -20,7 +22,7 @@
                             text: text,
                             gravity: toastData.gravity,
                             position: toastData.position,
-                            className: "bg-" + className + "-500",
+                            className: "bg-" + className,
                             stopOnFocus: true,
                             duration: 15000,
                             offset: {
