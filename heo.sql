@@ -69,12 +69,19 @@ INSERT INTO `contact` (`id`, `name`, `email`, `phone`, `message`) VALUES
 
 CREATE TABLE `donation` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `phone` varchar(255) NOT NULL,
   `amount` varchar(255) NOT NULL,
   `date` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `donation`
+--
+
+INSERT INTO `donation` (`id`, `email`, `phone`, `amount`, `firstname`, `lastname`, `date`, `status`, `reference`) VALUES
+(3, 'spotwebdev.com@gmail.com', '08108833188', '500', 'SPOTWEB', 'COM', '2024-12-09 21:12:34', 'pending', ''),
+(4, 'spotwebdev.com@gmail.com', '08108833188', '500', 'SPOTWEB', 'COM', '2024-12-09 21:13:10', 'pending', '');
 
 --
 -- Indexes for dumped tables
@@ -106,7 +113,7 @@ ALTER TABLE `contact`
 -- AUTO_INCREMENT for table `donation`
 --
 ALTER TABLE `donation`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
