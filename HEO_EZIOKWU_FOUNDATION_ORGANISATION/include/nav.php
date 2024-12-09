@@ -16,12 +16,12 @@
                 <div class="col-lg-6 text-right item-flex">
                     <div class="info">
                         <ul>
-                            <li>
+                            <!-- <li>
                                 <a href="#">Login</a>
-                            </li>
-                            <li>
+                            </li> -->
+                            <!-- <li>
                                 <a href="#">Register</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <div class="social">
@@ -58,7 +58,7 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav border-less">
                     <ul>
-                        <li class="button"><a href="#"><i class="fas fa-heart"></i> Donate</a></li>
+                        <li class="button"><a href="<?php echo $domain ?>"><i class="fas fa-heart"></i> Donate</a></li>
                     </ul>
                 </div>
                 <!-- End Atribute Navigation -->
