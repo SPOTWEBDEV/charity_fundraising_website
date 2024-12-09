@@ -1,16 +1,9 @@
 <?php
 
-include('../server/database.php');
+include('../server/connection.php');
 include('../server/admin/authoriazation/index.php');
 
 // selecting total user
-$user = mysqli_num_rows(mysqli_query($connection,"SELECT * FROM `clients`"));
-$amount = mysqli_fetch_assoc(mysqli_query($connection,"SELECT SUM(bal) AS total_balance FROM `clients`"));
-$total_transfer = mysqli_fetch_assoc(mysqli_query($connection,"SELECT SUM(amount) AS total_transfer FROM `transfer`"));
-$total_loan = mysqli_fetch_assoc(mysqli_query($connection,"SELECT SUM(loan_amount) AS total_loan FROM `loan_application`"));
-
-// selecting total pending order
-$totalPendingOrder = mysqli_num_rows(mysqli_query($connection,"SELECT * FROM transfer,loan_application,withdrawal,deposits WHERE  loan_application.status='Pending' || transfer.status='Pending' || deposits.status ='Pending' || withdrawal.status ='Pending'"))
 
 
 ?>
@@ -65,7 +58,7 @@ $totalPendingOrder = mysqli_num_rows(mysqli_query($connection,"SELECT * FROM tra
                                 <a href="#!" class="text-slate-400 dark:text-zink-200">Dashboards</a>
                             </li>
                             <li class="text-slate-700 dark:text-zink-100">
-                            Dashboards
+                                Dashboards
                             </li>
                         </ul>
                     </div>
@@ -212,7 +205,7 @@ $totalPendingOrder = mysqli_num_rows(mysqli_query($connection,"SELECT * FROM tra
                                     </symbol>
                                 </svg>
                             </div>
-                            
+
                         </div><!--end col-->
                         <div hidden class="col-span-12 card 2xl:col-span-4 2xl:row-span-2">
                             <div class="card-body">
@@ -230,8 +223,8 @@ $totalPendingOrder = mysqli_num_rows(mysqli_query($connection,"SELECT * FROM tra
                                 <div class="flex items-center justify-center mx-auto rounded-full size-14 bg-custom-100 text-custom-500 dark:bg-custom-500/20">
                                     <i data-lucide="wallet-2"></i>
                                 </div>
-                                <h5 class="mt-4 mb-2">$<span class="counter-value" data-target="<?php echo $amount['total_balance']?>">0</span>k</h5>
-                                <p class="text-slate-500 dark:text-zink-200">Total Balance</p>
+                                <h5 class="mt-4 mb-2">$<span class="counter-value" data-target="">0</span>k</h5>
+                                <p class="text-slate-500 dark:text-zink-200">Donation Balance</p>
                             </div>
                         </div><!--end col-->
                         <div class="col-span-12 card md:col-span-6 lg:col-span-3 2xl:col-span-2">
@@ -239,8 +232,8 @@ $totalPendingOrder = mysqli_num_rows(mysqli_query($connection,"SELECT * FROM tra
                                 <div class="flex items-center justify-center mx-auto text-purple-500 bg-purple-100 rounded-full size-14 dark:bg-purple-500/20">
                                     <i data-lucide="package"></i>
                                 </div>
-                                <h5 class="mt-4 mb-2"><span class="counter-value" data-target="<?php echo $total_loan['total_loan'] ?>">0</span>k</h5>
-                                <p class="text-slate-500 dark:text-zink-200">Total Loans</p>
+                                <h5 class="mt-4 mb-2"><span class="counter-value" data-target="">0</span>k</h5>
+                                <p class="text-slate-500 dark:text-zink-200">Total Donated Balance</p>
                             </div>
                         </div><!--end col-->
                         <div class="col-span-12 card md:col-span-6 lg:col-span-3 2xl:col-span-2">
@@ -248,7 +241,7 @@ $totalPendingOrder = mysqli_num_rows(mysqli_query($connection,"SELECT * FROM tra
                                 <div class="flex items-center justify-center mx-auto text-green-500 bg-green-100 rounded-full size-14 dark:bg-green-500/20">
                                     <i data-lucide="truck"></i>
                                 </div>
-                                <h5 class="mt-4 mb-2"><span class="counter-value" data-target="<?php echo $total_transfer['total_transfer'] ?>"></span>k</h5>
+                                <h5 class="mt-4 mb-2"><span class="counter-value" data-target=""></span>k</h5>
                                 <p class="text-slate-500 dark:text-zink-200">Total Transfer</p>
                             </div>
                         </div><!--end col-->
@@ -257,7 +250,7 @@ $totalPendingOrder = mysqli_num_rows(mysqli_query($connection,"SELECT * FROM tra
                                 <div class="flex items-center justify-center mx-auto text-red-500 bg-red-100 rounded-full size-14 dark:bg-red-500/20">
                                     <i data-lucide="package-x"></i>
                                 </div>
-                                <h5 class="mt-4 mb-2"><span class="counter-value" data-target="<?php echo $totalPendingOrder ?>"></span></h5>
+                                <h5 class="mt-4 mb-2"><span class="counter-value" data-target=""></span></h5>
                                 <p class="text-slate-500 dark:text-zink-200">total Pending Order</p>
                             </div>
                         </div><!--end col-->
@@ -301,68 +294,40 @@ $totalPendingOrder = mysqli_num_rows(mysqli_query($connection,"SELECT * FROM tra
                         <!--end col-->
                         <div class="col-span-12 card 2xl:col-span-12">
 
-                        <div class="card-body">
-                                                               <h6 class="mb-4 text-15">Recent Users Table</h6>
-                                                               <table id="basic_tables" class="display stripe group" style="width:100%">
-                                                                        <thead>
-                                                                                 <tr>
-                                                                                          <th class="ltr:!text-left rtl:!text-right">#</th>
-                                                                                          <th>Name</th>
-                                                                                          <th>Email</th>
-                                                                                          <th>Phone</th>
-                                                                                          <th>Birthday</th>
-                                                                                          <th>Location</th>
-                                                                                          <th>verifiaction</th>
-                                                                                         
-                                                                                 </tr>
-                                                                        </thead>
-                                                                        <tbody>
-
-                                                                                 <?php
-
-                                                                                 $select = mysqli_query($connection, "SELECT * FROM clients ORDER BY `id` DESC limit 5");
+                            <div class="card-body">
+                                <h6 class="mb-4 text-15">Recent Users Table</h6>
+                                <table id="basic_tables" class="display stripe group" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th class="ltr:!text-left rtl:!text-right">#</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>Amount</th>
+                                            <th>Donated Date</th>
 
 
-                                                                                 $count = 0;
-                                                                                 while ($row = mysqli_fetch_assoc($select)) {
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>Micheeal</td>
+                                            <td>Micheal@gmail.com</td>
+                                            <td>07080879957</td>
+                                            <td>$200</td>
+                                            <td>25-5-2023</td>
 
-                                                                                          $count++;
-
-
-                                                                                 ?>
-                                                                                          <tr>
-                                                                                                   <td><?php echo $count ?></td>
-                                                                                                   <td><?php echo $row['firstname'] . ' ' . $row['lastname'] ?></td>
-                                                                                                   <td><?php echo $row['email'] ?></td>
-                                                                                                   <td><?php echo $row['phone'] ?></td>
-                                                                                                   <td><?php echo $row['birthday'] ?></td>
-                                                                                                   <td><?php echo $row['address'] . ' ' . $row['state'] . ' ' . $row['country'] ?></td>
-                                                                                                   <td><?php
-
-                                                                                                            if ($row['verifiactionStatus'] == 0) { ?>
-
-                                                                                                                     <span class="delivery_status px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-yellow-100 border-yellow-200 text-yellow-500 dark:bg-yellow-500/20 dark:border-yellow-500/20">Not-Verified</span>
-
-                                                                                                            <?php } else { ?>
-                                                                                                                     <span class="delivery_status px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-green-100 border-green-200 text-green-500 dark:bg-green-500/20 dark:border-green-500/20">Verified</span>
-
-                                                                                                            <?php } ?>
-                                                                                                   </td>
-
-                                                                                                  
+                                        </tr>
 
 
 
-                                                                                          </tr>
-
-                                                                                 <?php } ?>
 
 
+                                    </tbody>
 
-                                                                        </tbody>
-                                                                       
-                                                               </table>
-                                                      </div>
+                                </table>
+                            </div>
                         </div><!--end col-->
 
 
@@ -377,27 +342,22 @@ $totalPendingOrder = mysqli_num_rows(mysqli_query($connection,"SELECT * FROM tra
                                 </div>
                                 <h6 class="mt-4 mb-3">Recent Local Transfer</h6>
                                 <ul class="divide-y divide-slate-200 dark:divide-zink-500">
-                                    <?php
-                                    $transfer = mysqli_query($connection, "SELECT transfer.*, clients.email,clients.img,clients.firstname,clients.lastname FROM transfer,clients WHERE clients.id = transfer.receiver AND transfer.type=0   ORDER BY transfer.transfer_id DESC LIMIT 4");
+                                   
                                  
-                                    if (mysqli_num_rows($transfer)) {
-                                        while ($row = mysqli_fetch_assoc($transfer)) { ?>
+
 
                                             <li class="flex items-center gap-3 py-2 first:pt-0 last:pb-0">
-                                                <div class="w-8 h-8 rounded-full shrink-0 bg-slate-100 dark:bg-zink-600">
-                                                    <img src=" <?php echo $domain . 'uploads/profile/' . $row['img'] ?>" alt="" class="w-8 h-8 rounded-full">
-                                                </div>
+                                                
                                                 <div class="grow">
-                                                    <h6 class="font-medium"><?php echo $row['firstname'] . " " . $row['lastname'] ?></h6>
-                                                    <p class="text-slate-500 dark:text-zink-200"><?php echo $row['email'] ?></p>
+                                                    <h6 class="font-medium">Micheeal</h6>
+                                                    <p class="text-slate-500 dark:text-zink-200">Micheal@gmail.com</p>
                                                 </div>
                                                 <div class="shrink-0">
-                                                    <h6>$<?php echo number_format($row['amount'], 2) ?></h6>
+                                                    <h6>$100</h6>
                                                 </div>
                                             </li>
 
-                                        <?php }
-                                    } else { ?>
+                                      
                                         <li class="flex items-center gap-3 py-2 first:pt-0 last:pb-0">
 
                                             <div class="grow">
@@ -407,8 +367,7 @@ $totalPendingOrder = mysqli_num_rows(mysqli_query($connection,"SELECT * FROM tra
 
                                         </li>
 
-                                    <?php } ?>
-
+                   
 
                                 </ul>
                             </div>

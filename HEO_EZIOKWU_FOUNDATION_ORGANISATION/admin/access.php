@@ -1,6 +1,6 @@
 <?php
 
-include('../server/database.php');
+include('../server/connection.php');
 include('../server/model.php');
 
 if(isset($_POST['login'])){
@@ -15,6 +15,7 @@ if(isset($_POST['login'])){
                            $id = $row['id'];
                            $_SESSION['admin_id'] = $id;
                            echo "<script>
+                           window.open('./home.php','_self')
                   window.onload = ()=>{
                       Model('Login successfully.', 'green');
 
@@ -29,6 +30,7 @@ if(isset($_POST['login'])){
                     
          }else{
                   echo "<script>
+                  
                   window.onload = ()=>{
                       Model('Login failed', 'red');
                    }

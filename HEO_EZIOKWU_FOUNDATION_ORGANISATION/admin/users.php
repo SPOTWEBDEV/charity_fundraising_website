@@ -1,71 +1,15 @@
 <?php
 
-include('../server/database.php');
-include('../server/config.php');
+include('../server/connection.php');
+// include('../server/config.php');
 include('../server/admin/authoriazation/index.php');
-include('../server/model.php');
+// include('../server/model.php');
 
 $thestatus = '';
 $pageName = "ALL Clients ";
 
 
-if (isset($_GET['del_id'])) {
-         $del_id =  $_GET['del_id'];
 
-
-         $uppdate_clients = mysqli_query($connection, "DELETE FROM clients WHERE id='$del_id'");
-         $uppdate_transfer = mysqli_query($connection, "DELETE FROM transfer WHERE user='$del_id'");
-         $uppdate_deposits = mysqli_query($connection, "DELETE FROM deposits WHERE user='$del_id'");
-         $uppdate_withdrawal = mysqli_query($connection, "DELETE FROM withdrawal WHERE user='$del_id'");
-
-
-         if ($uppdate_clients && $uppdate_transfer && $uppdate_deposits && $uppdate_withdrawal) {
-                  echo "<script>
-                  window.onload = ()=>{
-                      Model('Great news! User deposit request has been approved successfully.', 'green');
-
-                     setTimeout(()=>{
-                           window.open('./users.php','_self')
-                     },2000)
-             }
-                  ;
-                  </script>
-                  ";
-         } else {
-                  echo "<script>
-                  window.onload = ()=>{
-                      Model('failed to delete user.', 'red');
-             }
-                  ;
-                  </script>
-                  ";
-         }
-}
-
-// if (isset($_GET['rej_id'])) {
-//          $rej_id =  $_GET['rej_id'];
-//          $uppdate = mysqli_query($connection, "UPDATE loan_application SET `status`='Rejected' WHERE `application_id`='$rej_id'");
-
-//          if ($uppdate) {
-//                   echo "<script>
-//                   window.onload = ()=>{
-//                       Model('Great news! User deposit request has been Declined successfully.', 'green');
-
-//                       window.open('./giving.php')
-//              }
-//                   ;
-//                   </script>
-//                   ";
-//          } else {
-//                   echo "<script>
-//                   window.onload = ()=>{
-//                       Model('Error occurs when decline user deposit request.', 'red');
-//              }
-//                   ;
-//                   </script>
-//                   ";
-//          }
-// }
 
 ?>
 
@@ -128,67 +72,30 @@ if (isset($_GET['del_id'])) {
                                                                                           <th>Name</th>
                                                                                           <th>Email</th>
                                                                                           <th>Phone</th>
-                                                                                          <th>Birthday</th>
-                                                                                          <th>Location</th>
-                                                                                          <th>verifiaction</th>
-                                                                                          <th>Loan Status</th>
+                                                                                          <th>Amount</th>
+                                                                                          <th>Donation-date</th>
+                                                                                          
                                                                                  </tr>
                                                                         </thead>
                                                                         <tbody>
 
-                                                                                 <?php
+                   
+                                              
+    <tr>
+                                                                                                   <td>0</td>
+                                                                                                   <td>Micheaal</td>
+                                                                                                   <td>Micheal@gmail.com</td>
+                                                                                                   <td>07080879957</td>
+                                                                                                   <td>1000</td>
+                                                                                                   <td>25-5-2024</td>
+                                                                                                                                                         
 
-                                                                                 $select = mysqli_query($connection, "SELECT * FROM clients");
-
-
-                                                                                 $count = 0;
-                                                                                 while ($row = mysqli_fetch_assoc($select)) {
-
-                                                                                          $count++;
-
-
-                                                                                 ?>
-                                                                                          <tr>
-                                                                                                   <td><?php echo $count ?></td>
-                                                                                                   <td><?php echo $row['firstname'] . ' ' . $row['lastname'] ?></td>
-                                                                                                   <td><?php echo $row['email'] ?></td>
-                                                                                                   <td><?php echo $row['phone'] ?></td>
-                                                                                                   <td><?php echo $row['birthday'] ?></td>
-                                                                                                   <td><?php echo $row['address'] . ' ' . $row['state'] . ' ' . $row['country'] ?></td>
-                                                                                                   <td><?php
-
-                                                                                                            if ($row['verifiactionStatus'] == 0) { ?>
-
-                                                                                                                     <span class="delivery_status px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-yellow-100 border-yellow-200 text-yellow-500 dark:bg-yellow-500/20 dark:border-yellow-500/20">Not-Verified</span>
-
-                                                                                                            <?php } else { ?>
-                                                                                                                     <span class="delivery_status px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-green-100 border-green-200 text-green-500 dark:bg-green-500/20 dark:border-green-500/20">Verified</span>
-
-                                                                                                            <?php } ?>
-                                                                                                   </td>
-
-                                                                                                   <td class="px-3.5 py-2.5 border-y border-slate-200 dark:border-zink-500">
-                                                                                                            <div class="relative dropdown">
-                                                                                                                     <button id="orderAction1" data-bs-toggle="dropdown" class="flex items-center justify-center size-[30px] dropdown-toggle p-0 text-slate-500 btn bg-slate-100 hover:text-white hover:bg-slate-600 focus:text-white focus:bg-slate-600 focus:ring focus:ring-slate-100 active:text-white active:bg-slate-600 active:ring active:ring-slate-100 dark:bg-slate-500/20 dark:text-slate-400 dark:hover:bg-slate-500 dark:hover:text-white dark:focus:bg-slate-500 dark:focus:text-white dark:active:bg-slate-500 dark:active:text-white dark:ring-slate-400/20"><i data-lucide="more-horizontal" class="size-3"></i></button>
-                                                                                                                     <ul class="absolute z-50 hidden py-2 mt-1 ltr:text-left rtl:text-right list-none bg-white rounded-md shadow-md dropdown-menu min-w-[10rem] dark:bg-zink-600" aria-labelledby="orderAction1">
-                                                                                                                              <li>
-                                                                                                                                       <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 dropdown-item hover:bg-slate-100 hover:text-slate-500 focus:bg-slate-100 focus:text-slate-500 dark:text-zink-100 dark:hover:bg-zink-500 dark:hover:text-zink-200 dark:focus:bg-zink-500 dark:focus:text-zink-200" href="apps-ecommerce-order-overview.html"><i data-lucide="eye" class="inline-block size-3 ltr:mr-1 rtl:ml-1"></i> <span class="align-middle">Overview</span></a>
-                                                                                                                              </li>
-                                                                                                                              <li>
-                                                                                                                                       <a data-modal-target="addOrderModal" class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 dropdown-item hover:bg-slate-100 hover:text-slate-500 focus:bg-slate-100 focus:text-slate-500 dark:text-zink-100 dark:hover:bg-zink-500 dark:hover:text-zink-200 dark:focus:bg-zink-500 dark:focus:text-zink-200" href="./edit.php?edit_id=<?php echo $row['id'] ?>"><i data-lucide="file-edit" class="inline-block size-3 ltr:mr-1 rtl:ml-1"></i> <span class="align-middle">Edit</span></a>
-                                                                                                                              </li>
-                                                                                                                              <li>
-                                                                                                                                       <a data-modal-target="deleteModal" class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 dropdown-item hover:bg-slate-100 hover:text-slate-500 focus:bg-slate-100 focus:text-slate-500 dark:text-zink-100 dark:hover:bg-zink-500 dark:hover:text-zink-200 dark:focus:bg-zink-500 dark:focus:text-zink-200" href="./users.php?del_id=<?php echo $row['id'] ?>"><i data-lucide="trash-2" class="inline-block size-3 ltr:mr-1 rtl:ml-1"></i> <span class="align-middle">Delete</span></a>
-                                                                                                                              </li>
-                                                                                                                     </ul>
-                                                                                                            </div>
-                                                                                                   </td>
 
 
 
                                                                                           </tr>
 
-                                                                                 <?php } ?>
+
 
 
 

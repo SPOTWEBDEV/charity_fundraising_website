@@ -547,6 +547,7 @@
         </div>
 
         <!-- End Event Area -->
+        
 
         <!-- Start Donation 
     ============================================= -->
@@ -574,51 +575,57 @@
                     </div>
                     <div class="col-lg-6 donation-form">
                         <div class="form-box">
-                            <form action="#">
+                            <form action="POST">
       
                                 
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                   
+
+                                    <div class="col-md-12">
                                         <div class="form-group">
-                                            <label for="Amount">Amount</label>
+                    
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="Amount" placeholder="$50.00" required>
+                                                <input type="text" class="form-control" id="cardNumber" placeholder="Name" name="name" required>
+                                                <span class="input-group-addon"><i class="fas fa-user"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                    
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="cardNumber" name="email" placeholder="Email" required>
+                                                <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                    
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="cardNumber" name="phone" placeholder="Phonenumber" required>
+                                                <span class="input-group-addon"><i class="fas fa-phone"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                           
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="amount" id="Amount" placeholder="Amount" required>
                                                 <span class="input-group-addon"><i class="fas fa-dollar-sign"></i></span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label for="donateType">Frequency</label>
-                                            <select id="donateType" class="form-control">
-                                                <option value="once">One-Time</option>
-                                                <option value="weekly">Weekly</option>
-                                                <option value="fortnightly">Bi-Weekly</option>
-                                                <option value="monthly">Monthly</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="cardNumber">Card Number</label>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" id="cardNumber" placeholder="Enter your card number" required>
-                                                <span class="input-group-addon"><i class="fas fa-credit-card"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7 col-sm-7 col-xs-8">
-                                        <div class="form-group">
-                                            <div class="row">
-
-                                            </div>
-
-                                        </div>
-                                    </div>
+                           
+           
 
                                 </div>
                                 <div class="col-md-12">
-                                    <button class="btn btn-theme effect btn-md" type="submit">Donate Now</button>
+                                    <button class="btn btn-theme effect btn-md" name="donate_btn" type="submit">Donate Now</button>
                                 </div>
                         </div>
                         </form>
