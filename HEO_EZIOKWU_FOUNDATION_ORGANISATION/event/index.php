@@ -79,85 +79,49 @@
         <div class="container">
             <div class="event-grid-items">
                 <!-- Single Item  -->
-                <div class="item">
-                    <div class="row">
-                        <div class="thumb col-lg-5" style="background-image: url(<?php echo $domain ?>assets/img/school-3.jpg);">
-                            <div class="date">
-                                12 <strong>Aug</strong>
-                            </div>
-                        </div>
-                        <div class="info col-lg-7">
-                            <h4>
-                                <a href="#">Educational Empowerment</a>
-                            </h4>
-                            <p>
-                                The HEO Eziokwu Foundation is hosting an event to support educational initiatives. The foundation is focused on providing access to education for underprivileged children and empowering them with skills that will shape their future.
-                            </p>
-                            <ul class="date">
-                                <li>
-                                    <i class="fas fa-clock"></i> 10:00 AM - 18:00 PM
-                                </li>
-                                <li>
-                                    <i class="fas fa-calendar-alt"></i> 800 Loring Ave, Estancia
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                 <?php
+
+$select = mysqli_query($connection, "SELECT * FROM `event`");
+$count = 0;
+while ($row = mysqli_fetch_assoc($select)) { ?>
+
+    <div class="item">
+    <div class="row">
+        <div class="thumb col-lg-5" style="background-image: url(<?php echo $domain . 'upload/event/'. $row['image'] ?>);">
+            <div class="date">
+                <?php echo $row['date'] ?></strong>
+            </div>
+        </div>
+        <div class="info col-lg-7">
+            <h4>
+                <a href="#"><?php echo $row['title'] ?></a>
+            </h4>
+            <p>
+            <?php echo $row['write_up'] ?>
+            </p>
+            <ul class="date">
+                <li>
+                    <i class="fas fa-clock"></i> 10:00 AM - 18:00 PM
+                </li>
+                <li>
+                    <i class="fas fa-calendar-alt"></i> <?php echo $row['venue'] ?>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+<?php }?>
+                 
+                 
+
+
+               
                 <!-- End Single Item  -->
                 <!-- Single Item  -->
-                <div class="item">
-                    <div class="row">
-                        <div class="thumb col-lg-5" style="background-image: url(<?php echo $domain ?>assets/img/6.jpg);">
-                            <div class="date">
-                                05 <strong>Sep</strong>
-                            </div>
-                        </div>
-                        <div class="info col-lg-7">
-                            <h4>
-                                <a href="#">Health Care for Vulnerable Communities</a>
-                            </h4>
-                            <p>
-                                The HEO Eziokwu Foundation is providing medical services to underserved populations, ensuring that everyone has access to essential health care, regardless of their background or financial status.
-                            </p>
-                            <ul class="date">
-                                <li>
-                                    <i class="fas fa-clock"></i> 08:30 AM - 17:45 PM
-                                </li>
-                                <li>
-                                    <i class="fas fa-calendar-alt"></i> 800 Loring Ave, Estancia
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            
                 <!-- End Single Item  -->
-                <!-- Single Item  -->
-                <div class="item">
-                    <div class="row">
-                        <div class="thumb col-lg-5" style="background-image: url(<?php echo $domain ?>assets/img/football-3.jpg);">
-                            <div class="date">
-                                29 <strong>Dec</strong>
-                            </div>
-                        </div>
-                        <div class="info col-lg-7">
-                            <h4>
-                                <a href="#">Football for Youth Development</a>
-                            </h4>
-                            <p>
-                                The HEO Eziokwu Foundation is hosting a football event for youth development. This initiative aims to teach life skills through sports, empowering the youth with values such as teamwork, discipline, and leadership.
-                            </p>
-                            <ul class="date">
-                                <li>
-                                    <i class="fas fa-clock"></i> 09:45 AM - 15:30 PM
-                                </li>
-                                <li>
-                                    <i class="fas fa-calendar-alt"></i> 800 Loring Ave, Estancia
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+               
                 <!-- End Single Item  -->
             </div>
             <!-- Paginatin -->

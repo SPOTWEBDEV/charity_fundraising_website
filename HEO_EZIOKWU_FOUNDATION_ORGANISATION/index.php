@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include('./server/connection.php');
 include('./server/model.php');
@@ -567,7 +567,7 @@ include('./server/payment/index.php');
             <!-- End Fixed BG-->
             <div class="container">
                 <div class="row align-center">
-                    <div class="col-lg-6 info">
+                    <div class="col-lg-12 info">
                         <h5>Donate Today</h5>
                         <h2 class="area-title">Your donations bring hope and change lives</h2>
                         <p>
@@ -583,9 +583,24 @@ include('./server/payment/index.php');
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 donation-form">
+
+
+                    <style>
+                        .donation-area .donation-form span.input-group-addon {
+                            padding: 6px 12px;
+                            line-height: 38px;
+                            border-radius: 0 5px 5px 0;
+                            display: flex;
+                            align-content: center;
+                            justify-content: space-evenly;
+                            flex-wrap: wrap;
+                        }
+                    </style>
+
+
+                    <div class="col-lg-12 donation-form mt-5">
                         <div class="form-box">
-                        <!-- <script src="https://js.paystack.co/v2/inline.js"> -->
+                            <!-- <script src="https://js.paystack.co/v2/inline.js"> -->
                             <form method="POST">
                                 <div class="row">
                                     <div class="col-md-12">
@@ -756,92 +771,45 @@ include('./server/payment/index.php');
                     </div>
                 </div>
             </div>
+              
+
             <div class="container">
+            <div class="causes-items">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="gallery-items-area inner-title">
-                            <div class="gallery-content">
-                                <div class="magnific-mix-gallery masonary">
-                                    <div id="portfolio-grid" class="gallery-items colums-3">
-                                        <div class="pf-item">
-                                            <div class="item-inner">
-                                                <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Food Served" />
-                                                <div class="overlay">
-                                                    <h4><a href="#">Nourishing Lives</a></h4>
-                                                    <span class="cats">Meal Programs</span>
-                                                </div>
-                                                <div class="view">
-                                                    <a href="<?php echo $domain ?>assets/img/2.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pf-item wide">
-                                            <div class="item-inner">
-                                                <img src="<?php echo $domain ?>assets/img/school-2.jpg" alt="Water Access" />
-                                                <div class="overlay">
-                                                    <h4><a href="#">Access to Clean Water</a></h4>
-                                                    <span class="cats">Water Initiatives</span>
-                                                </div>
-                                                <div class="view">
-                                                    <a href="<?php echo $domain ?>assets/img/football-3.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pf-item">
-                                            <div class="item-inner">
-                                                <img src="<?php echo $domain ?>assets/img/football-3.jpg" alt="Blood Donation" />
-                                                <div class="overlay">
-                                                    <h4><a href="#">Blood Donation Drive</a></h4>
-                                                    <span class="cats">Health Support</span>
-                                                </div>
-                                                <div class="view">
-                                                    <a href="<?php echo $domain ?>assets/img/3.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pf-item">
-                                            <div class="item-inner">
-                                                <img src="<?php echo $domain ?>assets/img/8.jpg" alt="Education for Children" />
-                                                <div class="overlay">
-                                                    <h4><a href="#">Empowering Education</a></h4>
-                                                    <span class="cats">For Future Generations</span>
-                                                </div>
-                                                <div class="view">
-                                                    <a href="<?php echo $domain ?>assets/img/12.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pf-item">
-                                            <div class="item-inner">
-                                                <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Helping the Homeless" />
-                                                <div class="overlay">
-                                                    <h4><a href="#">Helping the Homeless</a></h4>
-                                                    <span class="cats">Shelter Projects</span>
-                                                </div>
-                                                <div class="view">
-                                                    <a href="<?php echo $domain ?>assets/img/football-4.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pf-item">
-                                            <div class="item-inner">
-                                                <img src="<?php echo $domain ?>assets/img/football-4.jpg" alt="Home Rebuilding" />
-                                                <div class="overlay">
-                                                    <h4><a href="#">Rebuilding Homes</a></h4>
-                                                    <span class="cats">For Stronger Communities</span>
-                                                </div>
-                                                <div class="view">
-                                                    <a href="<?php echo $domain ?>assets/img/football-6.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    
+                    <div class="single-item col-lg-6 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
+
+                                </a>
                             </div>
+                            
                         </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-6 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <!-- End Single Item -->
                     </div>
                 </div>
             </div>
+        </div>
+           
+
         </div>
 
         <!-- End Gallery Area -->

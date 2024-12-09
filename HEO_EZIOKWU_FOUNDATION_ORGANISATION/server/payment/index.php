@@ -47,7 +47,6 @@ if (isset($_POST['donate_btn'])) {
         echo "<script>window.onload = () => Model('cURL Error: " . curl_error($ch) . "', 'danger');</script>";
     } else {
         $response = json_decode($result);
-
         if (isset($response->data->authorization_url)) {
             header("Location: " . $response->data->authorization_url); // Redirect to Paystack
             exit;
@@ -58,6 +57,6 @@ if (isset($_POST['donate_btn'])) {
 
     curl_close($ch);
     $stmt->close();
-    $conn->close();
+    $connection->close();
 }
 ?>
