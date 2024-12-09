@@ -56,7 +56,7 @@
 
     <!-- Start Breadcrumb 
     ============================================= -->
-    <div class="breadcrumb-area text-center shadow dark bg-cover padding-xl text-light" style="background-image: url(<?php echo $domain ?>assets/img/2.jpg);">
+    <div class="breadcrumb-area text-center shadow dark bg-cover padding-xl text-light" style="background-image: url(<?php echo $domain ?>assets/img/5.jpg);">
         <div class="container">
             <div class="breadcrumb-items">
                 <div class="row">
@@ -74,6 +74,24 @@
     </div>
     <!-- End Breadcrumb -->
 
+
+
+    <?php 
+      if(isset($_POST['btn'])){
+         $name = $_POST['name'];
+         $email = $_POST['email'];
+         $phone = $_POST['phone'];
+         $message = $_POST['message'];
+
+         $query = mysqli_query($connection, "INSERT INTO `contact`(`name`, `email`, `phone`, `message`) VALUES ('$name','$email','$phone','$message')");
+
+         if($query){
+            echo "<script>alert('good')</script>";
+         }else{
+            echo "<script>alert('bad')</script>";
+         }
+      }
+    ?>
     <!-- Start Contact 
     ============================================= -->
     <div class="contact-form-area default-padding">
@@ -85,7 +103,7 @@
                         <div class="heading">
                             <h3>Let’s make the world better, together</h3>
                         </div>
-                        <form action="<?php echo $domain ?>assets/mail/contact.php" method="POST" class="contact-form">
+                        <form  method="POST" >
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
@@ -113,13 +131,13 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
+                                        <textarea class="form-control" id="comments" name="message" placeholder="Message"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <button type="submit" name="submit" id="submit">
+                                    <button type="submit" name="btn" id="submit">
                                         Send Message <i class="fa fa-paper-plane"></i>
                                     </button>
                                 </div>
@@ -167,11 +185,11 @@
 
     <!-- Start Google Maps 
     ============================================= -->
-    <div class="maps-area">
+    <!-- <div class="maps-area">
         <div class="google-maps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
         </div>
-    </div>
+    </div> -->
     <!-- End Google Maps -->
 
     <!-- Start Footer 

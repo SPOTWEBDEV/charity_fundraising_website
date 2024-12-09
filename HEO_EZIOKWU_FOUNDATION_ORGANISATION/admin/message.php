@@ -64,7 +64,7 @@ $pageName = "ALL Clients ";
 
                     <div class="card">
                         <div class="card-body">
-                            <h6 class="mb-4 text-15">Donations Table</h6>
+                            <h6 class="mb-4 text-15">Message Table</h6>
                             <table id="basic_tables" class="display stripe group" style="width:100%">
                                 <thead>
                                     <tr>
@@ -72,8 +72,8 @@ $pageName = "ALL Clients ";
                                         <th>Name</th>
                                         <th>Email</th>
                                         <th>Phone</th>
-                                        <th>Amount</th>
-                                        <th>Donation-date</th>
+                                        <th>Message</th>
+
 
                                     </tr>
                                 </thead>
@@ -81,30 +81,27 @@ $pageName = "ALL Clients ";
 
 
 
+                                    
+
+                                        <?php
+
+                                        $select = mysqli_query($connection, "SELECT * FROM `contact`");
+                                        $count = 0;
+                                        while ($row = mysqli_fetch_assoc($select)) {
+                                            $count++; ?>
 
 
-                                    <?php
+                                    <tr>
+                                        <td><?php echo $count ?></td>
+                                        <td><?php echo $row['name'] ?></td>
+                                        <td><?php echo $row['email'] ?></td>
+                                        <td><?php echo $row['phone'] ?></td>
+                                        <td><?php echo $row['message'] ?></td>
+                                    </tr>
+                                <?php   }
 
 
-
-                                    $select = mysqli_query($connection, "SELECT * FROM `donation`");
-                                    $count = 0;
-                                    while ($row = mysqli_fetch_assoc($select)) {
-                                        $count++; ?>
-
-
-                                        <tr>
-                                            <td><?php echo $count ?></td>
-                                            <td><?php echo $row['name'] ?></td>
-                                            <td><?php echo $row['email'] ?></td>
-                                            <td><?php echo $row['phone'] ?></td>
-                                            <td><?php echo $row['amount'] ?></td>
-                                            <td><?php echo $row['date'] ?></td>
-                                        </tr>
-                                    <?php   }
-
-
-                                    ?>
+                                ?>
 
 
 

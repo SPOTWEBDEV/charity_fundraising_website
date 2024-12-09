@@ -295,7 +295,7 @@ include('../server/admin/authoriazation/index.php');
                         <div class="col-span-12 card 2xl:col-span-12">
 
                             <div class="card-body">
-                                <h6 class="mb-4 text-15">Recent Users Table</h6>
+                                <h6 class="mb-4 text-15">Recent Donation Table</h6>
                                 <table id="basic_tables" class="display stripe group" style="width:100%">
                                     <thead>
                                         <tr>
@@ -310,15 +310,28 @@ include('../server/admin/authoriazation/index.php');
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>0</td>
-                                            <td>Micheeal</td>
-                                            <td>Micheal@gmail.com</td>
-                                            <td>07080879957</td>
-                                            <td>$200</td>
-                                            <td>25-5-2023</td>
+                                        <?php
 
-                                        </tr>
+
+
+                                        $select = mysqli_query($connection, "SELECT * FROM `donation`");
+                                        $count = 0;
+                                        while ($row = mysqli_fetch_assoc($select)) {
+                                            $count++; ?>
+
+
+                                            <tr>
+                                                <td><?php echo $count ?></td>
+                                                <td><?php echo $row['name'] ?></td>
+                                                <td><?php echo $row['email'] ?></td>
+                                                <td><?php echo $row['phone'] ?></td>
+                                                <td><?php echo $row['amount'] ?></td>
+                                                <td><?php echo $row['date'] ?></td>
+                                            </tr>
+                                        <?php   }
+
+
+                                        ?>
 
 
 
@@ -334,7 +347,7 @@ include('../server/admin/authoriazation/index.php');
 
 
 
-                        <div class="col-span-12 card lg:col-span-6 2xl:col-span-3">
+                        <!-- <div class="col-span-12 card lg:col-span-6 2xl:col-span-3">
                             <div class="card-body">
                                 <div class="flex items-center mb-3">
                                     <h6 class="grow text-15">Customer Service</h6>
@@ -342,36 +355,36 @@ include('../server/admin/authoriazation/index.php');
                                 </div>
                                 <h6 class="mt-4 mb-3">Recent Local Transfer</h6>
                                 <ul class="divide-y divide-slate-200 dark:divide-zink-500">
-                                   
-                                 
 
 
-                                            <li class="flex items-center gap-3 py-2 first:pt-0 last:pb-0">
-                                                
-                                                <div class="grow">
-                                                    <h6 class="font-medium">Micheeal</h6>
-                                                    <p class="text-slate-500 dark:text-zink-200">Micheal@gmail.com</p>
-                                                </div>
-                                                <div class="shrink-0">
-                                                    <h6>$100</h6>
-                                                </div>
-                                            </li>
 
-                                      
-                                        <li class="flex items-center gap-3 py-2 first:pt-0 last:pb-0">
 
-                                            <div class="grow">
+                                    <li class="flex items-center gap-3 py-2 first:pt-0 last:pb-0">
 
-                                                <p class="text-slate-500 dark:text-zink-200">You have not made any local transfer yet</p>
-                                            </div>
+                                        <div class="grow">
+                                            <h6 class="font-medium">Micheeal</h6>
+                                            <p class="text-slate-500 dark:text-zink-200">Micheal@gmail.com</p>
+                                        </div>
+                                        <div class="shrink-0">
+                                            <h6>$100</h6>
+                                        </div>
+                                    </li>
 
-                                        </li>
 
-                   
+                                    <li class="flex items-center gap-3 py-2 first:pt-0 last:pb-0">
+
+                                        <div class="grow">
+
+                                            <p class="text-slate-500 dark:text-zink-200">You have not made any local transfer yet</p>
+                                        </div>
+
+                                    </li>
+
+
 
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!--end col-->
                         <div hidden class="col-span-12 card lg:col-span-6 2xl:col-span-3">
