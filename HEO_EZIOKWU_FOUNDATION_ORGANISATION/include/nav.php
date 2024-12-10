@@ -58,7 +58,7 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav border-less">
                     <ul>
-                        <li class="button"><a href="<?php echo $domain ?>"><i class="fas fa-heart"></i> Donate</a></li>
+                        <li class="button"><a href="<?php echo $domain ?>donate/"><i class="fas fa-heart"></i> Donate</a></li>
                     </ul>
                 </div>
                 <!-- End Atribute Navigation -->
