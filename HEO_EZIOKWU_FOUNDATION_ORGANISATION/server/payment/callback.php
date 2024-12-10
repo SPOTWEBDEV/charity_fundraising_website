@@ -34,8 +34,8 @@ if (isset($_GET['reference']) && isset($_GET['id'])) {
 
     echo $status . ' - ' . $id;
 
-    $stmt = $connection->prepare("UPDATE `donation` SET `status` = ? WHERE `id` = ?");
-    $stmt->bind_param("si", $status, $reference);
+    $stmt = $connection->prepare("UPDATE `donation` SET `status` = ? , `reference`='$reference' WHERE `id` = ?");
+    $stmt->bind_param("ssi", $status,$reference, $id);
     $stmt->execute();
 
     $stmt->close();

@@ -17,7 +17,7 @@ if (isset($_POST['donate_btn'])) {
     if (!$stmt->execute()) {
         echo "<script>window.onload = () => Model('Database error: {$stmt->error}', 'danger');</script>";
         $stmt->close();
-        $conn->close();
+        $connection->close();
         exit;
     }
 
