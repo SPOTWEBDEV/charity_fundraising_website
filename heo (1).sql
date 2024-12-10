@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 09, 2024 at 06:04 PM
+-- Generation Time: Dec 10, 2024 at 12:42 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -72,31 +72,49 @@ CREATE TABLE `donation` (
   `email` varchar(255) NOT NULL,
   `phone` varchar(255) NOT NULL,
   `amount` varchar(255) NOT NULL,
-  `date` varchar(255) NOT NULL
+  `date` varchar(255) NOT NULL,
+  `firstname` varchar(255) NOT NULL,
+  `lastname` varchar(255) NOT NULL,
+  `status` enum('pending','success','reversal','canceled') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `donation`
 --
 
-INSERT INTO `donation` (`id`, `email`, `phone`, `amount`, `firstname`, `lastname`, `date`, `status`, `reference`) VALUES
-(3, 'spotwebdev.com@gmail.com', '08108833188', '500', 'SPOTWEB', 'COM', '2024-12-09 21:12:34', 'pending', ''),
-(4, 'spotwebdev.com@gmail.com', '08108833188', '500', 'SPOTWEB', 'COM', '2024-12-09 21:13:10', 'pending', '');
+INSERT INTO `donation` (`id`, `email`, `phone`, `amount`, `date`, `firstname`, `lastname`, `status`) VALUES
+(0, 'uchennagodswill539@gmail.com', '08103348475', '300', '2024-12-09 22:44:02', 'emmmauel', 'victor', 'pending');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `event`
+--
+
+CREATE TABLE `event` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `write_up` varchar(255) NOT NULL,
+  `date` varchar(255) NOT NULL,
+  `venue` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `event`
+--
+
+INSERT INTO `event` (`id`, `title`, `write_up`, `date`, `venue`, `image`) VALUES
+(5, 'Education empowerment', 'Our mission is to provide quality education to underserved communities, empowering individuals to break the cycle of poverty and achieve their full potential.', '2024-12-09', 'gariki', 'IMG-20241114-WA0105.jpg');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `contact`
+-- Indexes for table `event`
 --
-ALTER TABLE `contact`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `donation`
---
-ALTER TABLE `donation`
+ALTER TABLE `event`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -104,16 +122,10 @@ ALTER TABLE `donation`
 --
 
 --
--- AUTO_INCREMENT for table `contact`
+-- AUTO_INCREMENT for table `event`
 --
-ALTER TABLE `contact`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT for table `donation`
---
-ALTER TABLE `donation`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `event`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
