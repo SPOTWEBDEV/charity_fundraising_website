@@ -52,7 +52,7 @@ include('../server/payment/index.php');
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
-
+     <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
 </head>
 
@@ -79,20 +79,15 @@ include('../server/payment/index.php');
     </div>
     <!-- </div> -->
 
-    <div class="w-full max-w-md mx-auto my-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded">
-        <div class="flex items-center">
-            <svg class="w-6 h-6 mr-2 text-green-600" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10" stroke-width="2"></circle>
-                <path d="M9 12l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-            <span class="font-semibold">Success!</span>
+    <div class="flex align-center justify-center flex-col w-full max-w-md mx-auto my-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded">
+        <div class="flex align-center justify-center flex-col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check-circle-fill " viewBox="0 0 16 16" style="font-size: 20px;">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+</svg>
+            <h2 style="font-size:20px;" class="font-bold mt-2">Thank You for Your Generous Support!</h2>
         </div>
-        <p class="mt-2 text-sm">
-            Your donation has been processed successfully. We deeply appreciate your support in making a difference through the HEO Eziokwu Foundation.
-
-            Together, we are creating a positive impact in the lives of those who need it most. Thank you for being part of this mission! 🌟
-
-            If you have any questions or need assistance, feel free to contact us.
+        <p style="font-size:15px;" class="mt-2 text-sm items-center">
+        We are incredibly grateful for your kindness and belief in our mission. Thank you for being a part of the change!
         </p>
     </div>
 
@@ -119,11 +114,7 @@ include('../server/payment/index.php');
             <span class="font-semibold">Error!</span>
         </div>
         <p class="mt-2 text-sm">
-        We encountered an error while processing your donation. Please try again or contact us for assistance.
-
-Your support means a lot to us, and we apologize for the inconvenience. Let’s resolve this together! 🙏
-
-For help, reach out to our support team.
+        We encountered an error while processing your donation. 
         </p>
     </div>
 
@@ -134,6 +125,8 @@ For help, reach out to our support team.
 
 
     <?php include('../include/footer.php') ?>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
     <script src="<?php echo $domain ?>assets/js/popper.min.js"></script>
     <script src="<?php echo $domain ?>assets/js/bootstrap.min.js"></script>
