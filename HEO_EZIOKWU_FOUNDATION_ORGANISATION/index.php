@@ -219,7 +219,7 @@ include('./server/payment/index.php');
                             <span>Housing for Families</span>
                         </li>
                     </ul>
-                    <a class="btn circle btn-theme border btn-md" href="#">Become a Volunteer</a>
+                    <a class="btn circle btn-theme border btn-md" href="#">Sponsor us</a>
                 </div>
 
             </div>
@@ -561,116 +561,7 @@ include('./server/payment/index.php');
 
         <!-- Start Donation 
     ============================================= -->
-        <div class="donation-area text-light bg-gray default-padding">
-            <!-- Fixed BG-->
-            <div class="fixed-bg" style="background-image: url(<?php echo $domain ?>assets/img/9.jpg);"></div>
-            <!-- End Fixed BG-->
-            <div class="container">
-                <div class="row align-center">
-                    <div class="col-lg-12 info">
-                        <h5>Donate Today</h5>
-                        <h2 class="area-title">Your donations bring hope and change lives</h2>
-                        <p>
-                            Your generosity fuels projects that provide healthcare, education, and safe housing for those in need. Together, we can create a brighter future and uplift communities across the globe.
-                        </p>
-                        <div class="question">
-                            <div class="icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="info">
-                                <h5>Have questions about donating?</h5>
-                                <span>Call Now: +123 3456789</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <style>
-                        .donation-area .donation-form span.input-group-addon {
-                            padding: 6px 12px;
-                            line-height: 38px;
-                            border-radius: 0 5px 5px 0;
-                            display: flex;
-                            align-content: center;
-                            justify-content: space-evenly;
-                            flex-wrap: wrap;
-                        }
-                    </style>
-
-
-                    <div class="col-lg-12 donation-form mt-5">
-                        <div class="form-box">
-                            <!-- <script src="https://js.paystack.co/v2/inline.js"> -->
-                            <form method="POST">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required />
-                                                <span class="input-group-addon"><i class="fas fa-user"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required />
-                                                <span class="input-group-addon"><i class="fas fa-user"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" required />
-                                                <span class="input-group-addon"><i class="fas fa-phone"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
-                                                <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" id="country" name="country" placeholder="Country" required />
-                                                <span class="input-group-addon"><i class="fas fa-flag"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <input type="number" class="form-control" id="amount" name="amount" placeholder="Amount to be Donated" required />
-                                                <span class="input-group-addon"><i class="fas fa-dollar-sign"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-12">
-                                    <button class="btn btn-theme effect btn-md" name="donate_btn" type="submit">Donate Now</button>
-                                </div>
-
-                            </form>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+       
 
         <!-- End Donation Area -->
 
@@ -798,13 +689,86 @@ include('./server/payment/index.php');
                             <div class="thumb">
                                 <a href="#">
                                     <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
-
                                 </a>
                             </div>
-                            
                         </div>
                         <!-- End Single Item -->
                     </div>
+
+
+
+                    <div class="single-item col-lg-6 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="single-item col-lg-6 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="single-item col-lg-6 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="<?php echo $domain ?>assets/img/school-13.jpg" alt="Thumb">
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="single-item col-lg-6 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="<?php echo $domain ?>assets/img/football-6.jpg" alt="Thumb">
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-item col-lg-6 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="<?php echo $domain ?>assets/img/football-8.jpg" alt="Thumb">
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-item col-lg-6 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="<?php echo $domain ?>assets/img/football-9.jpg" alt="Thumb">
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
                 </div>
             </div>
         </div>
