@@ -20,7 +20,7 @@ include('../server/payment/index.php');
     <meta name="description" content="Poora - Fundraising & Charity Template">
 
     <!-- ========== Page Title ========== -->
-    <title><?php echo $siteshort ?> || Donation Page</title>
+    <title><?php echo $sitename ?> || Donation Page</title>
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="<?php echo $domain ?>assets/img/favicon.png" type="image/x-icon">

@@ -1,4 +1,4 @@
-<?php include('../server/connection.php') ?>
+<?php include '../server/connection.php'?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +10,7 @@
     <meta name="description" content="Poora - Fundraising & Charity Template">
 
     <!-- ========== Page Title ========== -->
-    <title><?php echo $siteshort ?> || Event Page</title>
+    <title><?php echo $sitename ?> || Event Page</title>
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="<?php echo $domain ?>assets/img/favicon.png" type="image/x-icon">
@@ -48,12 +48,12 @@
     <div class="se-pre-con"></div>
     <!-- Preloader Ends -->
 
-    <!-- Start Header Top 
+    <!-- Start Header Top
     ============================================= -->
-    <?php include('../include/nav.php') ?>
+    <?php include '../include/nav.php'?>
     <!-- End Header -->
 
-    <!-- Start Breadcrumb 
+    <!-- Start Breadcrumb
     ============================================= -->
     <div class="breadcrumb-area text-center shadow dark bg-fixed padding-xl text-light" style="background-image: url(<?php echo $domain ?>assets/img/2.jpg);">
         <div class="container">
@@ -73,7 +73,7 @@
     </div>
     <!-- End Breadcrumb -->
 
-    <!-- Start Event Area 
+    <!-- Start Event Area
     ============================================= -->
     <div class="event-area carousel-shadow default-padding bg-gray">
         <div class="container">
@@ -81,13 +81,13 @@
                 <!-- Single Item  -->
                  <?php
 
-$select = mysqli_query($connection, "SELECT * FROM `event`");
-$count = 0;
-while ($row = mysqli_fetch_assoc($select)) { ?>
+                     $select = mysqli_query($connection, "SELECT * FROM `event`");
+                     $count  = 0;
+                 while ($row = mysqli_fetch_assoc($select)) {?>
 
     <div class="item">
     <div class="row">
-        <div class="thumb col-lg-5" style="background-image: url(<?php echo $domain . 'upload/event/'. $row['image'] ?>);">
+        <div class="thumb col-lg-5" style="background-image: url(<?php echo $domain . 'upload/event/' . $row['image'] ?>);">
             <div class="date">
                 <?php echo $row['date'] ?></strong>
             </div>
@@ -104,24 +104,24 @@ while ($row = mysqli_fetch_assoc($select)) { ?>
                     <i class="fas fa-clock"></i> 10:00 AM - 18:00 PM
                 </li>
                 <li>
-                    <i class="fas fa-calendar-alt"></i> <?php echo $row['venue'] ?>
+                    <i class="fas fa-calendar-alt"></i>                                                        <?php echo $row['venue'] ?>
                 </li>
             </ul>
         </div>
     </div>
 </div>
-    
+
 <?php }?>
-                 
-                 
 
 
-               
+
+
+
                 <!-- End Single Item  -->
                 <!-- Single Item  -->
-            
+
                 <!-- End Single Item  -->
-               
+
                 <!-- End Single Item  -->
             </div>
             <!-- Paginatin -->
@@ -147,9 +147,9 @@ while ($row = mysqli_fetch_assoc($select)) { ?>
 
     <!-- End Event Area -->
 
-    <!-- Start Footer 
+    <!-- Start Footer
     ============================================= -->
-    <?php include('../include/footer.php') ?>
+    <?php include '../include/footer.php'?>
     <!-- End Footer -->
 
     <!-- jQuery Frameworks

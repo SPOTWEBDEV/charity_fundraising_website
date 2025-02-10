@@ -1,26 +1,70 @@
 <?php
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-session_start();
+
+function checkUrlProtocol($url)
+{
+    // Parse the URL to get the scheme
+    $parsedUrl = parse_url($url);
+
+    // Check if the scheme exists and if it's http or https
+    if (isset($parsedUrl['scheme'])) {
+        return $parsedUrl['scheme'];
+    } else {
+        return 'invalid'; // Invalid URL if no scheme is found
+    }
+}
+
+// Automatically get the current URL
+$currentUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http")
+    . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+
+// Get the protocol from the current URL
+$request = checkUrlProtocol($currentUrl);
+
+// Default configurations
 define("HOST", "localhost");
-define("USER", "root");
-define("PASSWORD", "");
-define("DATABASE", "heo");
 
+
+// Set configurations based on protocol
+if ($request == 'https') {
+    $domain = "https://fusionsassets.com/";
+    define("USER", "pdicsrdj_heo");
+    define("PASSWORD", "pdicsrdj_heo");
+    define("DATABASE", "pdicsrdj_heo");
+}
+elseif ($request == 'http') {
+    $domain = "http://localhost/charity_fundraising_website/HEO_EZIOKWU_FOUNDATION_ORGANISATION/";
+    define("USER", "root");
+    define("PASSWORD", "");
+    define("DATABASE", "heo");
+}
+
+// // Database connection
 $connection = mysqli_connect(HOST, USER, PASSWORD, DATABASE);
 
-
-
 if (!$connection) {
-    die('not conneted to databse');
+    die("Connection failed: " . mysqli_connect_error());
 }
-  
-$domain ='http://localhost/charity_fundraising_website/HEO_EZIOKWU_FOUNDATION_ORGANISATION/';
-$sitename = 'HEO_EZIOKWU_FOUNDATION_ORGANISATION';
-$sitenumber = '+234 706-433-4905';
-$sitenumberF = '+31639455131';
-$siteemail = 'eziokwufoundation@outlook.com';
-$siteshort = 'HEO-E-F-ORGANISATION';
+
+// // Site configurations
+$sitename = "H.E.O EZIOKWU FOUNDATION NIG LTD";
+
+
+// email config 
+$siteemail = "support@heoeziokwufoundationorganisation.ng";
+$emailpassword  = "support@heoeziokwufoundationorganisation.ng";
+$host = 'mail.heoeziokwufoundationorganisation.ng';
+$sitenumber = '090583748';
+
+
+
+session_start();
+
+
+
 
 
 

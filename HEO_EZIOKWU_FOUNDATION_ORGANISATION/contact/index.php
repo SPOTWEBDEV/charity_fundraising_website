@@ -10,7 +10,7 @@
     <meta name="description" content="Poora - Fundraising & Charity Template">
 
     <!-- ========== Page Title ========== -->
-    <title><?php echo $siteshort ?> || Contact Page</title>
+    <title><?php echo $sitename ?> || Contact Page</title>
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="<?php echo $domain ?>assets/img/favicon.png" type="image/x-icon">
@@ -172,7 +172,7 @@
                                 <p>
                                     Call Us
                                     <span><?php echo $sitenumber ?></span>
-                                    <span><?php echo $sitenumberF ?></span>
+                                    
                                 </p>
                             </li>
                         </ul>
