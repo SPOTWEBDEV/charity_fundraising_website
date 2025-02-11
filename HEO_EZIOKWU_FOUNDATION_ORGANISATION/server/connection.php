@@ -30,7 +30,7 @@ define("HOST", "localhost");
 
 // Set configurations based on protocol
 if ($request == 'https') {
-    $domain = "https://fusionsassets.com/";
+    $domain = "heoeziokwufoundationorganisation.ng/";
     define("USER", "pdicsrdj_heo");
     define("PASSWORD", "pdicsrdj_heo");
     define("DATABASE", "pdicsrdj_heo");
@@ -54,10 +54,10 @@ $sitename = "H.E.O EZIOKWU FOUNDATION NIG LTD";
 
 
 // email config 
-$siteemail = "support@heoeziokwufoundationorganisation.ng";
+$siteemail = "eziokwufoundation@outlook.com";
 $emailpassword  = "support@heoeziokwufoundationorganisation.ng";
 $host = 'mail.heoeziokwufoundationorganisation.ng';
-$sitenumber = '090583748';
+$sitenumber = '+2347064334905';
 
 
 

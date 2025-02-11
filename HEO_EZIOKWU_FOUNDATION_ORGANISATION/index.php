@@ -23,27 +23,27 @@ include('./server/payment/index.php');
     <title><?php echo $sitename ?> || Home Page</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="<?php echo $domain ?>assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
-    <link href="<?php echo $domain ?>assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="<?php echo $domain ?>assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="<?php echo $domain ?>assets/css/themify-icons.css" rel="stylesheet" />
-    <link href="<?php echo $domain ?>assets/css/flaticon-set.css" rel="stylesheet" />
-    <link href="<?php echo $domain ?>assets/css/magnific-popup.css" rel="stylesheet" />
-    <link href="<?php echo $domain ?>assets/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="<?php echo $domain ?>assets/css/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="<?php echo $domain ?>assets/css/animate.css" rel="stylesheet" />
-    <link href="<?php echo $domain ?>assets/css/bootsnav.css" rel="stylesheet" />
-    <link href="<?php echo $domain ?>assets/css/style.css" rel="stylesheet">
-    <link href="<?php echo $domain ?>assets/css/responsive.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="<?php echo $domain ?>assets/js/html5/html5shiv.min.js"></script>
-      <script src="<?php echo $domain ?>assets/js/html5/respond.min.js"></script>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
     <![endif]-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
@@ -81,7 +81,7 @@ include('./server/payment/index.php');
             <!-- Wrapper for slides -->
             <div class="carousel-inner carousel-zoom">
                 <div class="carousel-item active">
-                    <div class="slider-thumb bg-cover" style="background-image: url(<?php echo $domain ?>assets/img/7.jpg);"></div>
+                    <div class="slider-thumb bg-cover" style="background-image: url(assets/img/7.jpg);"></div>
                     <div class="box-table">
                         <div class="box-cell shadow dark">
                             <div class="container">
@@ -100,7 +100,7 @@ include('./server/payment/index.php');
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="slider-thumb bg-cover" style="background-image: url(<?php echo $domain ?>assets/img/8.jpg);"></div>
+                    <div class="slider-thumb bg-cover" style="background-image: url(assets/img/8.jpg);"></div>
                     <div class="box-table">
                         <div class="box-cell shadow dark">
                             <div class="container">
@@ -136,7 +136,7 @@ include('./server/payment/index.php');
                         <h4> <i class="fas fa-bolt"></i> Popular Causes</h4>
                         <div class="item">
                             <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/school-4.jpg" alt="Thumb">
+                                <img src="assets/img/school-4.jpg" alt="Thumb">
                             </div>
                             <div class="info">
                                 <span class="cats">
@@ -156,7 +156,7 @@ include('./server/payment/index.php');
                         </div>
                         <div class="item">
                             <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/9.jpg" alt="Thumb">
+                                <img src="assets/img/9.jpg" alt="Thumb">
                             </div>
                             <div class="info">
                                 <span class="cats">
@@ -176,7 +176,7 @@ include('./server/payment/index.php');
                         </div>
                         <div class="item">
                             <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb">
+                                <img src="assets/img/1.jpg" alt="Thumb">
                             </div>
                             <div class="info">
                                 <span class="cats">
@@ -219,7 +219,7 @@ include('./server/payment/index.php');
                             <span>Housing for Families</span>
                         </li>
                     </ul>
-                    <a class="btn circle btn-theme border btn-md" href="#">Sponsor us</a>
+                    <a class="btn circle btn-theme border btn-md" href="./payment/">Sponsor us</a>
                 </div>
 
             </div>
@@ -302,10 +302,10 @@ include('./server/payment/index.php');
                 <div class="col-lg-6 thumb-box">
                     <div class="thumb">
                         <div class="thumb-1">
-                            <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+                            <img src="assets/img/3.jpg" alt="Thumb">
                         </div>
                         <div class="thumb-2">
-                            <img src="<?php echo $domain ?>assets/img/2.jpg" alt="Thumb">
+                            <img src="assets/img/2.jpg" alt="Thumb">
                             <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube light video-play-button item-center">
                                 <i class="fa fa-play"></i>
                             </a>
@@ -359,7 +359,7 @@ include('./server/payment/index.php');
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
+                                    <img src="assets/img/school-6.jpg" alt="Thumb">
 
                                 </a>
                             </div>
@@ -387,7 +387,7 @@ include('./server/payment/index.php');
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/football-5.jpg" alt="Thumb">
+                                    <img src="assets/img/football-5.jpg" alt="Thumb">
                                     <div class="trend">
                                         <i class="fas fa-bolt"></i> Trend
                                     </div>
@@ -412,7 +412,7 @@ include('./server/payment/index.php');
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+                                    <img src="assets/img/3.jpg" alt="Thumb">
 
                                 </a>
                             </div>
@@ -441,7 +441,7 @@ include('./server/payment/index.php');
         <div class="volunteer-area text-center default-padding">
             <!-- Fixed Shape -->
             <div class="shape-bottom">
-                <img src="<?php echo $domain ?>assets/img/shape/7.png" alt="Shape">
+                <img src="assets/img/shape/7.png" alt="Shape">
             </div>
             <!-- Fixed Shape -->
             <div class="container">
@@ -469,7 +469,7 @@ include('./server/payment/index.php');
         <div class="event-area carousel-shadow default-padding bg-gray">
             <!-- Fixed Shape -->
             <div class="shape-bottom-left">
-                <img src="<?php echo $domain ?>assets/img/8.jpg" alt="Shape">
+                <img src="assets/img/8.jpg" alt="Shape">
             </div>
             <!-- Fixed Shape -->
             <div class="container">
@@ -495,7 +495,7 @@ include('./server/payment/index.php');
                     <!-- Single Item  -->
                     <div class="item">
                         <div class="thumb">
-                            <img src="<?php echo $domain ?>assets/img/7.jpg" alt="Thumb">
+                            <img src="assets/img/7.jpg" alt="Thumb">
                             <div class="date">
                                 12 <strong>Aug</strong>
                             </div>
@@ -515,7 +515,7 @@ include('./server/payment/index.php');
                     <!-- Single Item  -->
                     <div class="item">
                         <div class="thumb">
-                            <img src="<?php echo $domain ?>assets/img/football-4.jpg" alt="Thumb">
+                            <img src="assets/img/football-4.jpg" alt="Thumb">
                             <div class="date">
                                 25 <strong>Dec</strong>
                             </div>
@@ -535,7 +535,7 @@ include('./server/payment/index.php');
                     <!-- Single Item  -->
                     <div class="item">
                         <div class="thumb">
-                            <img src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
+                            <img src="assets/img/school-5.jpg" alt="Thumb">
                             <div class="date">
                                 18 <strong>Jul</strong>
                             </div>
@@ -672,7 +672,7 @@ include('./server/payment/index.php');
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
+                                    <img src="assets/img/school-6.jpg" alt="Thumb">
 
                                 </a>
                             </div>
@@ -688,7 +688,7 @@ include('./server/payment/index.php');
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+                                    <img src="assets/img/3.jpg" alt="Thumb">
                                 </a>
                             </div>
                         </div>
@@ -701,7 +701,7 @@ include('./server/payment/index.php');
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
+                                    <img src="assets/img/school-5.jpg" alt="Thumb">
 
                                 </a>
                             </div>
@@ -713,7 +713,7 @@ include('./server/payment/index.php');
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
+                                    <img src="assets/img/school-7.jpg" alt="Thumb">
 
                                 </a>
                             </div>
@@ -725,7 +725,7 @@ include('./server/payment/index.php');
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/school-13.jpg" alt="Thumb">
+                                    <img src="assets/img/school-13.jpg" alt="Thumb">
 
                                 </a>
                             </div>
@@ -737,7 +737,7 @@ include('./server/payment/index.php');
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/football-6.jpg" alt="Thumb">
+                                    <img src="assets/img/football-6.jpg" alt="Thumb">
 
                                 </a>
                             </div>
@@ -748,7 +748,7 @@ include('./server/payment/index.php');
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/football-8.jpg" alt="Thumb">
+                                    <img src="assets/img/football-8.jpg" alt="Thumb">
 
                                 </a>
                             </div>
@@ -759,7 +759,7 @@ include('./server/payment/index.php');
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/football-9.jpg" alt="Thumb">
+                                    <img src="assets/img/football-9.jpg" alt="Thumb">
 
                                 </a>
                             </div>
@@ -802,7 +802,7 @@ include('./server/payment/index.php');
                             <div class="item">
                                 <div class="thumb">
                                     <a href="blog-single-with-sidebar.html">
-                                        <img src="<?php echo $domain ?>assets/img/blog/1.jpg" alt="Thumb">
+                                        <img src="assets/img/blog/1.jpg" alt="Thumb">
                                         <span class="date">
                                             24 <strong>Aug</strong>
                                         </span>
@@ -831,7 +831,7 @@ include('./server/payment/index.php');
                             <div class="item">
                                 <div class="thumb">
                                     <a href="blog-single-with-sidebar.html">
-                                        <img src="<?php echo $domain ?>assets/img/blog/2.jpg" alt="Thumb">
+                                        <img src="assets/img/blog/2.jpg" alt="Thumb">
                                         <span class="date">
                                             18 <strong>Sep</strong>
                                         </span>
@@ -860,7 +860,7 @@ include('./server/payment/index.php');
                             <div class="item">
                                 <div class="thumb">
                                     <a href="blog-single-with-sidebar.html">
-                                        <img src="<?php echo $domain ?>assets/img/blog/3.jpg" alt="Thumb">
+                                        <img src="assets/img/blog/3.jpg" alt="Thumb">
                                         <span class="date">
                                             05 <strong>Jul</strong>
                                         </span>
@@ -890,24 +890,24 @@ include('./server/payment/index.php');
         </div>
 
         <?php include('./include/footer.php') ?>
-        <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/popper.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/bootstrap.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/equal-height.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/jquery.appear.js"></script>
-        <script src="<?php echo $domain ?>assets/js/jquery.easing.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/jquery.magnific-popup.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/modernizr.custom.13711.js"></script>
-        <script src="<?php echo $domain ?>assets/js/owl.carousel.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/wow.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/progress-bar.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/isotope.pkgd.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/imagesloaded.pkgd.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/count-to.js"></script>
-        <script src="<?php echo $domain ?>assets/js/YTPlayer.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/jquery.nice-select.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/bootsnav.js"></script>
-        <script src="<?php echo $domain ?>assets/js/main.js"></script>
+        <script src="assets/js/jquery-1.12.4.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/equal-height.min.js"></script>
+        <script src="assets/js/jquery.appear.js"></script>
+        <script src="assets/js/jquery.easing.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/modernizr.custom.13711.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/progress-bar.min.js"></script>
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/count-to.js"></script>
+        <script src="assets/js/YTPlayer.min.js"></script>
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <script src="assets/js/bootsnav.js"></script>
+        <script src="assets/js/main.js"></script>
 
 </body>
 
