@@ -202,23 +202,11 @@ include('./server/payment/index.php');
                     <h2 class="text-blur">About</h2>
                     <h2 class="area-title">HEO Eziokwu Foundation Organization</h2>
                     <p>
-                        HEO Eziokwu Foundation is committed to bridging the opportunity gap for underprivileged communities, offering hope and essential resources to help individuals thrive. By addressing the critical needs in education, healthcare, and housing, we aim to create a solid foundation of support that empowers families to pursue better and more dignified lives. Our initiatives are designed to connect families with the resources they deserve, strengthening entire communities and fostering long-term resilience.
+                    HEO Eziokwu Foundation organisation is dedicated to bridging the opportunity gap for less privileged communities, offering hope and resources that enable individuals to thrive. By addressing critical needs, we aim to create a foundation of support that empowers families to pursue better and more dignified lives. Our initiatives are tailored to connect families with the resources they deserve, ultimately strengthening entire communities and fostering long-term resilience.
+
                     </p>
 
-                    <ul>
-                        <li>
-                            <h5>168K</h5>
-                            <span>People Educated</span>
-                        </li>
-                        <li>
-                            <h5>5M Ton</h5>
-                            <span>Healthcare Aid Provided</span>
-                        </li>
-                        <li>
-                            <h5>37K Sqmi.</h5>
-                            <span>Housing for Families</span>
-                        </li>
-                    </ul>
+                   
                     <a class="btn circle btn-theme border btn-md" href="#">Sponsor us</a>
                 </div>
 
@@ -317,7 +305,8 @@ include('./server/payment/index.php');
                     <h2 class="text-blur">Mission</h2>
                     <h2 class="area-title">We believe that we can save more lifes with you.</h2>
                     <p>
-                        Our mission is to empower disadvantaged families by providing essential resources and sustained support in education, healthcare, and housing. Heo Eziokwu Foundation organisation is dedicated to building a society in Africa where everyone, regardless of their background, has a fair chance to succeed and a brighter future to look forward to.
+                    Our mission is to empower disadvantaged families by providing essential resources and sustained support in education, healthcare, and housing. Heo Eziokwu Foundation organisation is dedicated to building a society in Africa where everyone, regardless of their background, has a fair chance to succeed and a brighter future to look forward to.
+
 
                     </p>
 
