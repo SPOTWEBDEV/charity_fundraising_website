@@ -30,7 +30,7 @@ define("HOST", "localhost");
 
 // Set configurations based on protocol
 if ($request == 'https') {
-    $domain = "heoeziokwufoundationorganisation.ng/";
+    $domain = "https://heoeziokwufoundationorganisation.ng/";
     define("USER", "pdicsrdj_heo");
     define("PASSWORD", "pdicsrdj_heo");
     define("DATABASE", "pdicsrdj_heo");

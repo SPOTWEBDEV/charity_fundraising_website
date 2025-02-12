@@ -59,13 +59,14 @@
                         <div class="d-flex pb-2">
                             <p class="fw-bold h7">Account Details</p>
                             <p class="ms-auto">
-                                <span class="switch-icon fas fa-sync-alt me-3" onclick="switchAccount()"></span>
+                                <span class="switch-icon d-none fas fa-sync-alt me-3" onclick="switchAccount()"></span>
+                                <button class="btn btn-sm btn-success" onclick="switchAccount()">Switch Account</button>
                                 <span class="copy-icon far fa-clone" onclick="copyToClipboard()"></span>
                             </p>
                         </div>
                         <div class="bg-blue p-2">
                             <p class="h8 text-muted accountName"></p>
-                            <p class="p-blue  text-primary h14 accountNumber"></p>
+                            <p style="font-size:30px" class="p-blue  text-primary  accountNumber"></p>
                         </div>
                     </div>
                 </div>
