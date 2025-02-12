@@ -69,8 +69,8 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="index.html">
-                        <h2 style="font-size: 20px;">HEO E F O</h2>
-                        <!-- <img src="assets/img/logo.png" class="logo" alt="Logo"> -->
+                        <!-- <h2 style="font-size: 20px;">HEO E F O</h2> -->
+                        <img style="height: 80px;" src="<?php echo $domain ?>assets/img/logo.jpg" class="logo" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
