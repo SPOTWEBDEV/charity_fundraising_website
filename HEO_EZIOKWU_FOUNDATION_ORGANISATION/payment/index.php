@@ -47,8 +47,14 @@
         .copy-icon { cursor: pointer; color: rgb(0,29,76); }
         .switch-icon { cursor: pointer; color: rgb(0,29,76); }
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+
+<a href="../" style="border-radius: 50%; height: 50px; width:50px; background-color: white; display: flex; align-items: center; justify-content: center; top: 20px; left:30px; position: fixed;" class="fixed ">
+    
+    <i style="color: black; font-size: 20px;" class="bi bi-arrow-left"></i>
+</a>
 
 <div class="container">
     <div class="row m-0">
