@@ -110,7 +110,13 @@ include('./server/payment/index.php');
                                             <h4 data-animation="animated slideInDown">Get started today</h4>
                                             <p data-animation="animated slideInRight">Guided by the principles of compassion and empowerment, we work to create meaningful, positive impacts by providing essential support in three key areas: Education, Healthcare, and Housing.
                                             </p>
-                                            <a data-animation="animated fadeInUp" class="btn circle btn-theme border btn-md" href="#">Discover More</a>
+                                            <video id="myVideo" width="600" controls>
+                                                <source src="https://www.youtube.com/watch?v=N1DBPhdvQl8" type="video/mp4">
+                                                
+                                            </video>
+
+                                            <a data-animation="animated fadeInUp" class="btn circle btn-theme border btn-md" href="#" id="discoverBtn">Discover More</a>
+
                                         </div>
                                     </div>
                                 </div>
@@ -202,11 +208,11 @@ include('./server/payment/index.php');
                     <h2 class="text-blur">About</h2>
                     <h2 class="area-title">HEO Eziokwu Foundation Organization</h2>
                     <p>
-                    HEO Eziokwu Foundation organisation is dedicated to bridging the opportunity gap for less privileged communities, offering hope and resources that enable individuals to thrive. By addressing critical needs, we aim to create a foundation of support that empowers families to pursue better and more dignified lives. Our initiatives are tailored to connect families with the resources they deserve, ultimately strengthening entire communities and fostering long-term resilience.
+                        HEO Eziokwu Foundation organisation is dedicated to bridging the opportunity gap for less privileged communities, offering hope and resources that enable individuals to thrive. By addressing critical needs, we aim to create a foundation of support that empowers families to pursue better and more dignified lives. Our initiatives are tailored to connect families with the resources they deserve, ultimately strengthening entire communities and fostering long-term resilience.
 
                     </p>
 
-                   
+
                     <a class="btn circle btn-theme border btn-md" href="#">Sponsor us</a>
                 </div>
 
@@ -305,7 +311,7 @@ include('./server/payment/index.php');
                     <h2 class="text-blur">Mission</h2>
                     <h2 class="area-title">We believe that we can save more lifes with you.</h2>
                     <p>
-                    Our mission is to empower disadvantaged families by providing essential resources and sustained support in education, healthcare, and housing. Heo Eziokwu Foundation organisation is dedicated to building a society in Africa where everyone, regardless of their background, has a fair chance to succeed and a brighter future to look forward to.
+                        Our mission is to empower disadvantaged families by providing essential resources and sustained support in education, healthcare, and housing. Heo Eziokwu Foundation organisation is dedicated to building a society in Africa where everyone, regardless of their background, has a fair chance to succeed and a brighter future to look forward to.
 
 
                     </p>
@@ -442,7 +448,7 @@ include('./server/payment/index.php');
                         <p>
                             Your support can help us create lasting change. By becoming a volunteer, you’ll be contributing to the well-being of underprivileged families around the world.
                         </p>
-                        <form method="POST">
+                        <form method="POST" class="d-none">
                             <input type="email" placeholder="Your Email" class="form-control" name="email">
                             <button type="submit">Join Now</button>
                         </form>
@@ -550,7 +556,7 @@ include('./server/payment/index.php');
 
         <!-- Start Donation 
     ============================================= -->
-       
+
 
         <!-- End Donation Area -->
 
@@ -651,117 +657,117 @@ include('./server/payment/index.php');
                     </div>
                 </div>
             </div>
-              
+
 
             <div class="container">
-            <div class="causes-items">
-                <div class="row">
-                    
-                    <div class="single-item col-lg-6 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
+                <div class="causes-items">
+                    <div class="row">
 
-                                </a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-6 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
-                                </a>
+                        <div class="single-item col-lg-6 col-md-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
+
+                                    </a>
+                                </div>
+
                             </div>
                         </div>
                         <!-- End Single Item -->
-                    </div>
+                        <!-- Single Item -->
+
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="single-item col-lg-6 col-md-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                        </div>
 
 
 
-                    <div class="single-item col-lg-6 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
+                        <div class="single-item col-lg-6 col-md-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
 
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
 
-                    <div class="single-item col-lg-6 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
+                        <div class="single-item col-lg-6 col-md-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
 
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
 
-                    <div class="single-item col-lg-6 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/school-13.jpg" alt="Thumb">
+                        <div class="single-item col-lg-6 col-md-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="<?php echo $domain ?>assets/img/school-13.jpg" alt="Thumb">
 
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
 
-                    <div class="single-item col-lg-6 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/football-6.jpg" alt="Thumb">
+                        <div class="single-item col-lg-6 col-md-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="<?php echo $domain ?>assets/img/football-6.jpg" alt="Thumb">
 
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="single-item col-lg-6 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/football-8.jpg" alt="Thumb">
+                        <div class="single-item col-lg-6 col-md-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="<?php echo $domain ?>assets/img/football-8.jpg" alt="Thumb">
 
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="single-item col-lg-6 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/football-9.jpg" alt="Thumb">
+                        <div class="single-item col-lg-6 col-md-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="<?php echo $domain ?>assets/img/football-9.jpg" alt="Thumb">
 
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+
+
+
+
                     </div>
-
-
-
-
                 </div>
             </div>
-        </div>
-           
+
 
         </div>
 
@@ -879,6 +885,17 @@ include('./server/payment/index.php');
         </div>
 
         <?php include('./include/footer.php') ?>
+        <script>
+            // Select the button and video elements
+            const discoverBtn = document.getElementById('discoverBtn');
+            const myVideo = document.getElementById('myVideo');
+
+            // Add click event listener to the button
+            discoverBtn.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent any default action (e.g., following a link)
+                myVideo.play(); // Play the video
+            });
+        </script>
         <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
         <script src="<?php echo $domain ?>assets/js/popper.min.js"></script>
         <script src="<?php echo $domain ?>assets/js/bootstrap.min.js"></script>

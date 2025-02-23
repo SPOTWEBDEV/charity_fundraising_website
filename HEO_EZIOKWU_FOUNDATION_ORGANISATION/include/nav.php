@@ -47,6 +47,13 @@
             </div>
         </div>
     </div>
+    
+   
+   
+
+
+
+
 
 <header id="home">
 
@@ -68,9 +75,9 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand">
                         <!-- <h2 style="font-size: 20px;">HEO E F O</h2> -->
-                        <img style="height: 80px;" src="<?php echo $domain ?>assets/img/logo.jpg" class="logo" alt="Logo">
+                        <img style="height: 100px;" src="<?php echo $domain ?>assets/img/logo.jpg" class="logo" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
