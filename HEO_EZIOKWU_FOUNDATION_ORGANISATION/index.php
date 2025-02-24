@@ -60,6 +60,50 @@ include('./server/payment/index.php');
     <?php include('./include/nav.php') ?>
 
 
+    <style>
+        .video-container{
+            width:100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            z-index: 1099;
+            background-color: white;
+            display: none;
+        }
+        .video-container video {
+            width: 100%;
+            height: 100%;
+        }
+        .video-container.active{
+            display: flex;
+        }
+        .cancel{
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            z-index: 2099;
+        }
+        .cancel button{
+            padding: 3px 10px;
+            border-radius: 10px;
+        }
+    </style>
+
+    <section class="video-container">
+        <div class="cancel">
+            <button onclick="cancelVideos()">cancel</button>
+        </div>
+        
+        <video style="width: 100%;" id="myVideo" width="100%" >
+            <source src="<?php echo $domain  ?>assets/img/myvideo.mp4" type="video/mp4">
+
+        </video>
+    </section>
+
+
 
     <div class="banner-area inc-shape inc-indicator content-less text-large">
         <div id="bootcarousel" class="carousel text-light slide carousel-fade animate_text" data-ride="carousel">
@@ -91,7 +135,7 @@ include('./server/payment/index.php');
                                             <h4 data-animation="animated slideInDown">HEO EZIOKWU FOUNDATION ORGANIZATION</h4>
                                             <p data-animation="animated slideInRight">Was Founded on the 12th of June 2011, by High Chief Okoh Emmanuel Henry,who's from Ako-Nike Community in Enugu State, Nigeria,
                                                 Heo Eziokwu Foundation is a dedicated non-profit organization committed to uplifting and empowering underprivileged families.</p>
-                                            <a data-animation="animated fadeInUp" class="btn circle btn-theme border btn-md" href="#">Discover More</a>
+                                            <a data-animation="animated fadeInUp" class="btn circle btn-theme border btn-md" id="discoverBtn">Discover More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -110,12 +154,9 @@ include('./server/payment/index.php');
                                             <h4 data-animation="animated slideInDown">Get started today</h4>
                                             <p data-animation="animated slideInRight">Guided by the principles of compassion and empowerment, we work to create meaningful, positive impacts by providing essential support in three key areas: Education, Healthcare, and Housing.
                                             </p>
-                                            <video id="myVideo" width="600" controls>
-                                                <source src="https://www.youtube.com/watch?v=N1DBPhdvQl8" type="video/mp4">
-                                                
-                                            </video>
 
-                                            <a data-animation="animated fadeInUp" class="btn circle btn-theme border btn-md" href="#" id="discoverBtn">Discover More</a>
+
+                                            <a class="btn circle btn-theme border btn-md"  id="discoverBtn">Discover More</a>
 
                                         </div>
                                     </div>
@@ -145,9 +186,11 @@ include('./server/payment/index.php');
                                 <img src="<?php echo $domain ?>assets/img/school-4.jpg" alt="Thumb">
                             </div>
                             <div class="info">
-                                <span class="cats">
-                                    Education
-                                </span>
+                                <a href="<?php echo $domain ?>education/">
+                                    <span class="cats">
+                                        Education
+                                    </span>
+                                </a>
                                 <h4>
                                     <a href="#">Empower Education in Africa</a>
                                 </h4>
@@ -165,9 +208,11 @@ include('./server/payment/index.php');
                                 <img src="<?php echo $domain ?>assets/img/9.jpg" alt="Thumb">
                             </div>
                             <div class="info">
-                                <span class="cats">
-                                    Healthcare
-                                </span>
+                                <a href="<?php echo $domain ?>health/">
+                                    <span class="cats">
+                                        Healthcare
+                                    </span>
+                                </a>
                                 <h4>
                                     <a href="#">Affordable Healthcare for All</a>
                                 </h4>
@@ -185,9 +230,11 @@ include('./server/payment/index.php');
                                 <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb">
                             </div>
                             <div class="info">
-                                <span class="cats">
-                                    Housing
-                                </span>
+                                <a href="<?php echo $domain ?>housing/">
+                                    <span class="cats">
+                                        Housing
+                                    </span>
+                                </a>
                                 <h4>
                                     <a href="#">Safe Housing for Vulnerable Families</a>
                                 </h4>
@@ -300,9 +347,7 @@ include('./server/payment/index.php');
                         </div>
                         <div class="thumb-2">
                             <img src="<?php echo $domain ?>assets/img/2.jpg" alt="Thumb">
-                            <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube light video-play-button item-center">
-                                <i class="fa fa-play"></i>
-                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -886,15 +931,7 @@ include('./server/payment/index.php');
 
         <?php include('./include/footer.php') ?>
         <script>
-            // Select the button and video elements
-            const discoverBtn = document.getElementById('discoverBtn');
-            const myVideo = document.getElementById('myVideo');
 
-            // Add click event listener to the button
-            discoverBtn.addEventListener('click', function(event) {
-                event.preventDefault(); // Prevent any default action (e.g., following a link)
-                myVideo.play(); // Play the video
-            });
         </script>
         <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
         <script src="<?php echo $domain ?>assets/js/popper.min.js"></script>
@@ -914,6 +951,27 @@ include('./server/payment/index.php');
         <script src="<?php echo $domain ?>assets/js/jquery.nice-select.min.js"></script>
         <script src="<?php echo $domain ?>assets/js/bootsnav.js"></script>
         <script src="<?php echo $domain ?>assets/js/main.js"></script>
+
+
+        <script>
+            let discoverBtn = document.querySelectorAll('#discoverBtn')
+            let video_container = document.querySelector('.video-container')
+            let videos = document.querySelector('.video-container >  video')
+            discoverBtn.forEach(el=>{
+                el.onclick = function(){
+
+                    video_container.classList.add('active')
+                    videos.play()
+                    videos.autoplay = true
+
+                }
+            })
+
+            function cancelVideos(){
+                videos.pause()
+                video_container.classList.remove('active')
+            }
+        </script>
 
 </body>
 
