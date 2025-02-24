@@ -1,12 +1,8 @@
 <?php
 
-include('./server/connection.php');
-include('./server/model.php');
-include('./server/payment/index.php');
-
-
-
-
+    include './server/connection.php';
+    include './server/model.php';
+    include './server/payment/index.php';
 
 ?>
 <!DOCTYPE html>
@@ -57,7 +53,7 @@ include('./server/payment/index.php');
     <!-- Preloader Start -->
     <div class="se-pre-con"></div>
 
-    <?php include('./include/nav.php') ?>
+    <?php include './include/nav.php'?>
 
 
     <style>
@@ -135,7 +131,7 @@ include('./server/payment/index.php');
                                             <h4 data-animation="animated slideInDown">HEO EZIOKWU FOUNDATION ORGANIZATION</h4>
                                             <p data-animation="animated slideInRight">Was Founded on the 12th of June 2011, by High Chief Okoh Emmanuel Henry,who's from Ako-Nike Community in Enugu State, Nigeria,
                                                 Heo Eziokwu Foundation is a dedicated non-profit organization committed to uplifting and empowering underprivileged families.</p>
-                                            <a data-animation="animated fadeInUp" class="btn circle btn-theme border btn-md" id="discoverBtn">Discover More</a>
+                                            <a data-animation="animated fadeInUp" class="btn circle d-none btn-theme border btn-md" href="#">Discover More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -260,7 +256,7 @@ include('./server/payment/index.php');
                     </p>
 
 
-                    <a class="btn circle btn-theme border btn-md" href="#">Sponsor us</a>
+                    <a class="btn circle btn-theme border btn-md" href="./payment">Sponsor us</a>
                 </div>
 
             </div>
@@ -269,7 +265,7 @@ include('./server/payment/index.php');
 
     <!-- End About Area -->
 
-    <!-- Start What We Do 
+    <!-- Start What We Do
     ============================================= -->
     <div class="we-do-area half-bg default-padding bottom-less bg-gray">
         <div class="container">
@@ -335,7 +331,7 @@ include('./server/payment/index.php');
     </div>
     <!-- End What We Do -->
 
-    <!-- Start Our Mission 
+    <!-- Start Our Mission
     ============================================= -->
     <div class="mission-area half-bg default-padding-bottom bg-gray">
         <div class="container">
@@ -362,14 +358,14 @@ include('./server/payment/index.php');
                     </p>
 
 
-                    <a class="btn circle btn-theme border btn-md" href="#">Join With Us</a>
+                    <a class="btn circle btn-theme border btn-md" href="./payment/">Join With Us</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Our Mission -->
 
-    <!-- Start Causes 
+    <!-- Start Causes
     ============================================= -->
     <div class="causes-area bg-gray default-padding bottom-less">
         <div class="container">
@@ -385,7 +381,7 @@ include('./server/payment/index.php');
                         <p>
                             Join us in supporting vital causes that provide education, healthcare, and housing to underprivileged families, helping them build better futures.
                         </p>
-                        <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#">View All <i class="fas fa-angle-right"></i></a>
+                        <a class="btn d-none circle btn-md btn-gradient wow fadeInUp" href="./event/">View All <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
 
@@ -476,7 +472,7 @@ include('./server/payment/index.php');
         </div>
         <!-- End Causes -->
 
-        <!-- Start Volunteer 
+        <!-- Start Volunteer
     ============================================= -->
         <div class="volunteer-area text-center default-padding">
             <!-- Fixed Shape -->
@@ -493,7 +489,34 @@ include('./server/payment/index.php');
                         <p>
                             Your support can help us create lasting change. By becoming a volunteer, you’ll be contributing to the well-being of underprivileged families around the world.
                         </p>
-                        <form method="POST" class="d-none">
+
+                        <style>
+                            .nice-select{
+                                display:none
+                            }
+                        </style>
+                        <?php
+
+                            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
+                                $email = $connection->real_escape_string($_POST['email']);
+
+                                echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+
+                                if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                                    echo "<script>Swal.fire('Error', 'Invalid email format', 'error');</script>";
+                                } else {
+                                    $insertQuery = "INSERT INTO newsletter (email) VALUES ('$email')";
+
+                                    if ($connection->query($insertQuery) === true) {
+                                        echo "<script>Swal.fire('Success', 'Successfully subscribed!', 'success');</script>";
+                                    } else {
+                                        echo "<script>Swal.fire('Error', 'Email already subscribed or error occurred.', 'error');</script>";
+                                    }
+                                }
+                            }
+
+                        ?>
+                        <form method="POST">
                             <input type="email" placeholder="Your Email" class="form-control" name="email">
                             <button type="submit">Join Now</button>
                         </form>
@@ -504,7 +527,7 @@ include('./server/payment/index.php');
         </div>
         <!-- End Volunteer -->
 
-        <!-- Start Event Area 
+        <!-- Start Event Area
     ============================================= -->
         <div class="event-area carousel-shadow default-padding bg-gray">
             <!-- Fixed Shape -->
@@ -599,13 +622,13 @@ include('./server/payment/index.php');
         <!-- End Event Area -->
 
 
-        <!-- Start Donation 
+        <!-- Start Donation
     ============================================= -->
 
 
         <!-- End Donation Area -->
 
-        <!-- Start Testimonials 
+        <!-- Start Testimonials
     ============================================= -->
         <div class="testimonials-area carousel-shadow bg-gray default-padding">
             <div class="container">
@@ -681,7 +704,7 @@ include('./server/payment/index.php');
 
         <!-- End Testimonials Area -->
 
-        <!-- Start Gallery 
+        <!-- Start Gallery
     ============================================= -->
         <div class="gallery-area default-padding">
             <div class="container">
@@ -705,18 +728,31 @@ include('./server/payment/index.php');
 
 
             <div class="container">
-                <div class="causes-items">
-                    <div class="row">
+            <div class="causes-items">
+                <div class="row">
 
-                        <div class="single-item col-lg-6 col-md-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="#">
-                                        <img src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
+                    <div class="single-item col-lg-6 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
 
-                                    </a>
-                                </div>
+                                </a>
+                            </div>
 
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-6 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+                                </a>
                             </div>
                         </div>
                         <!-- End Single Item -->
@@ -818,7 +854,7 @@ include('./server/payment/index.php');
 
         <!-- End Gallery Area -->
 
-        <!-- Start Blog 
+        <!-- Start Blog
     ============================================= -->
         <div class="blog-area default-padding bottom-less bg-gray">
             <div class="container">
@@ -933,7 +969,7 @@ include('./server/payment/index.php');
         <script>
 
         </script>
-        <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
+       <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
         <script src="<?php echo $domain ?>assets/js/popper.min.js"></script>
         <script src="<?php echo $domain ?>assets/js/bootstrap.min.js"></script>
         <script src="<?php echo $domain ?>assets/js/equal-height.min.js"></script>

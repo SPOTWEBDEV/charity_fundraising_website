@@ -1,9 +1,9 @@
 <?php
 
-include('../server/connection.php');
-if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
-  echo "<script> window.location.href = 'login.php'</script>";
-}
+    include '../server/connection.php';
+    if (! isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
+        echo "<script> window.location.href = 'login.php'</script>";
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en" class="light-style layout-menu-fixed " dir="ltr" data-theme="theme-default" data-assets-path="assets/" data-template="vertical-menu-template-free">
@@ -59,7 +59,7 @@ if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
     <div class="layout-container">
 
       <!-- Menu -->
-      <?php include('includes/side_bar.php') ?>
+      <?php include 'includes/side_bar.php'?>
       <!-- / Menu -->
 
       <!-- Layout container -->
@@ -178,66 +178,83 @@ if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
           <div class="container-xxl flex-grow-1 container-p-y">
 
             <h4 class="fw-bold py-3 mb-4">
-              <span class="text-muted fw-light">Admin /</span> Booked_List
+              <span class="text-muted fw-light">Admin /</span> Donation
             </h4>
 
             <!-- Basic Bootstrap Table -->
             <div class="card">
-              <h5 class="card-header">Booked_List</h5>
+              <h5 class="card-header">All Donation</h5>
               <div class="table-responsive text-nowrap">
                 <table class="table">
                   <thead>
                     <tr>
                       <th>S/N</th>
-                      <th>Fullname</th> 
+                      <th>Fullname</th>
                       <th>Email</th>
                       <th>Phonenumber</th>
                       <th>Booked_Date</th>
                       <th>Amount</th>
-                      <th>Type</th>
-                      <th>Status</th> 
-                      
-                      
+
+                      <th>Status</th>
+                       <th>Action</th>
+
+
                     </tr>
                   </thead>
                   <tbody class="table-border-bottom-0">
                     <?php
-                    
-                    $sql = mysqli_query($connection, "SELECT * FROM `donation`");
-                    if (mysqli_num_rows($sql)) {
-                      $count = 1;
-                      while ($details = mysqli_fetch_assoc($sql)) {
 
-                        $id = $details['id'];
-                    ?>
+                        $sql = mysqli_query($connection, "SELECT * FROM `donations`");
+                        if (mysqli_num_rows($sql)) {
+                            $count = 1;
+                            while ($details = mysqli_fetch_assoc($sql)) {
+
+                                $id = $details['id'];
+                            ?>
                         <tr>
                           <td><?php echo $count ?></td>
-                          <td><?php echo $details['firstname']?></td> 
-                          <td><?php echo $details['lastname']?></td> 
-                          <td><?php echo $details['email']?></td> 
-                          <td><?php echo $details['phone']?></td> 
-                          <td><?php echo $details['date']?></td> 
-                          <td><?php echo ($details['amount'] == '')? '0.00': number_format($details['amount'],2)?></td> 
-                          <td><?php 
-                             
-                               if($details['status'] == 'pending' || $details['status'] == 'ongoing') {
-                                    echo "<span class='badge bg-danger'>Pending</span>";
-                                  }
-                               if($details['status'] == 'cancelled' || $details['status'] == 'declined' || $details['status'] == 'failed' || $details['status'] == 'abandoned') {
-                                    echo "<span class='badge bg-warning'></span>";
-                                  }
-                                  if($details['status'] == 'success' || $details['status'] == 'approved' ) {
-                                    echo "<span class='badge bg-success'></span>";
-                                  }
-                               ?></td> 
-                         
-                          
+                          <td><?php echo $details['fullname'] ?></td>
+
+                          <td><?php echo $details['email'] ?></td>
+                          <td><?php echo $details['phone'] ?></td>
+                          <td><?php echo $details['created_at'] ?></td>
+                          <td><?php echo($details['amount'] == '') ? '0.00' : number_format($details['amount'], 2) ?></td>
+                          <td><?php
+
+                                          if ($details['status'] == 'pending' || $details['status'] == 'ongoing') {
+                                              echo "<span class='badge bg-danger'>Pending</span>";
+                                          }
+                                          if ($details['status'] == 'cancelled' || $details['status'] == 'declined' || $details['status'] == 'failed' || $details['status'] == 'abandoned') {
+                                              echo "<span class='badge bg-warning'>Declined</span>";
+                                          }
+                                          if ($details['status'] == 'success' || $details['status'] == 'approved') {
+                                              echo "<span class='badge bg-success'>Success</span>";
+                                          }
+                                      ?>
+                          </td>
+
+                          <td>
+                            <?php
+
+                                        if ($details['status'] == 'pending' || $details['status'] == 'ongoing') {
+                                            echo "<a  href='?app_id=$id'><span  class='badge bg-primary'>click to approved</span></a>";
+                                            echo '<br>';
+                                            echo "<a  href='?del_id=$id'><span class='badge bg-primary ml-2'>click to declined</span></a>";
+                                        }else{
+                                          echo '--';
+                                        }
+
+                                    ?>
+
+                          </td>
+
+
                         </tr>
                     <?php $count++;
-                      }
-                    } else {
-                      echo "<td class='bg-danger text-white' colspan='10'>No Users</td>";
-                    } ?>
+                            }
+                        } else {
+                            echo "<td class='bg-danger text-white' colspan='10'>No Users</td>";
+                    }?>
                   </tbody>
                 </table>
               </div>
@@ -247,31 +264,6 @@ if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
           <!-- / Content -->
 
 
-
-
-          <!-- Footer -->
-          <!-- <footer class="content-footer footer bg-footer-theme">
-            <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-              <div class="mb-2 mb-md-0">
-                © <script>
-                  document.write(new Date().getFullYear())
-                </script>
-                , made with ❤️ by <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
-              </div>
-              <div>
-
-                <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
-                <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
-
-                <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/" target="_blank" class="footer-link me-4">Documentation</a>
-
-                <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank" class="footer-link me-4">Support</a>
-
-
-              </div>
-            </div>
-          </footer> -->
-          <!-- / Footer -->
           <div class="content-backdrop fade"></div>
         </div>
         <!-- Content wrapper -->
@@ -286,7 +278,25 @@ if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
 
 
   </div>
-  <!-- / Layout wrapper -->
+
+
+  <?php
+
+      if (isset($_GET['app_id'])) {
+          $app_id      = mysqli_real_escape_string($connection, $_GET['app_id']);
+          $updateQuery = "UPDATE `donations` SET `status`='approved', `updated_at`=NOW() WHERE `id`='$app_id'";
+          mysqli_query($connection, $updateQuery);
+          echo "<script>alert('Donation Approved!');;</script>";
+      }
+
+      if (isset($_GET['del_id'])) {
+          $del_id      = mysqli_real_escape_string($connection, $_GET['del_id']);
+          $updateQuery = "UPDATE `donations` SET `status`='declined', `updated_at`=NOW() WHERE `id`='$del_id'";
+          mysqli_query($connection, $updateQuery);
+          echo "<script>alert('Donation Declined!');</script>";
+      }
+
+  ?>
 
 
 

@@ -65,7 +65,7 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav border-less">
                     <ul>
-                        <li class="button"><a href="<?php echo $domain ?>donate/"><i class="fas fa-heart"></i> Donate</a></li>
+                        <li class="button"><a href="payment/"><i class="fas fa-heart"></i> Donate</a></li>
                     </ul>
                 </div>
                 <!-- End Atribute Navigation -->
@@ -90,15 +90,15 @@
                         
                       
                         <li>
-                            <a href="<?php echo $domain ?>">Home</a>
+                            <a href="">Home</a>
                         </li>
 
                         <li>
-                            <a href="<?php echo $domain ?>event">Event</a>
+                            <a href="event">Event</a>
                         </li>
 
                         <li>
-                            <a href="<?php echo $domain ?>contact">Contact</a>
+                            <a href="contact">Contact</a>
                         </li>
                     </ul>
                 </div>
