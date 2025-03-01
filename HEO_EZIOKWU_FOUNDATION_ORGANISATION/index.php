@@ -1,8 +1,8 @@
 <?php
 
-    include './server/connection.php';
-    include './server/model.php';
-    include './server/payment/index.php';
+include './server/connection.php';
+include './server/model.php';
+include './server/payment/index.php';
 
 ?>
 <!DOCTYPE html>
@@ -53,12 +53,12 @@
     <!-- Preloader Start -->
     <div class="se-pre-con"></div>
 
-    <?php include './include/nav.php'?>
+    <?php include './include/nav.php' ?>
 
 
     <style>
-        .video-container{
-            width:100%;
+        .video-container {
+            width: 100%;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -69,20 +69,24 @@
             background-color: white;
             display: none;
         }
+
         .video-container video {
             width: 100%;
             height: 100%;
         }
-        .video-container.active{
+
+        .video-container.active {
             display: flex;
         }
-        .cancel{
+
+        .cancel {
             position: absolute;
             top: 30px;
             left: 50px;
             z-index: 2099;
         }
-        .cancel button{
+
+        .cancel button {
             padding: 3px 10px;
             border-radius: 10px;
         }
@@ -92,8 +96,8 @@
         <div class="cancel">
             <button onclick="cancelVideos()">cancel</button>
         </div>
-        
-        <video style="width: 100%;" id="myVideo" width="100%" >
+
+        <video style="width: 100%;" id="myVideo" width="100%">
             <source src="<?php echo $domain  ?>assets/img/myvideo.mp4" type="video/mp4">
 
         </video>
@@ -152,7 +156,7 @@
                                             </p>
 
 
-                                            <a class="btn circle btn-theme border btn-md"  id="discoverBtn">Discover More</a>
+                                            <a class="btn circle btn-theme border btn-md" id="discoverBtn">Discover More</a>
 
                                         </div>
                                     </div>
@@ -491,29 +495,29 @@
                         </p>
 
                         <style>
-                            .nice-select{
-                                display:none
+                            .nice-select {
+                                display: none
                             }
                         </style>
                         <?php
 
-                            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
-                                $email = $connection->real_escape_string($_POST['email']);
+                        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
+                            $email = $connection->real_escape_string($_POST['email']);
 
-                                echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+                            echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
 
-                                if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                                    echo "<script>Swal.fire('Error', 'Invalid email format', 'error');</script>";
+                            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                                echo "<script>Swal.fire('Error', 'Invalid email format', 'error');</script>";
+                            } else {
+                                $insertQuery = "INSERT INTO newsletter (email) VALUES ('$email')";
+
+                                if ($connection->query($insertQuery) === true) {
+                                    echo "<script>Swal.fire('Success', 'Successfully subscribed!', 'success');</script>";
                                 } else {
-                                    $insertQuery = "INSERT INTO newsletter (email) VALUES ('$email')";
-
-                                    if ($connection->query($insertQuery) === true) {
-                                        echo "<script>Swal.fire('Success', 'Successfully subscribed!', 'success');</script>";
-                                    } else {
-                                        echo "<script>Swal.fire('Error', 'Email already subscribed or error occurred.', 'error');</script>";
-                                    }
+                                    echo "<script>Swal.fire('Error', 'Email already subscribed or error occurred.', 'error');</script>";
                                 }
                             }
+                        }
 
                         ?>
                         <form method="POST">
@@ -728,286 +732,287 @@
 
 
             <div class="container">
-            <div class="causes-items">
-                <div class="row">
+                <div class="causes-items">
+                    <div class="row">
 
-                    <div class="single-item col-lg-6 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
-
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-6 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="single-item col-lg-6 col-md-6">
+                        <div class="single-item col-12">
                             <div class="item">
                                 <div class="thumb">
                                     <a href="#">
-                                        <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+                                        <img src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
+
                                     </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="image-grid">
+                            <div class="single-item col-12">
+                                <div class="item">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-item col-12">
+                                <div class="item">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-item col-12">
+                                <div class="item">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-item col-12">
+                                <div class="item">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-item col-12">
+                                <div class="item">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="<?php echo $domain ?>assets/img/school-13.jpg" alt="Thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-item col-12">
+                                <div class="item">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="<?php echo $domain ?>assets/img/football-6.jpg" alt="Thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-item col-12">
+                                <div class="item">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="<?php echo $domain ?>assets/img/football-8.jpg" alt="Thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-item col-12">
+                                <div class="item">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="<?php echo $domain ?>assets/img/football-9.jpg" alt="Thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <style>
+                            .image-grid {
+                                display: grid;
+                                grid-template-columns: repeat(2,1fr);
+                                gap: 16px;
+                                /* Space between items */
+                            }
+
+                            .single-item {
+                                width: 100%;
+                                /* Ensure each item fills the column */
+                            }
+                            .single-item img{
+                                height: 400px;
+                            }
+
+                            
+                        </style>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- End Gallery Area -->
+
+            <!-- Start Blog
+    ============================================= -->
+            <div class="blog-area default-padding bottom-less bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="site-heading text-center">
+                                <h5>Latest News</h5>
+                                <h2>
+                                    Stay Updated with Us on the Latest & Popular Causes by HEO Eziokwu Foundation
+                                </h2>
+                                <div class="heading-divider"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="blog-items">
+                        <div class="row">
+                            <!-- Single Item -->
+                            <div class="single-item col-lg-4 col-md-6">
+                                <div class="item">
+                                    <div class="thumb">
+                                        <a href="blog-single-with-sidebar.html">
+                                            <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb">
+                                            <span class="date">
+                                                24 <strong>Aug</strong>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <h4>
+                                            <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation Partners with Local Communities</a>
+                                        </h4>
+                                        <div class="meta">
+                                            <ul>
+                                                <li>By <a href="#">HEO Foundation</a></li>
+                                                <li><a href="#"><i class="fas fa-comments"></i> 12 Comments</a></li>
+                                            </ul>
+                                        </div>
+                                        <p>
+                                            We are making strides towards a brighter future, collaborating with local communities to promote educational opportunities and better living conditions.
+                                        </p>
+                                        <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="single-item col-lg-4 col-md-6">
+                                <div class="item">
+                                    <div class="thumb">
+                                        <a href="blog-single-with-sidebar.html">
+                                            <img src="<?php echo $domain ?>assets/img/2.jpg" alt="Thumb">
+                                            <span class="date">
+                                                18 <strong>Sep</strong>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <h4>
+                                            <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation's Water Access Project</a>
+                                        </h4>
+                                        <div class="meta">
+                                            <ul>
+                                                <li>By <a href="#">HEO Foundation</a></li>
+                                                <li><a href="#"><i class="fas fa-comments"></i> 26 Comments</a></li>
+                                            </ul>
+                                        </div>
+                                        <p>
+                                            Our Water Access initiative is helping underprivileged areas gain reliable access to clean drinking water, improving overall health and well-being.
+                                        </p>
+                                        <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="single-item col-lg-4 col-md-6">
+                                <div class="item">
+                                    <div class="thumb">
+                                        <a href="blog-single-with-sidebar.html">
+                                            <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+                                            <span class="date">
+                                                05 <strong>Jul</strong>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <h4>
+                                            <a href="blog-single-with-sidebar.html">Empowering the Next Generation: Education for All</a>
+                                        </h4>
+                                        <div class="meta">
+                                            <ul>
+                                                <li>By <a href="#">HEO Foundation</a></li>
+                                                <li><a href="#"><i class="fas fa-comments"></i> 05 Comments</a></li>
+                                            </ul>
+                                        </div>
+                                        <p>
+                                            Join us in the fight to ensure that every child receives quality education, as we work towards providing free learning resources in underserved regions.
+                                        </p>
+                                        <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
+                                    </div>
                                 </div>
                             </div>
                             <!-- End Single Item -->
                         </div>
-
-
-
-                        <div class="single-item col-lg-6 col-md-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="#">
-                                        <img src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="single-item col-lg-6 col-md-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="#">
-                                        <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="single-item col-lg-6 col-md-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="#">
-                                        <img src="<?php echo $domain ?>assets/img/school-13.jpg" alt="Thumb">
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="single-item col-lg-6 col-md-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="#">
-                                        <img src="<?php echo $domain ?>assets/img/football-6.jpg" alt="Thumb">
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="single-item col-lg-6 col-md-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="#">
-                                        <img src="<?php echo $domain ?>assets/img/football-8.jpg" alt="Thumb">
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="single-item col-lg-6 col-md-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="#">
-                                        <img src="<?php echo $domain ?>assets/img/football-9.jpg" alt="Thumb">
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
                     </div>
                 </div>
             </div>
 
+            <?php include('./include/footer.php') ?>
+            <script>
 
-        </div>
-
-        <!-- End Gallery Area -->
-
-        <!-- Start Blog
-    ============================================= -->
-        <div class="blog-area default-padding bottom-less bg-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="site-heading text-center">
-                            <h5>Latest News</h5>
-                            <h2>
-                                Stay Updated with Us on the Latest & Popular Causes by HEO Eziokwu Foundation
-                            </h2>
-                            <div class="heading-divider"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="blog-items">
-                    <div class="row">
-                        <!-- Single Item -->
-                        <div class="single-item col-lg-4 col-md-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="blog-single-with-sidebar.html">
-                                        <img src="<?php echo $domain ?>assets/img/blog/1.jpg" alt="Thumb">
-                                        <span class="date">
-                                            24 <strong>Aug</strong>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="info">
-                                    <h4>
-                                        <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation Partners with Local Communities</a>
-                                    </h4>
-                                    <div class="meta">
-                                        <ul>
-                                            <li>By <a href="#">HEO Foundation</a></li>
-                                            <li><a href="#"><i class="fas fa-comments"></i> 12 Comments</a></li>
-                                        </ul>
-                                    </div>
-                                    <p>
-                                        We are making strides towards a brighter future, collaborating with local communities to promote educational opportunities and better living conditions.
-                                    </p>
-                                    <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="single-item col-lg-4 col-md-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="blog-single-with-sidebar.html">
-                                        <img src="<?php echo $domain ?>assets/img/blog/2.jpg" alt="Thumb">
-                                        <span class="date">
-                                            18 <strong>Sep</strong>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="info">
-                                    <h4>
-                                        <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation's Water Access Project</a>
-                                    </h4>
-                                    <div class="meta">
-                                        <ul>
-                                            <li>By <a href="#">HEO Foundation</a></li>
-                                            <li><a href="#"><i class="fas fa-comments"></i> 26 Comments</a></li>
-                                        </ul>
-                                    </div>
-                                    <p>
-                                        Our Water Access initiative is helping underprivileged areas gain reliable access to clean drinking water, improving overall health and well-being.
-                                    </p>
-                                    <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="single-item col-lg-4 col-md-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="blog-single-with-sidebar.html">
-                                        <img src="<?php echo $domain ?>assets/img/blog/3.jpg" alt="Thumb">
-                                        <span class="date">
-                                            05 <strong>Jul</strong>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="info">
-                                    <h4>
-                                        <a href="blog-single-with-sidebar.html">Empowering the Next Generation: Education for All</a>
-                                    </h4>
-                                    <div class="meta">
-                                        <ul>
-                                            <li>By <a href="#">HEO Foundation</a></li>
-                                            <li><a href="#"><i class="fas fa-comments"></i> 05 Comments</a></li>
-                                        </ul>
-                                    </div>
-                                    <p>
-                                        Join us in the fight to ensure that every child receives quality education, as we work towards providing free learning resources in underserved regions.
-                                    </p>
-                                    <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <?php include('./include/footer.php') ?>
-        <script>
-
-        </script>
-       <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/popper.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/bootstrap.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/equal-height.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/jquery.appear.js"></script>
-        <script src="<?php echo $domain ?>assets/js/jquery.easing.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/jquery.magnific-popup.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/modernizr.custom.13711.js"></script>
-        <script src="<?php echo $domain ?>assets/js/owl.carousel.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/wow.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/progress-bar.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/isotope.pkgd.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/imagesloaded.pkgd.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/count-to.js"></script>
-        <script src="<?php echo $domain ?>assets/js/YTPlayer.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/jquery.nice-select.min.js"></script>
-        <script src="<?php echo $domain ?>assets/js/bootsnav.js"></script>
-        <script src="<?php echo $domain ?>assets/js/main.js"></script>
+            </script>
+            <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
+            <script src="<?php echo $domain ?>assets/js/popper.min.js"></script>
+            <script src="<?php echo $domain ?>assets/js/bootstrap.min.js"></script>
+            <script src="<?php echo $domain ?>assets/js/equal-height.min.js"></script>
+            <script src="<?php echo $domain ?>assets/js/jquery.appear.js"></script>
+            <script src="<?php echo $domain ?>assets/js/jquery.easing.min.js"></script>
+            <script src="<?php echo $domain ?>assets/js/jquery.magnific-popup.min.js"></script>
+            <script src="<?php echo $domain ?>assets/js/modernizr.custom.13711.js"></script>
+            <script src="<?php echo $domain ?>assets/js/owl.carousel.min.js"></script>
+            <script src="<?php echo $domain ?>assets/js/wow.min.js"></script>
+            <script src="<?php echo $domain ?>assets/js/progress-bar.min.js"></script>
+            <script src="<?php echo $domain ?>assets/js/isotope.pkgd.min.js"></script>
+            <script src="<?php echo $domain ?>assets/js/imagesloaded.pkgd.min.js"></script>
+            <script src="<?php echo $domain ?>assets/js/count-to.js"></script>
+            <script src="<?php echo $domain ?>assets/js/YTPlayer.min.js"></script>
+            <script src="<?php echo $domain ?>assets/js/jquery.nice-select.min.js"></script>
+            <script src="<?php echo $domain ?>assets/js/bootsnav.js"></script>
+            <script src="<?php echo $domain ?>assets/js/main.js"></script>
 
 
-        <script>
-            let discoverBtn = document.querySelectorAll('#discoverBtn')
-            let video_container = document.querySelector('.video-container')
-            let videos = document.querySelector('.video-container >  video')
-            discoverBtn.forEach(el=>{
-                el.onclick = function(){
+            <script>
+                let discoverBtn = document.querySelectorAll('#discoverBtn')
+                let video_container = document.querySelector('.video-container')
+                let videos = document.querySelector('.video-container >  video')
+                discoverBtn.forEach(el => {
+                    el.onclick = function() {
 
-                    video_container.classList.add('active')
-                    videos.play()
-                    videos.autoplay = true
+                        video_container.classList.add('active')
+                        videos.play()
+                        videos.autoplay = true
 
+                    }
+                })
+
+                function cancelVideos() {
+                    videos.pause()
+                    video_container.classList.remove('active')
                 }
-            })
-
-            function cancelVideos(){
-                videos.pause()
-                video_container.classList.remove('active')
-            }
-        </script>
+            </script>
 
 </body>
 
