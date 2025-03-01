@@ -836,7 +836,7 @@ include './server/payment/index.php';
                         <style>
                             .image-grid {
                                 display: grid;
-                                grid-template-columns: repeat(2,1fr);
+                                grid-template-columns: repeat(2, 1fr);
                                 gap: 16px;
                                 /* Space between items */
                             }
@@ -845,11 +845,19 @@ include './server/payment/index.php';
                                 width: 100%;
                                 /* Ensure each item fills the column */
                             }
-                            .single-item img{
+
+                            .single-item img {
                                 height: 400px;
                             }
 
-                            
+                            @media(max-width:700px) {
+                                .image-grid {
+
+                                    grid-template-columns: repeat(1, 1fr);
+
+                                }
+
+                            }
                         </style>
                     </div>
                 </div>

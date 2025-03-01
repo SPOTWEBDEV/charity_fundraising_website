@@ -155,7 +155,7 @@
     <div class="causes-items">
         <div class="row">
 
-            <div class="single-item col-lg-6 col-md-6">
+            <div class="single-item col-lg-6 col-md-6 mt-3">
                 <div class="item">
                     <div class="thumb">
                         <a href="#">
@@ -171,7 +171,7 @@
 
             <!-- End Single Item -->
             <!-- Single Item -->
-            <div class="single-item col-lg-6 col-md-6">
+            <div class="single-item col-lg-6 col-md-6 mt-3">
                 <div class="item">
                     <div class="thumb">
                         <a href="#">
@@ -184,7 +184,7 @@
 
 
 
-            <div class="single-item col-lg-6 col-md-6">
+            <div class="single-item col-lg-6 col-md-6 mt-3">
                 <div class="item">
                     <div class="thumb">
                         <a href="#">
@@ -196,7 +196,7 @@
             </div>
 
 
-            <div class="single-item col-lg-6 col-md-6">
+            <div class="single-item col-lg-6 col-md-6 mt-3">
                 <div class="item">
                     <div class="thumb">
                         <a href="#">
@@ -208,7 +208,7 @@
             </div>
 
 
-            <div class="single-item col-lg-6 col-md-6">
+            <div class="single-item col-lg-6 col-md-6 mt-3">
                 <div class="item">
                     <div class="thumb">
                         <a href="#">
@@ -220,7 +220,7 @@
             </div>
 
 
-            <div class="single-item col-lg-6 col-md-6">
+            <div class="single-item col-lg-6 col-md-6 mt-3">
                 <div class="item">
                     <div class="thumb">
                         <a href="#">
