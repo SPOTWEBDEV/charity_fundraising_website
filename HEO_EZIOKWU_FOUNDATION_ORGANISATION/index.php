@@ -910,7 +910,7 @@ include './server/payment/index.php';
                                         <p>
                                             We are making strides towards a brighter future, collaborating with local communities to promote educational opportunities and better living conditions.
                                         </p>
-                                        <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -939,7 +939,7 @@ include './server/payment/index.php';
                                         <p>
                                             Our Water Access initiative is helping underprivileged areas gain reliable access to clean drinking water, improving overall health and well-being.
                                         </p>
-                                        <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -968,7 +968,7 @@ include './server/payment/index.php';
                                         <p>
                                             Join us in the fight to ensure that every child receives quality education, as we work towards providing free learning resources in underserved regions.
                                         </p>
-                                        <a class="btn-more" href="blog-single-with-sidebar.html">Read More</a>
+                                        
                                     </div>
                                 </div>
                             </div>
