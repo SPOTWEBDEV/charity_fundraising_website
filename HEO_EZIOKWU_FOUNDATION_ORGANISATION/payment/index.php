@@ -17,7 +17,7 @@
               VALUES ('$fullname', '$email', '$phone', '$amount', '$bank_id', '$created_at', '$updated_at', '$status')";
 
         if (mysqli_query($connection, $query)) {
-            echo "<script>alert('Donation submitted successfully!'); window.location.href='donation_page.php';</script>";
+            echo "<script>alert('Donation submitted successfully!'); window.location.href='../index.php';</script>";
         } else {
             echo "<script>alert('Error: " . mysqli_error($connection) . "');</script>";
         }

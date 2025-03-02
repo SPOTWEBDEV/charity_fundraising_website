@@ -56,52 +56,9 @@ include './server/payment/index.php';
     <?php include './include/nav.php' ?>
 
 
-    <style>
-        .video-container {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: fixed;
-            top: 0;
-            z-index: 1099;
-            background-color: white;
-            display: none;
-        }
+ 
 
-        .video-container video {
-            width: 100%;
-            height: 100%;
-        }
-
-        .video-container.active {
-            display: flex;
-        }
-
-        .cancel {
-            position: absolute;
-            top: 30px;
-            left: 50px;
-            z-index: 2099;
-        }
-
-        .cancel button {
-            padding: 3px 10px;
-            border-radius: 10px;
-        }
-    </style>
-
-    <section class="video-container">
-        <div class="cancel">
-            <button onclick="cancelVideos()">cancel</button>
-        </div>
-
-        <video style="width: 100%;" id="myVideo" width="100%">
-            <source src="<?php echo $domain  ?>assets/img/myvideo.mp4" type="video/mp4">
-
-        </video>
-    </section>
+    
 
 
 
@@ -1004,22 +961,16 @@ include './server/payment/index.php';
 
             <script>
                 let discoverBtn = document.querySelectorAll('#discoverBtn')
-                let video_container = document.querySelector('.video-container')
-                let videos = document.querySelector('.video-container >  video')
+               
                 discoverBtn.forEach(el => {
                     el.onclick = function() {
 
-                        video_container.classList.add('active')
-                        videos.play()
-                        videos.autoplay = true
+                        window.location.href = 'videos.php'
 
                     }
                 })
 
-                function cancelVideos() {
-                    videos.pause()
-                    video_container.classList.remove('active')
-                }
+               
             </script>
 
 </body>
