@@ -10,7 +10,7 @@
     <meta name="description" content="Poora - Fundraising & Charity Template">
 
     <!-- ========== Page Title ========== -->
-    <title><?php echo $sitename ?> || Event Page</title>
+    <title><?php echo $sitename ?> || Education</title>
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="<?php echo $domain ?>assets/img/favicon.png" type="image/x-icon">
@@ -57,87 +57,27 @@
         <div class="container">
             <div class="row align-center">
 
-                <div class="col-lg-6 popular-causes">
-                    <div class="causes-box">
-                        <h4> <i class="fas fa-bolt"></i> Popular Causes</h4>
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/school-4.jpg" alt="Thumb">
-                            </div>
-                            <div class="info">
-                                <a href="<?php echo $domain ?>education/">
-                                <span class="cats">
-                                    Education
-                                </span>
-                                </a>
-                                <h4>
-                                    <a href="#">Empower Education in Africa</a>
-                                </h4>
-                                <!-- <div class="progress-box">
-                                <p>Raised : $6,230 <span class="float-right">Goal : $8,400</span></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-width="87"></div>
-                                </div>
-                                <span>Fund collected: 87%</span>
-                            </div> -->
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/9.jpg" alt="Thumb">
-                            </div>
-                            <div class="info">
-                                <a href="<?php echo $domain ?>health/">
-                                <span class="cats">
-                                    Healthcare
-                                </span>
-                                </a>
-                                <h4>
-                                    <a href="#">Affordable Healthcare for All</a>
-                                </h4>
-                                <!-- <div class="progress-box">
-                                <p>Raised : $970 <span class="float-right">Goal : $1,800</span></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-width="55"></div>
-                                </div>
-                                <span>Fund collected: 55%</span>
-                            </div> -->
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb">
-                            </div>
-                            <div class="info">
-                               <a href="<?php echo $domain ?>housing/">
-                               <span class="cats">
-                                    Housing
-                                </span>
-                               </a>
-                                <h4>
-                                    <a href="#">Safe Housing for Vulnerable Families</a>
-                                </h4>
-                                <!-- <div class="progress-box">
-                                <p>Raised : $2,400 <span class="float-right">Goal : $4,300</span></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-width="77"></div>
-                                </div>
-                                <span>Fund collected: 77%</span>
-                            </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-6 info">
+                <div class="info">
                     <h5>Education</h5>
                     <h2 class="text-blur">Education</h2>
                     <h2 class="area-title">HEO Eziokwu Foundation Organization</h2>
                     <p>
-                        HEO Eziokwu Foundation organisation is dedicated to bridging the opportunity gap for less privileged communities, offering hope and resources that enable individuals to thrive. By addressing critical needs, we aim to create a foundation of support that empowers families to pursue better and more dignified lives. Our initiatives are tailored to connect families with the resources they deserve, ultimately strengthening entire communities and fostering long-term resilience.
+                        The HEO Eziokwu Foundation Organization is deeply committed to bridging the opportunity gap in education for underprivileged communities. We believe that education is the key to unlocking potential, transforming lives, and empowering individuals to break free from the cycle of poverty. Our mission is to provide access to quality education, ensuring that every child, no matter their background, has the opportunity to succeed and build a brighter future.
+
+
 
                     </p>
 
+                    <p>We understand that education is not just about academic learning but also about personal growth, skills development, and the fostering of critical thinking. To this end, our foundation works to address the systemic barriers that prevent marginalized communities from accessing quality education. By offering scholarships, learning resources, mentorship, and educational materials, we aim to give every student the tools they need to succeed.</p>
+
+                    <p>Our education initiatives focus on building sustainable educational systems that offer long-term support for students and their families. Whether it's providing access to primary and secondary schooling, vocational training, or higher education opportunities, we strive to create pathways that empower individuals and equip them with the knowledge and skills needed to thrive in an ever-evolving world.</p>
+
+                    <p>In addition to supporting students, we also work closely with educators and communities to improve teaching standards, create inclusive classrooms, and enhance learning environments. We believe that the whole community must be involved in the education process to ensure that it is effective, equitable, and accessible to all.</p>
+
+                    <p>Through our educational programs, we are not just investing in students but in the future of entire communities. By helping individuals reach their full potential, we are fostering a culture of lifelong learning and creating a ripple effect that will benefit generations to come.</p>
+
+                    <p>At HEO Eziokwu, we are determined to ensure that education becomes a tool of empowerment and a stepping stone for a more prosperous and dignified life. Together, we are making a lasting impact by providing equal access to the educational opportunities that every individual deserves.</p>
 
                     <a class="btn circle btn-theme border btn-md" href="#">Sponsor us</a>
                 </div>

@@ -44,99 +44,44 @@
 
 <body>
 
-    
+
     <div class="se-pre-con"></div>
-  
+
     <?php include '../include/nav.php'?>
-    
 
 
- 
+
+
 
     <div class="about-area default-padding">
         <div class="container">
             <div class="row align-center">
 
-                <div class="col-lg-6 popular-causes">
-                    <div class="causes-box">
-                        <h4> <i class="fas fa-bolt"></i> Popular Causes</h4>
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/school-4.jpg" alt="Thumb">
-                            </div>
-                            <div class="info">
-                                <a href="<?php echo $domain ?>education/">
-                                <span class="cats">
-                                    Education
-                                </span>
-                                </a>
-                                <h4>
-                                    <a href="#">Empower Education in Africa</a>
-                                </h4>
-                                <!-- <div class="progress-box">
-                                <p>Raised : $6,230 <span class="float-right">Goal : $8,400</span></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-width="87"></div>
-                                </div>
-                                <span>Fund collected: 87%</span>
-                            </div> -->
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/9.jpg" alt="Thumb">
-                            </div>
-                            <div class="info">
-                                <a href="<?php echo $domain ?>health/">
-                                <span class="cats">
-                                    Healthcare
-                                </span>
-                                </a>
-                                <h4>
-                                    <a href="#">Affordable Healthcare for All</a>
-                                </h4>
-                                <!-- <div class="progress-box">
-                                <p>Raised : $970 <span class="float-right">Goal : $1,800</span></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-width="55"></div>
-                                </div>
-                                <span>Fund collected: 55%</span>
-                            </div> -->
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb">
-                            </div>
-                            <div class="info">
-                               <a href="<?php echo $domain ?>housing/">
-                               <span class="cats">
-                                    Housing
-                                </span>
-                               </a>
-                                <h4>
-                                    <a href="#">Safe Housing for Vulnerable Families</a>
-                                </h4>
-                                <!-- <div class="progress-box">
-                                <p>Raised : $2,400 <span class="float-right">Goal : $4,300</span></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-width="77"></div>
-                                </div>
-                                <span>Fund collected: 77%</span>
-                            </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-6 info">
-                    <h5>About Us</h5>
-                    <h2 class="text-blur">About</h2>
-                    <h2 class="area-title">HEO Eziokwu Foundation Organization</h2>
-                    <p>
-                        HEO Eziokwu Foundation organisation is dedicated to bridging the opportunity gap for less privileged communities, offering hope and resources that enable individuals to thrive. By addressing critical needs, we aim to create a foundation of support that empowers families to pursue better and more dignified lives. Our initiatives are tailored to connect families with the resources they deserve, ultimately strengthening entire communities and fostering long-term resilience.
 
-                    </p>
+                <div class="info">
+                    <h5>Housing</h5>
+                    <h2 class="text-blur">Housing</h2>
+<h2 class="area-title">HEO Eziokwu Foundation Organization</h2>
+<p>
+    HEO Eziokwu Foundation Organization is committed to addressing one of the most fundamental needs of individuals—safe and stable housing. We understand that access to quality housing is essential for the well-being and prosperity of individuals and families. Housing is more than just shelter; it is the foundation upon which families build their lives, pursue educational goals, and achieve financial independence.
+</p>
+<p>
+    At the HEO Eziokwu Foundation, we recognize the challenges faced by less privileged communities in securing affordable and decent housing. Whether it's overcoming the high cost of living, dealing with overcrowded and unsafe living conditions, or battling the lack of basic infrastructure, we are dedicated to providing practical solutions that promote long-term stability.
+</p>
+<p>
+    Our housing initiatives focus on providing families with access to secure, affordable homes, as well as supporting the creation of sustainable housing projects. We collaborate with local communities, governments, and other stakeholders to develop housing solutions that are both cost-effective and suitable for the needs of vulnerable populations. Through this collaborative approach, we aim to create neighborhoods that offer safety, dignity, and opportunity for all residents.
+</p>
+<p>
+    Beyond simply providing shelter, our housing programs aim to empower individuals by creating spaces where families can thrive. We focus on improving the quality of homes by offering resources for maintenance, access to utilities, and support for community-driven infrastructure projects. By ensuring that families have stable housing, we create the foundation for them to pursue education, employment, and better health outcomes.
+</p>
+<p>
+    The HEO Eziokwu Foundation is also focused on promoting long-term sustainability in housing by encouraging environmentally conscious building practices and improving energy efficiency. This not only reduces the cost of living but also contributes to the protection of the environment and the long-term viability of housing projects.
+</p>
+<p>
+    Through our housing initiatives, we are helping to rebuild communities and empower families to reach their full potential. Our work is centered around creating living environments that foster dignity, growth, and hope, ensuring that every family has access to a place they can call home.
+</p>
+
 
 
                     <a class="btn circle btn-theme border btn-md" href="#">Sponsor us</a>
@@ -231,9 +176,9 @@
                 </div>
             </div>
 
-            
 
-           
+
+
 
 
 
