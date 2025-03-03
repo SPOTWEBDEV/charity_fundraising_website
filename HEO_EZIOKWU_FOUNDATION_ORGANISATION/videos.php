@@ -51,8 +51,8 @@
             <i onclick="cancelVideos()" class="bi bi-x-lg"></i>
         </div>
 
-        <video style="width: 100%;" id="myVideo" width="100%">
-            <source src="<?php echo $domain ?>assets/img/myvideo.mp4" type="video/mp4">
+        <video controls  style="width: 100%;" id="myVideo" width="100%">
+            <source  src="<?php echo $domain ?>assets/img/myvideo.mp4" type="video/mp4">
         </video>
     </section>
 
@@ -61,12 +61,13 @@
         let videos = document.querySelector('.video-container > video');
 
         // Use oncanplay to make sure the video is ready
-        videos.oncanplay = function() {
-    console.log('Video is ready to play');
-    videos.muted = true;  // Mute the video to allow autoplay
-    videos.play();
-    videos.autoplay = true;
-}
+//         videos.oncanplay = function() {
+//     console.log('Video is ready to play');
+   
+//     videos.loop = true;  // Mute the video to allow autoplay
+//     videos.play();
+//     videos.autoplay = true;
+// }
 
 
         function cancelVideos() {
