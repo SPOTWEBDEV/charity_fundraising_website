@@ -92,7 +92,9 @@ include './server/payment/index.php';
                                             <h4 data-animation="animated slideInDown">HEO EZIOKWU FOUNDATION ORGANIZATION</h4>
                                             <p data-animation="animated slideInRight">Was Founded on the 12th of June 2011, by High Chief Okoh Emmanuel Henry,who's from Ako-Nike Community in Enugu State, Nigeria,
                                                 Heo Eziokwu Foundation is a dedicated non-profit organization committed to uplifting and empowering underprivileged families.</p>
-                                            <a data-animation="animated fadeInUp" class="btn circle d-none btn-theme border btn-md" href="#">Discover More</a>
+                                            <!-- <a data-animation="animated fadeInUp" class="btn circle d-none btn-theme border btn-md" href="#">Discover More</a> -->
+                                            <a class="btn circle btn-theme border btn-md" id="discoverBtn">Discover More</a>
+
                                         </div>
                                     </div>
                                 </div>
@@ -247,8 +249,8 @@ include './server/payment/index.php';
             <div class="wedo-items text-center">
                 <div class="row">
                     <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
+                    <div  class="single-item col-lg-4 col-md-6">
+                        <div style="height:520px;" class="item">
                             <i style="color: #3bcf93;" class="fas fa-graduation-cap"></i>
                             <h4>Education empowerment</h4>
                             <p>
@@ -262,9 +264,9 @@ include './server/payment/index.php';
 
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <i class="fas fa-heartbeat"></i>
+                    <div  class="single-item col-lg-4 col-md-6">
+                        <div style="height:520px;" class="item">
+                            <i style="color: #3bcf93;"class="fas fa-heartbeat"></i>
                             <h4>Healthcare Assistance </h4>
                             <p>
                                 Providing financial support to cover essential medical expenses, helping underprivileged individuals and families access the healthcare services they need to lead healthy, fulfilling lives.
@@ -275,8 +277,8 @@ include './server/payment/index.php';
                     <!-- End Single Item -->
                     <!-- Single Item -->
                     <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <i style="color: #3bcf93;" class="fas fa-house-user"></i>
+                        <div style="height:520px;" class="item">
+                            <i style="color: #3bcf93;" class="fas fa-user"></i>
                             <h4>Housing Support</h4>
                             <p>
                                 Offering safe and stable housing solutions for vulnerable members of our community, including widows and widowers. By providing secure living environments, we enable individuals to rebuild their lives with dignity and hope.
@@ -294,7 +296,7 @@ include './server/payment/index.php';
 
     <!-- Start Our Mission
     ============================================= -->
-    <div class="mission-area half-bg default-padding-bottom bg-gray">
+    <div class="mission-area half-bg default-padding-bottom bg-gray" style="padding:10px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 thumb-box">
@@ -353,7 +355,7 @@ include './server/payment/index.php';
                 <div class="row">
                     <!-- Single Item -->
                     <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
+                        <div style="height:400px;padding-bottom:20px" class="item">
                             <div class="thumb">
                                 <a href="#">
                                     <img src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
@@ -381,7 +383,7 @@ include './server/payment/index.php';
                     <!-- End Single Item -->
                     <!-- Single Item -->
                     <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
+                        <div style="height:400px;padding-bottom:20px"class="item">
                             <div class="thumb">
                                 <a href="#">
                                     <img src="<?php echo $domain ?>assets/img/football-5.jpg" alt="Thumb">
@@ -406,7 +408,7 @@ include './server/payment/index.php';
                     <!-- End Single Item -->
                     <!-- Single Item -->
                     <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
+                        <div style="height:600px;"class="item">
                             <div class="thumb">
                                 <a href="#">
                                     <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
@@ -492,9 +494,9 @@ include './server/payment/index.php';
     ============================================= -->
         <div class="event-area carousel-shadow default-padding bg-gray">
             <!-- Fixed Shape -->
-            <div class="shape-bottom-left">
+            <!-- <div class="shape-bottom-left">
                 <img src="<?php echo $domain ?>assets/img/8.jpg" alt="Shape">
-            </div>
+            </div> -->
             <!-- Fixed Shape -->
             <div class="container">
                 <div class="heading-left">
