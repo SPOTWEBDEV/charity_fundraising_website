@@ -15,7 +15,7 @@
         $id = mysqli_real_escape_string($connection, $id);
 
         // Prepare the delete query
-        $delete = mysqli_query($connection, "DELETE FROM services WHERE id = '$id'");
+        $delete = mysqli_query($connection, "DELETE FROM event WHERE id = '$id'");
 
         // Check if the query was successful
         if ($delete) {
