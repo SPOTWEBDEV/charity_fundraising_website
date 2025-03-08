@@ -4,13 +4,12 @@
         <img src="assets/img/footer-bg.png" alt="Shape">
     </div>
     <!-- Fixed Shape -->
-    <div class="container">
+    <div style="border:none ;box-shadow:none" class="container">
         <div class="f-items default-padding">
             <div class="row">
-                <div class="col-lg-4 col-md-6 item">
+                <div style="border:none ;box-shadow:none" class="col-lg-4 col-md-6 item">
                     <div class="f-item about">
-                        <img height="100px" src="<?php echo $domain ?>assets/img/logo.jpg
-" alt="Logo">
+                        <img height="100px" src="<?php echo $domain ?>assets/img/logo.jpg" alt="Logo">
                         <p>
                             The HEO Eziokwu Foundation is a dynamic organization dedicated to improving the lives of underprivileged communities. Through various initiatives, such as providing food, water, and educational resources, the foundation strives to bring positive change. With a focus on empowering the elderly and offering support for vulnerable groups, the foundation continues to uphold its mission of social responsibility and community development.
                         </p>
@@ -23,16 +22,16 @@
                 </div>
 
 
-                <div class="col-lg-3 col-md-6 item">
-                    <div class="f-item">
+                <div style="border:none ;box-shadow:none" class="col-lg-3 col-md-6 item">
+                    <div  class="f-item">
                         <h4 class="widget-title">Contact Info</h4>
                         <div class="address">
                             <ul>
                                 <li>
                                     <strong>Address:</strong> Elshaddai Plaza
-186 Ogui Road, China Town Bus Stop
-Enugu, Enugu State
-Nigeria
+                                    186 Ogui Road, China Town Bus Stop
+                                    Enugu, Enugu State
+                                    Nigeria
                                 </li>
 
                                 <li>
@@ -59,7 +58,7 @@ Nigeria
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>Copyright                                 <?php echo $siteemail ?> &copy; 2025. Designed by <a href="">SPOTWEBDEV</a></p>
+                    <p>Copyright <?php echo $siteemail ?> &copy; 2025. Designed by <a href="">SPOTWEBDEV</a></p>
                 </div>
                 <div class="col-md-6 text-right link">
                     <ul>

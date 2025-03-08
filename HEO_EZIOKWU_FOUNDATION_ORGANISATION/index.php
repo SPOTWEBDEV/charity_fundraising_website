@@ -167,7 +167,7 @@ include './server/payment/index.php';
                 <div class="col-lg-6 popular-causes">
                     <div class="causes-box">
                         <h4> <i class="fas fa-bolt"></i> Popular Causes</h4>
-                        <div class="item">
+                        <div style="display: flex;gap:10px;" class="item">
                             <div class="thumb">
                                 <img src="<?php echo $domain ?>assets/img/school-4.jpg" alt="Thumb">
                             </div>
@@ -189,7 +189,7 @@ include './server/payment/index.php';
                             </div> -->
                             </div>
                         </div>
-                        <div class="item">
+                        <div style="display: flex;gap:10px;" class="item">
                             <div class="thumb">
                                 <img src="<?php echo $domain ?>assets/img/9.jpg" alt="Thumb">
                             </div>
@@ -211,7 +211,7 @@ include './server/payment/index.php';
                             </div> -->
                             </div>
                         </div>
-                        <div class="item">
+                        <div style="display: flex;gap:10px;" class="item">
                             <div class="thumb">
                                 <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb">
                             </div>
@@ -414,9 +414,9 @@ include './server/payment/index.php';
                             <div class="thumb">
                                 <a href="#">
                                     <img src="<?php echo $domain ?>assets/img/football-5.jpg" alt="Thumb">
-                                    <div class="trend">
-                                        <i class="fas fa-bolt"></i> Trend
-                                    </div>
+                                    <!-- <div class="trend">
+                                        <i class="fas fa-bolt"></i> 
+                                    </div> -->
 
                                 </a>
                             </div>
@@ -654,6 +654,22 @@ include './server/payment/index.php';
                                 </div>
                             </div>
                             <!-- End Single Item  -->
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Amara Nwosu</h4>
+                                            <span>Mother & Entrepreneur</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        HEO Eziokwu Foundation gave me the opportunity to rebuild my life. Their support helped me start a small business, which now provides for my family. I am forever grateful for their kindness and commitment to uplifting others.
+                                    </p>
+                                </div>
+                            </div>
+
                             <!-- Single Item  -->
                             <div class="item">
                                 <div class="info">
@@ -685,6 +701,22 @@ include './server/payment/index.php';
                                     </p>
                                 </div>
                             </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Michael Adeyemi</h4>
+                                            <span>Teacher</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        The support from HEO Eziokwu Foundation has given my students a chance at a brighter future. Their dedication to education and community welfare is truly life-changing. I am proud to witness the impact they make every day.
+                                    </p>
+                                </div>
+                            </div>
+
                             <!-- End Single Item  -->
                         </div>
                     </div>
@@ -710,7 +742,7 @@ include './server/payment/index.php';
                             <p>
                                 See how our efforts are making a difference. From providing meals to building homes, we're committed to creating lasting change in communities.
                             </p>
-                            <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#">Explore All Projects <i class="fas fa-angle-right"></i></a>
+                            <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#"> <i class="fas fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>

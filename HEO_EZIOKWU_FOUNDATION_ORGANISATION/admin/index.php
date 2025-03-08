@@ -207,7 +207,7 @@ if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
                           </span> Registered Users And You can manage your website from
                           the action pane</p>
 
-                        <a href="all.php" class="btn btn-sm btn-outline-primary">See Users</a>
+                        <a href="book.php" class="btn btn-sm btn-outline-primary">ALL BOOKING</a>
                       </div>
                     </div>
                     <div class="col-sm-5 text-center text-sm-left">
