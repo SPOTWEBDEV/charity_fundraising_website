@@ -45,6 +45,33 @@ include './server/payment/index.php';
 
     <!-- ========== Google Fonts ========== -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .causes-items .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .single-item {
+            display: flex;
+            flex: 1;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info {
+            flex-grow: 1;
+        }
+    </style>
 
 </head>
 
@@ -56,9 +83,9 @@ include './server/payment/index.php';
     <?php include './include/nav.php' ?>
 
 
- 
 
-    
+
+
 
 
 
@@ -249,7 +276,7 @@ include './server/payment/index.php';
             <div class="wedo-items text-center">
                 <div class="row">
                     <!-- Single Item -->
-                    <div  class="single-item col-lg-4 col-md-6">
+                    <div class="single-item col-lg-4 col-md-6">
                         <div style="height:520px;" class="item">
                             <i style="color: #3bcf93;" class="fas fa-graduation-cap"></i>
                             <h4>Education empowerment</h4>
@@ -264,9 +291,9 @@ include './server/payment/index.php';
 
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div  class="single-item col-lg-4 col-md-6">
+                    <div class="single-item col-lg-4 col-md-6">
                         <div style="height:520px;" class="item">
-                            <i style="color: #3bcf93;"class="fas fa-heartbeat"></i>
+                            <i style="color: #3bcf93;" class="fas fa-heartbeat"></i>
                             <h4>Healthcare Assistance </h4>
                             <p>
                                 Providing financial support to cover essential medical expenses, helping underprivileged individuals and families access the healthcare services they need to lead healthy, fulfilling lives.
@@ -355,7 +382,7 @@ include './server/payment/index.php';
                 <div class="row">
                     <!-- Single Item -->
                     <div class="single-item col-lg-4 col-md-6">
-                        <div style="height:400px;padding-bottom:20px" class="item">
+                        <div style="" class="item">
                             <div class="thumb">
                                 <a href="#">
                                     <img src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
@@ -383,7 +410,7 @@ include './server/payment/index.php';
                     <!-- End Single Item -->
                     <!-- Single Item -->
                     <div class="single-item col-lg-4 col-md-6">
-                        <div style="height:400px;padding-bottom:20px"class="item">
+                        <div style="" class="item">
                             <div class="thumb">
                                 <a href="#">
                                     <img src="<?php echo $domain ?>assets/img/football-5.jpg" alt="Thumb">
@@ -408,7 +435,7 @@ include './server/payment/index.php';
                     <!-- End Single Item -->
                     <!-- Single Item -->
                     <div class="single-item col-lg-4 col-md-6">
-                        <div style="height:600px;"class="item">
+                        <div style="" class="item">
                             <div class="thumb">
                                 <a href="#">
                                     <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
@@ -869,7 +896,7 @@ include './server/payment/index.php';
                                         <p>
                                             We are making strides towards a brighter future, collaborating with local communities to promote educational opportunities and better living conditions.
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -898,7 +925,7 @@ include './server/payment/index.php';
                                         <p>
                                             Our Water Access initiative is helping underprivileged areas gain reliable access to clean drinking water, improving overall health and well-being.
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -927,7 +954,7 @@ include './server/payment/index.php';
                                         <p>
                                             Join us in the fight to ensure that every child receives quality education, as we work towards providing free learning resources in underserved regions.
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -963,7 +990,7 @@ include './server/payment/index.php';
 
             <script>
                 let discoverBtn = document.querySelectorAll('#discoverBtn')
-               
+
                 discoverBtn.forEach(el => {
                     el.onclick = function() {
 
@@ -971,8 +998,6 @@ include './server/payment/index.php';
 
                     }
                 })
-
-               
             </script>
 
 </body>
