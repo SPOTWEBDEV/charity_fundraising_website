@@ -27,7 +27,7 @@
                     <div class="social">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="https://www.facebook.com/share/15jBXHjvUm/">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
@@ -63,7 +63,7 @@
             <div class="container-full">
 
                 <!-- Start Atribute Navigation -->
-                <div class="attr-nav border-less">
+                <div style="padding-top:25px"class="attr-nav border-less">
                     <ul>
                         <li class="button"><a href="<?php echo $domain ?>payment/"><i class="fas fa-heart"></i> Donate</a></li>
                     </ul>
