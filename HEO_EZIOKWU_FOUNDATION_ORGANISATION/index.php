@@ -655,20 +655,6 @@ include './server/payment/index.php';
                             </div>
                             <!-- End Single Item  -->
 
-                            <div class="item">
-                                <div class="info">
-                                    <div class="top-info">
-                                        <i class="fas fa-quote-left"></i>
-                                        <div class="provider">
-                                            <h4>Amara Nwosu</h4>
-                                            <span>Mother & Entrepreneur</span>
-                                        </div>
-                                    </div>
-                                    <p>
-                                        HEO Eziokwu Foundation gave me the opportunity to rebuild my life. Their support helped me start a small business, which now provides for my family. I am forever grateful for their kindness and commitment to uplifting others.
-                                    </p>
-                                </div>
-                            </div>
 
                             <!-- Single Item  -->
                             <div class="item">
@@ -707,6 +693,113 @@ include './server/payment/index.php';
                                     <div class="top-info">
                                         <i class="fas fa-quote-left"></i>
                                         <div class="provider">
+                                            <h4>Amina Yusuf</h4>
+                                            <span>Small Business Owner</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        With their financial assistance, I was able to expand my business. Now, I can support my family and even create job opportunities for others in need.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Emeka Nwankwo</h4>
+                                            <span>Community Organizer</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Their food relief programs have drastically reduced hunger in our neighborhood. Their generosity has brought smiles to many faces.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Mercy Uzo</h4>
+                                            <span>High School Graduate</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Without their scholarship program, I wouldn’t have finished high school. Now, I have a bright future ahead, thanks to their generosity.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Gabriel Anene</h4>
+                                            <span>Social Worker</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        The work of HEO Eziokwu Foundation is truly remarkable. They have transformed the lives of so many families in need. I am honored to support their mission.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Nkechi Opara</h4>
+                                            <span>Artist</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Their arts and crafts program helped me turn my passion into a career. Now, I sell my artwork and inspire others to follow their dreams.
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="testimonial-items testimonial-carousel owl-carousel owl-theme">
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Amara Nwosu</h4>
+                                            <span>Mother & Entrepreneur</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        HEO Eziokwu Foundation gave me the opportunity to rebuild my life. Their support helped me start a small business, which now provides for my family. I am forever grateful for their kindness and commitment to uplifting others.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Single Item  -->
+
+                            <!-- End Single Item  -->
+                            <!-- Single Item  -->
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
                                             <h4>Michael Adeyemi</h4>
                                             <span>Teacher</span>
                                         </div>
@@ -717,11 +810,220 @@ include './server/payment/index.php';
                                 </div>
                             </div>
 
-                            <!-- End Single Item  -->
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Chinwe Uche</h4>
+                                            <span>Single Mother</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        HEO Eziokwu Foundation helped me start over. With their support, I can now provide food and education for my children. Their kindness has changed our lives forever.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Joseph Okorie</h4>
+                                            <span>Healthcare Worker</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Their healthcare programs have saved countless lives in our village. We now have access to free medical checkups and life-saving treatments.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Fatima Bello</h4>
+                                            <span>Widow</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        After my husband passed away, I struggled to make ends meet. The foundation stepped in and gave me a fresh start. I will forever be grateful.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Abdulrahman Musa</h4>
+                                            <span>Farmer</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Their agricultural support programs helped me increase my farm’s yield. Now, I can feed my family and contribute to food security in my village.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Janet Onu</h4>
+                                            <span>Nurse</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        The foundation provided essential medical supplies for our clinic. Thanks to their generosity, we can now save more lives.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Collins Okeke</h4>
+                                            <span>Entrepreneur</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Their business grants gave me the opportunity to expand my startup. I am now able to employ others and help my community grow economically.
+                                    </p>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="testimonial-items testimonial-carousel owl-carousel owl-theme">
+                            <!-- Single Item  -->
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Grace Okafor</h4>
+                                            <span>Beneficiary</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        HEO Eziokwu Foundation has been a blessing to me and my children. With their support, my kids are now in school, and we no longer worry about basic needs. I am forever grateful for their kindness and compassion.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Single Item  -->
+
+
+                            <!-- Single Item  -->
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Chinedu Eze</h4>
+                                            <span>Volunteer</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Volunteering with the foundation has been a life-changing experience. Seeing the smiles on the faces of families we've helped reminds me of the importance of giving back and being part of something bigger.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Samuel Eze</h4>
+                                            <span>Youth Mentor</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Thanks to the foundation, many young people in our community now have access to quality education and career opportunities. Their work is truly inspiring.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Blessing Anaba</h4>
+                                            <span>Student</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Before HEO Eziokwu Foundation stepped in, I had no hope of furthering my education. Now, I am studying to become a doctor and make a difference.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Okechukwu Dike</h4>
+                                            <span>Volunteer</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Working with HEO Eziokwu Foundation has been the most fulfilling experience of my life. Seeing the lives we impact daily is truly humbling.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Chidera Nnamdi</h4>
+                                            <span>Engineer</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Their vocational training programs helped me land my dream job. Today, I can provide for my family and give back to my community.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <i class="fas fa-quote-left"></i>
+                                        <div class="provider">
+                                            <h4>Esther Obi</h4>
+                                            <span>Orphan</span>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        HEO Eziokwu Foundation became my family when I had none. They provided me with shelter, education, and most importantly, love.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- End Testimonials Area -->
