@@ -83,7 +83,7 @@
                 <!-- End Header Navigation -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-menu">
+                <div style="padding-top:25px;padding-left:40px;" class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                       
                         

@@ -71,6 +71,16 @@ include './server/payment/index.php';
         .info {
             flex-grow: 1;
         }
+
+
+
+        .testimonial-items {
+            display: flex;
+            flex-direction: column;
+            /* Stack items vertically */
+            gap: 10px;
+            /* Adds spacing between items */
+        }
     </style>
 
 </head>
@@ -637,7 +647,7 @@ include './server/payment/index.php';
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="testimonial-items testimonial-carousel owl-carousel owl-theme">
+                        <div style="display: flex; flex-direction: column;" class="testimonial-items testimonial-carousel owl-carousel owl-theme">
                             <!-- Single Item  -->
                             <div class="item">
                                 <div class="info">
@@ -773,7 +783,7 @@ include './server/payment/index.php';
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="testimonial-items testimonial-carousel owl-carousel owl-theme">
+                        <div style="display: flex; flex-direction: column;" class="testimonial-items testimonial-carousel owl-carousel owl-theme">
 
                             <div class="item">
                                 <div class="info">
@@ -909,7 +919,7 @@ include './server/payment/index.php';
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="testimonial-items testimonial-carousel owl-carousel owl-theme">
+                        <div style="display: flex; flex-direction: column;" class="testimonial-items testimonial-carousel owl-carousel owl-theme">
                             <!-- Single Item  -->
                             <div class="item">
                                 <div class="info">
