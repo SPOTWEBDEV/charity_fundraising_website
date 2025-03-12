@@ -41,6 +41,13 @@
     <!-- ========== Google Fonts ========== -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- SweetAlert CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
+
+<!-- SweetAlert JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+
 </head>
 
 <body>
@@ -76,22 +83,40 @@
 
 
 
-    <?php 
-      if(isset($_POST['btn'])){
-         $name = $_POST['name'];
-         $email = $_POST['email'];
-         $phone = $_POST['phone'];
-         $message = $_POST['message'];
+   <?php
+if (isset($_POST['btn'])) {
+    $name    = $_POST['name'];
+    $email   = $_POST['email'];
+    $phone   = $_POST['phone'];
+    $message = $_POST['message'];
 
-         $query = mysqli_query($connection, "INSERT INTO `contact`(`name`, `email`, `phone`, `message`) VALUES ('$name','$email','$phone','$message')");
+    // Perform the database query
+    $query = mysqli_query($connection, "INSERT INTO contact(name, email, phone, message) VALUES ('$name','$email','$phone','$message')");
 
-         if($query){
-            echo "<script>alert('good')</script>";
-         }else{
-            echo "<script>alert('bad')</script>";
-         }
-      }
-    ?>
+    // Check the result of the query and show the corresponding SweetAlert message
+    if ($query) {
+        // Success: Show SweetAlert success message
+        echo "<script>
+                swal({
+                    title: 'Message Sent!',
+                    text: 'Your contact message has been successfully submitted. We will get back to you shortly.',
+                    icon: 'success',
+                    button: 'OK',
+                });
+              </script>";
+    } else {
+        // Error: Show SweetAlert error message
+        echo "<script>
+                swal({
+                    title: 'Submission Failed!',
+                    text: 'Something went wrong while submitting your message. Please try again later.',
+                    icon: 'error',
+                    button: 'OK',
+                });
+              </script>";
+    }
+}
+?>
     <!-- Start Contact 
     ============================================= -->
     <div class="contact-form-area default-padding">
@@ -172,6 +197,16 @@
                                 <p>
                                     Call Us
                                     <span><?php echo $sitenumber ?></span>
+                                    
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>
+                                    Contact on Facebook
+                                    <a href="https://www.facebook.com/share/15jBXHjvUm/
+"> <button style="background:#3BCF93
+"  class="btn btn-sm text-white rounded">join us on facebook</button></a>
                                     
                                 </p>
                             </li>
