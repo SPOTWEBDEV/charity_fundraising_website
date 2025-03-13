@@ -201,7 +201,7 @@ if (isset($_POST['btn'])) {
                                 </p>
                             </li>
                             <li>
-                                <i class="fas fa-mobile-alt"></i>
+                                <i class="fab fa-facebook"></i>
                                 <p>
                                     Contact on Facebook
                                     <a href="https://www.facebook.com/share/15jBXHjvUm/
