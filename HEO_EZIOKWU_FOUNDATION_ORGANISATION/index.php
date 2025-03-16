@@ -44,43 +44,48 @@ include './server/payment/index.php';
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!-- ========== Google Fonts ========== -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap"
+        rel="stylesheet">
     <style>
-        .causes-items .row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+    .causes-items .row {
+        display: flex;
+        flex-wrap: wrap;
+        /* gap: 20px; */
+    }
 
-        .single-item {
-            display: flex;
-            flex: 1;
-        }
+    .single-item {
+        display: flex;
+        flex: 1;
+    }
 
-        .item {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
-            border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        }
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
 
-        .info {
-            flex-grow: 1;
-        }
+    .info {
+        flex-grow: 1;
+    }
 
 
 
-        .testimonial-items {
-            display: flex;
-            flex-direction: column;
-            /* Stack items vertically */
-            gap: 10px;
-            /* Adds spacing between items */
-        }
+    .testimonial-items {
+        display: flex;
+        flex-direction: column;
+        /* Stack items vertically */
+        gap: 10px;
+        /* Adds spacing between items */
+    }
+
+    .owl-dots{
+        display:none
+    }
     </style>
 
 </head>
@@ -119,18 +124,24 @@ include './server/payment/index.php';
             <!-- Wrapper for slides -->
             <div class="carousel-inner carousel-zoom">
                 <div class="carousel-item active">
-                    <div class="slider-thumb bg-cover" style="background-image: url(<?php echo $domain ?>assets/img/7.jpg);"></div>
+                    <div class="slider-thumb bg-cover"
+                        style="background-image: url(<?php echo $domain ?>assets/img/7.jpg);"></div>
                     <div class="box-table">
                         <div class="box-cell shadow dark">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-9">
                                         <div class="content">
-                                            <h4 data-animation="animated slideInDown">HEO EZIOKWU FOUNDATION ORGANIZATION</h4>
-                                            <p data-animation="animated slideInRight">Was Founded on the 12th of June 2011, by High Chief Okoh Emmanuel Henry,who's from Ako-Nike Community in Enugu State, Nigeria,
-                                                Heo Eziokwu Foundation is a dedicated non-profit organization committed to uplifting and empowering underprivileged families.</p>
+                                            <h4 data-animation="animated slideInDown">HEO EZIOKWU FOUNDATION
+                                                ORGANIZATION</h4>
+                                            <p data-animation="animated slideInRight">Was Founded on the 12th of June
+                                                2011, by High Chief Okoh Emmanuel Henry,who's from Ako-Nike Community in
+                                                Enugu State, Nigeria,
+                                                Heo Eziokwu Foundation is a dedicated non-profit organization committed
+                                                to uplifting and empowering underprivileged families.</p>
                                             <!-- <a data-animation="animated fadeInUp" class="btn circle d-none btn-theme border btn-md" href="#">Discover More</a> -->
-                                            <a class="btn circle btn-theme border btn-md" id="discoverBtn">Discover More</a>
+                                            <a class="btn circle btn-theme border btn-md" id="discoverBtn">Discover
+                                                More</a>
 
                                         </div>
                                     </div>
@@ -140,7 +151,8 @@ include './server/payment/index.php';
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="slider-thumb bg-cover" style="background-image: url(<?php echo $domain ?>assets/img/8.jpg);"></div>
+                    <div class="slider-thumb bg-cover"
+                        style="background-image: url(<?php echo $domain ?>assets/img/8.jpg);"></div>
                     <div class="box-table">
                         <div class="box-cell shadow dark">
                             <div class="container">
@@ -148,11 +160,15 @@ include './server/payment/index.php';
                                     <div class="col-lg-9">
                                         <div class="content">
                                             <h4 data-animation="animated slideInDown">Get started today</h4>
-                                            <p data-animation="animated slideInRight">Guided by the principles of compassion and empowerment, we work to create meaningful, positive impacts by providing essential support in three key areas: Education, Healthcare, and Housing.
+                                            <p data-animation="animated slideInRight">Guided by the principles of
+                                                compassion and empowerment, we work to create meaningful, positive
+                                                impacts by providing essential support in three key areas: Education,
+                                                Healthcare, and Housing.
                                             </p>
 
 
-                                            <a class="btn circle btn-theme border btn-md" id="discoverBtn">Discover More</a>
+                                            <a class="btn circle btn-theme border btn-md" id="discoverBtn">Discover
+                                                More</a>
 
                                         </div>
                                     </div>
@@ -251,7 +267,12 @@ include './server/payment/index.php';
                     <h2 class="text-blur">About</h2>
                     <h2 class="area-title">HEO Eziokwu Foundation Organization</h2>
                     <p>
-                        HEO Eziokwu Foundation organisation is dedicated to bridging the opportunity gap for less privileged communities, offering hope and resources that enable individuals to thrive. By addressing critical needs, we aim to create a foundation of support that empowers families to pursue better and more dignified lives. Our initiatives are tailored to connect families with the resources they deserve, ultimately strengthening entire communities and fostering long-term resilience.
+                        HEO Eziokwu Foundation organisation is dedicated to bridging the opportunity gap for less
+                        privileged communities, offering hope and resources that enable individuals to thrive. By
+                        addressing critical needs, we aim to create a foundation of support that empowers families to
+                        pursue better and more dignified lives. Our initiatives are tailored to connect families with
+                        the resources they deserve, ultimately strengthening entire communities and fostering long-term
+                        resilience.
 
                     </p>
 
@@ -284,48 +305,43 @@ include './server/payment/index.php';
         </div>
         <div class="container">
             <div class="wedo-items text-center">
-                <div class="row">
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div style="height:520px;" class="item">
-                            <i style="color: #3bcf93;" class="fas fa-graduation-cap"></i>
-                            <h4>Education empowerment</h4>
-                            <p>
-                                Supporting the education of over 500,000 students, from primary to university level, by covering tuition fees and supplying critical learning resources such as textbooks, exercise books, classroom furniture, smart boards, and other essential materials. Our aim is to ensure that every child has the resources needed to excel academically and reach their full potential.
+            <div class="container">
+    <div class="row">
+        <!-- Single Item -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="item" style="height: 520px; display: flex; flex-direction: column; justify-content: space-between;">
+                <i style="color: #3bcf93;" class="fas fa-graduation-cap fa-3x"></i>
+                <h4>Education Empowerment</h4>
+                <p>
+                    Supporting the education of over 500,000 students, from primary to university level, by covering tuition fees and supplying critical learning resources such as textbooks, exercise books, classroom furniture, smart boards, and other essential materials. Our aim is to ensure that every child has the resources needed to excel academically and reach their full potential.
+                </p>
+            </div>
+        </div>
 
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
+        <!-- Single Item -->
+        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="item" style="height: 520px; display: flex; flex-direction: column; justify-content: space-between;">
+                <i style="color: #3bcf93;" class="fas fa-heartbeat fa-3x"></i>
+                <h4>Healthcare Assistance</h4>
+                <p>
+                    Providing financial support to cover essential medical expenses, helping underprivileged individuals and families access the healthcare services they need to lead healthy, fulfilling lives.
+                </p>
+            </div>
+        </div>
 
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div style="height:520px;" class="item">
-                            <i style="color: #3bcf93;" class="fas fa-heartbeat"></i>
-                            <h4>Healthcare Assistance </h4>
-                            <p>
-                                Providing financial support to cover essential medical expenses, helping underprivileged individuals and families access the healthcare services they need to lead healthy, fulfilling lives.
+        <!-- Single Item -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="item" style="height: 520px; display: flex; flex-direction: column; justify-content: space-between;">
+                <i style="color: #3bcf93;" class="fas fa-user fa-3x"></i>
+                <h4>Housing Support</h4>
+                <p>
+                    Offering safe and stable housing solutions for vulnerable members of our community, including widows and widowers. By providing secure living environments, we enable individuals to rebuild their lives with dignity and hope.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div style="height:520px;" class="item">
-                            <i style="color: #3bcf93;" class="fas fa-user"></i>
-                            <h4>Housing Support</h4>
-                            <p>
-                                Offering safe and stable housing solutions for vulnerable members of our community, including widows and widowers. By providing secure living environments, we enable individuals to rebuild their lives with dignity and hope.
-
-
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>
             </div>
         </div>
     </div>
@@ -352,7 +368,10 @@ include './server/payment/index.php';
                     <h2 class="text-blur">Mission</h2>
                     <h2 class="area-title">We believe that we can save more lifes with you.</h2>
                     <p>
-                        Our mission is to empower disadvantaged families by providing essential resources and sustained support in education, healthcare, and housing. Heo Eziokwu Foundation organisation is dedicated to building a society in Africa where everyone, regardless of their background, has a fair chance to succeed and a brighter future to look forward to.
+                        Our mission is to empower disadvantaged families by providing essential resources and sustained
+                        support in education, healthcare, and housing. Heo Eziokwu Foundation organisation is dedicated
+                        to building a society in Africa where everyone, regardless of their background, has a fair
+                        chance to succeed and a brighter future to look forward to.
 
 
                     </p>
@@ -379,9 +398,11 @@ include './server/payment/index.php';
                     </div>
                     <div class="col-lg-6 right-info">
                         <p>
-                            Join us in supporting vital causes that provide education, healthcare, and housing to underprivileged families, helping them build better futures.
+                            Join us in supporting vital causes that provide education, healthcare, and housing to
+                            underprivileged families, helping them build better futures.
                         </p>
-                        <a class="btn d-none circle btn-md btn-gradient wow fadeInUp" href="./event/">View All <i class="fas fa-angle-right"></i></a>
+                        <a class="btn d-none circle btn-md btn-gradient wow fadeInUp" href="./event/">View All <i
+                                class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
 
@@ -391,7 +412,7 @@ include './server/payment/index.php';
             <div class="causes-items">
                 <div class="row">
                     <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div style="" class="item">
                             <div class="thumb">
                                 <a href="#">
@@ -404,7 +425,8 @@ include './server/payment/index.php';
                                     <a href="#">Education empowerment</a>
                                 </h4>
                                 <p>
-                                    Our mission is to provide quality education to underserved communities, empowering individuals to break the cycle of poverty and achieve their full potential.
+                                    Our mission is to provide quality education to underserved communities, empowering
+                                    individuals to break the cycle of poverty and achieve their full potential.
                                 </p>
                                 <!-- <div class="progress-box">
                                     <div class="progress">
@@ -419,11 +441,12 @@ include './server/payment/index.php';
                     </div>
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
+                    <div class=" col-lg-4 col-md-6">
                         <div style="" class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="<?php echo $domain ?>assets/img/football-5.jpg" alt="Thumb">
+                                    <img style="width:fit-content; "
+                                        src="<?php echo $domain ?>assets/img/football-5.jpg" alt="Thumb">
                                     <!-- <div class="trend">
                                         <i class="fas fa-bolt"></i> 
                                     </div> -->
@@ -435,7 +458,8 @@ include './server/payment/index.php';
                                     <a href="#">Housing Support for Vulnerable Families</a>
                                 </h4>
                                 <p>
-                                    Helping to provide safe and stable housing for vulnerable families, including widows and orphans, enabling them to rebuild their lives with dignity and security.
+                                    Helping to provide safe and stable housing for vulnerable families, including widows
+                                    and orphans, enabling them to rebuild their lives with dignity and security.
                                 </p>
 
 
@@ -444,7 +468,7 @@ include './server/payment/index.php';
                     </div>
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
+                    <div class=" col-lg-4 col-md-6">
                         <div style="" class="item">
                             <div class="thumb">
                                 <a href="#">
@@ -457,7 +481,9 @@ include './server/payment/index.php';
                                     <a href="#">Healthcare Assistance for All</a>
                                 </h4>
                                 <p>
-                                    Providing essential medical support and healthcare services to underprivileged communities, ensuring everyone has access to the care they need to lead healthy lives.
+                                    Providing essential medical support and healthcare services to underprivileged
+                                    communities, ensuring everyone has access to the care they need to lead healthy
+                                    lives.
                                 </p>
 
                                 <div class="progress-box">
@@ -485,15 +511,17 @@ include './server/payment/index.php';
                     <div class="col-lg-8 offset-lg-2">
                         <h5>Become a Volunteer</h5>
                         <h2 class="text-blur">Volunteer with Us</h2>
-                        <h2 class="area-title">Join us in empowering communities through education, healthcare, and housing support.</h2>
+                        <h2 class="area-title">Join us in empowering communities through education, healthcare, and
+                            housing support.</h2>
                         <p>
-                            Your support can help us create lasting change. By becoming a volunteer, you’ll be contributing to the well-being of underprivileged families around the world.
+                            Your support can help us create lasting change. By becoming a volunteer, you’ll be
+                            contributing to the well-being of underprivileged families around the world.
                         </p>
 
                         <style>
-                            .nice-select {
-                                display: none
-                            }
+                        .nice-select {
+                            display: none
+                        }
                         </style>
                         <?php
 
@@ -546,9 +574,10 @@ include './server/payment/index.php';
                         </div>
                         <div class="col-lg-6 right-info">
                             <p>
-                                Explore opportunities to create impact through events focused on healthcare, sports, and education. Together, we can uplift lives and transform communities.
+                                Explore opportunities to create impact through events focused on healthcare, sports, and
+                                education. Together, we can uplift lives and transform communities.
                             </p>
-                            <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#">View All <i class="fas fa-angle-right"></i></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -569,9 +598,18 @@ include './server/payment/index.php';
                                 <a href="#">Healthcare Camps</a>
                             </h4>
                             <p>
-                                Join us in offering free healthcare services to communities in need, ensuring they have access to essential medical care.
-                            </p>
-                            <a class="btn circle btn-theme border btn-md" href="#">Know More</a>
+
+
+                                Healthcare camps are organized events aimed at providing free or low-cost medical
+                                services to underserved communities, especially those with limited access to healthcare
+                                facilities. These camps are often set up in rural or remote areas, where healthcare
+                                resources are scarce or difficult to reach. The primary goal is to deliver essential
+                                medical care, offer preventive health screenings, and raise awareness about health
+                                issues. 
+                               
+
+                               
+
                         </div>
                     </div>
                     <!-- End Single Item  -->
@@ -589,9 +627,17 @@ include './server/payment/index.php';
                                 <a href="#">Charity Football Matches</a>
                             </h4>
                             <p>
-                                Participate in thrilling football matches where every goal contributes to supporting housing and educational projects.
+
+
+                                Charity football matches have become a popular and meaningful way for people to support
+                                various causes while enjoying the excitement of the beautiful game. These events are
+                                often organized with the goal of raising funds for charitable organizations, supporting
+                                local communities, or raising awareness for important social issues.
+                              
+
+                               
                             </p>
-                            <a class="btn circle btn-theme border btn-md" href="#">Know More</a>
+
                         </div>
                     </div>
                     <!-- End Single Item  -->
@@ -609,9 +655,21 @@ include './server/payment/index.php';
                                 <a href="#">Educational Empowerment Workshops</a>
                             </h4>
                             <p>
-                                Empower young minds through workshops aimed at improving access to quality education and life skills training.
+
+
+                                Educational empowerment workshops are programs designed to provide individuals with the
+                                knowledge, skills, and confidence needed to improve their personal and professional
+                                lives. These workshops are often focused on specific areas such as literacy, financial
+                                management, career development, leadership, or social skills. The goal is to equip
+                                participants with the tools they need to succeed and break down barriers to education
+                                and economic opportunities.
+                      
+
+                            
+
+                             
                             </p>
-                            <a class="btn circle btn-theme border btn-md" href="#">Know More</a>
+
                         </div>
                     </div>
                     <!-- End Single Item  -->
@@ -647,7 +705,8 @@ include './server/payment/index.php';
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div style="display: flex; flex-direction: column;" class="testimonial-items testimonial-carousel owl-carousel owl-theme">
+                        <div style="display: flex; flex-direction: column;"
+                            class="testimonial-items testimonial-carousel owl-carousel owl-theme">
                             <!-- Single Item  -->
                             <div class="item">
                                 <div class="info">
@@ -659,7 +718,9 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        HEO Eziokwu Foundation has been a blessing to me and my children. With their support, my kids are now in school, and we no longer worry about basic needs. I am forever grateful for their kindness and compassion.
+                                        HEO Eziokwu Foundation has been a blessing to me and my children. With their
+                                        support, my kids are now in school, and we no longer worry about basic needs. I
+                                        am forever grateful for their kindness and compassion.
                                     </p>
                                 </div>
                             </div>
@@ -677,7 +738,9 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        Volunteering with the foundation has been a life-changing experience. Seeing the smiles on the faces of families we've helped reminds me of the importance of giving back and being part of something bigger.
+                                        Volunteering with the foundation has been a life-changing experience. Seeing the
+                                        smiles on the faces of families we've helped reminds me of the importance of
+                                        giving back and being part of something bigger.
                                     </p>
                                 </div>
                             </div>
@@ -693,7 +756,9 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        HEO Eziokwu Foundation has transformed our community through education and healthcare support. They are truly making a difference and helping us build a brighter future for everyone.
+                                        HEO Eziokwu Foundation has transformed our community through education and
+                                        healthcare support. They are truly making a difference and helping us build a
+                                        brighter future for everyone.
                                     </p>
                                 </div>
                             </div>
@@ -708,7 +773,8 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        With their financial assistance, I was able to expand my business. Now, I can support my family and even create job opportunities for others in need.
+                                        With their financial assistance, I was able to expand my business. Now, I can
+                                        support my family and even create job opportunities for others in need.
                                     </p>
                                 </div>
                             </div>
@@ -723,7 +789,8 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        Their food relief programs have drastically reduced hunger in our neighborhood. Their generosity has brought smiles to many faces.
+                                        Their food relief programs have drastically reduced hunger in our neighborhood.
+                                        Their generosity has brought smiles to many faces.
                                     </p>
                                 </div>
                             </div>
@@ -738,7 +805,8 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        Without their scholarship program, I wouldn’t have finished high school. Now, I have a bright future ahead, thanks to their generosity.
+                                        Without their scholarship program, I wouldn’t have finished high school. Now, I
+                                        have a bright future ahead, thanks to their generosity.
                                     </p>
                                 </div>
                             </div>
@@ -753,7 +821,8 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        The work of HEO Eziokwu Foundation is truly remarkable. They have transformed the lives of so many families in need. I am honored to support their mission.
+                                        The work of HEO Eziokwu Foundation is truly remarkable. They have transformed
+                                        the lives of so many families in need. I am honored to support their mission.
                                     </p>
                                 </div>
                             </div>
@@ -768,7 +837,8 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        Their arts and crafts program helped me turn my passion into a career. Now, I sell my artwork and inspire others to follow their dreams.
+                                        Their arts and crafts program helped me turn my passion into a career. Now, I
+                                        sell my artwork and inspire others to follow their dreams.
                                     </p>
                                 </div>
                             </div>
@@ -780,10 +850,11 @@ include './server/payment/index.php';
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container mt-2">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div style="display: flex; flex-direction: column;" class="testimonial-items testimonial-carousel owl-carousel owl-theme">
+                        <div style="display: flex; flex-direction: column;"
+                            class="testimonial-items testimonial-carousel owl-carousel owl-theme">
 
                             <div class="item">
                                 <div class="info">
@@ -795,7 +866,9 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        HEO Eziokwu Foundation gave me the opportunity to rebuild my life. Their support helped me start a small business, which now provides for my family. I am forever grateful for their kindness and commitment to uplifting others.
+                                        HEO Eziokwu Foundation gave me the opportunity to rebuild my life. Their support
+                                        helped me start a small business, which now provides for my family. I am forever
+                                        grateful for their kindness and commitment to uplifting others.
                                     </p>
                                 </div>
                             </div>
@@ -815,7 +888,9 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        The support from HEO Eziokwu Foundation has given my students a chance at a brighter future. Their dedication to education and community welfare is truly life-changing. I am proud to witness the impact they make every day.
+                                        The support from HEO Eziokwu Foundation has given my students a chance at a
+                                        brighter future. Their dedication to education and community welfare is truly
+                                        life-changing. I am proud to witness the impact they make every day.
                                     </p>
                                 </div>
                             </div>
@@ -830,7 +905,9 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        HEO Eziokwu Foundation helped me start over. With their support, I can now provide food and education for my children. Their kindness has changed our lives forever.
+                                        HEO Eziokwu Foundation helped me start over. With their support, I can now
+                                        provide food and education for my children. Their kindness has changed our lives
+                                        forever.
                                     </p>
                                 </div>
                             </div>
@@ -845,7 +922,8 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        Their healthcare programs have saved countless lives in our village. We now have access to free medical checkups and life-saving treatments.
+                                        Their healthcare programs have saved countless lives in our village. We now have
+                                        access to free medical checkups and life-saving treatments.
                                     </p>
                                 </div>
                             </div>
@@ -860,7 +938,8 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        After my husband passed away, I struggled to make ends meet. The foundation stepped in and gave me a fresh start. I will forever be grateful.
+                                        After my husband passed away, I struggled to make ends meet. The foundation
+                                        stepped in and gave me a fresh start. I will forever be grateful.
                                     </p>
                                 </div>
                             </div>
@@ -875,7 +954,8 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        Their agricultural support programs helped me increase my farm’s yield. Now, I can feed my family and contribute to food security in my village.
+                                        Their agricultural support programs helped me increase my farm’s yield. Now, I
+                                        can feed my family and contribute to food security in my village.
                                     </p>
                                 </div>
                             </div>
@@ -890,7 +970,8 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        The foundation provided essential medical supplies for our clinic. Thanks to their generosity, we can now save more lives.
+                                        The foundation provided essential medical supplies for our clinic. Thanks to
+                                        their generosity, we can now save more lives.
                                     </p>
                                 </div>
                             </div>
@@ -905,7 +986,8 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        Their business grants gave me the opportunity to expand my startup. I am now able to employ others and help my community grow economically.
+                                        Their business grants gave me the opportunity to expand my startup. I am now
+                                        able to employ others and help my community grow economically.
                                     </p>
                                 </div>
                             </div>
@@ -916,10 +998,11 @@ include './server/payment/index.php';
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container mt-2">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div style="display: flex; flex-direction: column;" class="testimonial-items testimonial-carousel owl-carousel owl-theme">
+                        <div style="display: flex; flex-direction: column;"
+                            class="testimonial-items testimonial-carousel owl-carousel owl-theme">
                             <!-- Single Item  -->
                             <div class="item">
                                 <div class="info">
@@ -931,7 +1014,9 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        HEO Eziokwu Foundation has been a blessing to me and my children. With their support, my kids are now in school, and we no longer worry about basic needs. I am forever grateful for their kindness and compassion.
+                                        HEO Eziokwu Foundation has been a blessing to me and my children. With their
+                                        support, my kids are now in school, and we no longer worry about basic needs. I
+                                        am forever grateful for their kindness and compassion.
                                     </p>
                                 </div>
                             </div>
@@ -949,7 +1034,9 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        Volunteering with the foundation has been a life-changing experience. Seeing the smiles on the faces of families we've helped reminds me of the importance of giving back and being part of something bigger.
+                                        Volunteering with the foundation has been a life-changing experience. Seeing the
+                                        smiles on the faces of families we've helped reminds me of the importance of
+                                        giving back and being part of something bigger.
                                     </p>
                                 </div>
                             </div>
@@ -964,7 +1051,8 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        Thanks to the foundation, many young people in our community now have access to quality education and career opportunities. Their work is truly inspiring.
+                                        Thanks to the foundation, many young people in our community now have access to
+                                        quality education and career opportunities. Their work is truly inspiring.
                                     </p>
                                 </div>
                             </div>
@@ -979,7 +1067,8 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        Before HEO Eziokwu Foundation stepped in, I had no hope of furthering my education. Now, I am studying to become a doctor and make a difference.
+                                        Before HEO Eziokwu Foundation stepped in, I had no hope of furthering my
+                                        education. Now, I am studying to become a doctor and make a difference.
                                     </p>
                                 </div>
                             </div>
@@ -994,7 +1083,8 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        Working with HEO Eziokwu Foundation has been the most fulfilling experience of my life. Seeing the lives we impact daily is truly humbling.
+                                        Working with HEO Eziokwu Foundation has been the most fulfilling experience of
+                                        my life. Seeing the lives we impact daily is truly humbling.
                                     </p>
                                 </div>
                             </div>
@@ -1009,7 +1099,8 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        Their vocational training programs helped me land my dream job. Today, I can provide for my family and give back to my community.
+                                        Their vocational training programs helped me land my dream job. Today, I can
+                                        provide for my family and give back to my community.
                                     </p>
                                 </div>
                             </div>
@@ -1024,7 +1115,8 @@ include './server/payment/index.php';
                                         </div>
                                     </div>
                                     <p>
-                                        HEO Eziokwu Foundation became my family when I had none. They provided me with shelter, education, and most importantly, love.
+                                        HEO Eziokwu Foundation became my family when I had none. They provided me with
+                                        shelter, education, and most importantly, love.
                                     </p>
                                 </div>
                             </div>
@@ -1052,9 +1144,10 @@ include './server/payment/index.php';
                         </div>
                         <div class="col-lg-6 right-info">
                             <p>
-                                See how our efforts are making a difference. From providing meals to building homes, we're committed to creating lasting change in communities.
+                                See how our efforts are making a difference. From providing meals to building homes,
+                                we're committed to creating lasting change in communities.
                             </p>
-                            <a class="btn circle btn-md btn-gradient wow fadeInUp" href="#"> <i class="fas fa-angle-right"></i></a>
+
                         </div>
                     </div>
                 </div>
@@ -1164,30 +1257,30 @@ include './server/payment/index.php';
                         <!-- End Single Item -->
                         <!-- Single Item -->
                         <style>
+                        .image-grid {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            gap: 16px;
+                            /* Space between items */
+                        }
+
+                        .single-item {
+                            width: 100%;
+                            /* Ensure each item fills the column */
+                        }
+
+                        .single-item img {
+                            height: 100%;
+                        }
+
+                        @media(max-width:700px) {
                             .image-grid {
-                                display: grid;
-                                grid-template-columns: repeat(2, 1fr);
-                                gap: 16px;
-                                /* Space between items */
-                            }
 
-                            .single-item {
-                                width: 100%;
-                                /* Ensure each item fills the column */
-                            }
-
-                            .single-item img {
-                                height: 400px;
-                            }
-
-                            @media(max-width:700px) {
-                                .image-grid {
-
-                                    grid-template-columns: repeat(1, 1fr);
-
-                                }
+                                grid-template-columns: repeat(1, 1fr);
 
                             }
+
+                        }
                         </style>
                     </div>
                 </div>
@@ -1217,7 +1310,7 @@ include './server/payment/index.php';
                     <div class="blog-items">
                         <div class="row">
                             <!-- Single Item -->
-                            <div class="single-item col-lg-4 col-md-6">
+                            <div class=" col-lg-4 col-md-6">
                                 <div class="item">
                                     <div class="thumb">
                                         <a href="blog-single-with-sidebar.html">
@@ -1229,7 +1322,8 @@ include './server/payment/index.php';
                                     </div>
                                     <div class="info">
                                         <h4>
-                                            <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation Partners with Local Communities</a>
+                                            <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation Partners with
+                                                Local Communities</a>
                                         </h4>
                                         <div class="meta">
                                             <ul>
@@ -1238,7 +1332,9 @@ include './server/payment/index.php';
                                             </ul>
                                         </div>
                                         <p>
-                                            We are making strides towards a brighter future, collaborating with local communities to promote educational opportunities and better living conditions.
+                                            We are making strides towards a brighter future, collaborating with local
+                                            communities to promote educational opportunities and better living
+                                            conditions.
                                         </p>
 
                                     </div>
@@ -1246,7 +1342,7 @@ include './server/payment/index.php';
                             </div>
                             <!-- End Single Item -->
                             <!-- Single Item -->
-                            <div class="single-item col-lg-4 col-md-6">
+                            <div class=" col-lg-4 col-md-6">
                                 <div class="item">
                                     <div class="thumb">
                                         <a href="blog-single-with-sidebar.html">
@@ -1258,7 +1354,8 @@ include './server/payment/index.php';
                                     </div>
                                     <div class="info">
                                         <h4>
-                                            <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation's Water Access Project</a>
+                                            <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation's Water
+                                                Access Project</a>
                                         </h4>
                                         <div class="meta">
                                             <ul>
@@ -1267,7 +1364,8 @@ include './server/payment/index.php';
                                             </ul>
                                         </div>
                                         <p>
-                                            Our Water Access initiative is helping underprivileged areas gain reliable access to clean drinking water, improving overall health and well-being.
+                                            Our Water Access initiative is helping underprivileged areas gain reliable
+                                            access to clean drinking water, improving overall health and well-being.
                                         </p>
 
                                     </div>
@@ -1275,7 +1373,7 @@ include './server/payment/index.php';
                             </div>
                             <!-- End Single Item -->
                             <!-- Single Item -->
-                            <div class="single-item col-lg-4 col-md-6">
+                            <div class=" col-lg-4 col-md-6">
                                 <div class="item">
                                     <div class="thumb">
                                         <a href="blog-single-with-sidebar.html">
@@ -1287,7 +1385,8 @@ include './server/payment/index.php';
                                     </div>
                                     <div class="info">
                                         <h4>
-                                            <a href="blog-single-with-sidebar.html">Empowering the Next Generation: Education for All</a>
+                                            <a href="blog-single-with-sidebar.html">Empowering the Next Generation:
+                                                Education for All</a>
                                         </h4>
                                         <div class="meta">
                                             <ul>
@@ -1296,7 +1395,8 @@ include './server/payment/index.php';
                                             </ul>
                                         </div>
                                         <p>
-                                            Join us in the fight to ensure that every child receives quality education, as we work towards providing free learning resources in underserved regions.
+                                            Join us in the fight to ensure that every child receives quality education,
+                                            as we work towards providing free learning resources in underserved regions.
                                         </p>
 
                                     </div>
@@ -1333,15 +1433,15 @@ include './server/payment/index.php';
 
 
             <script>
-                let discoverBtn = document.querySelectorAll('#discoverBtn')
+            let discoverBtn = document.querySelectorAll('#discoverBtn')
 
-                discoverBtn.forEach(el => {
-                    el.onclick = function() {
+            discoverBtn.forEach(el => {
+                el.onclick = function() {
 
-                        window.location.href = 'videos.php'
+                    window.location.href = 'videos.php'
 
-                    }
-                })
+                }
+            })
             </script>
 
 </body>
