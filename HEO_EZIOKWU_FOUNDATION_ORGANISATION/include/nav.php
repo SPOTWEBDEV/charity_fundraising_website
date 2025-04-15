@@ -100,6 +100,14 @@
                         <li>
                             <a href="<?php echo $domain ?>contact">Contact</a>
                         </li>
+
+                        <li>
+                            <a href="<?php echo $domain ?>blog">Blog</a>
+                        </li>
+
+                        <li>
+                            <a href="<?php echo $domain ?>about">About Us</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
