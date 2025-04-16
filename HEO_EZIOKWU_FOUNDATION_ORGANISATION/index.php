@@ -47,45 +47,45 @@ include './server/payment/index.php';
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap"
         rel="stylesheet">
     <style>
-    .causes-items .row {
-        display: flex;
-        flex-wrap: wrap;
-        /* gap: 20px; */
-    }
+        .causes-items .row {
+            display: flex;
+            flex-wrap: wrap;
+            /* gap: 20px; */
+        }
 
-    .single-item {
-        display: flex;
-        flex: 1;
-    }
+        .single-item {
+            display: flex;
+            flex: 1;
+        }
 
-    .item {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-        border: 1px solid #ddd;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    }
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-    .info {
-        flex-grow: 1;
-    }
+        .info {
+            flex-grow: 1;
+        }
 
 
 
-    .testimonial-items {
-        display: flex;
-        flex-direction: column;
-        /* Stack items vertically */
-        gap: 10px;
-        /* Adds spacing between items */
-    }
+        .testimonial-items {
+            display: flex;
+            flex-direction: column;
+            /* Stack items vertically */
+            gap: 10px;
+            /* Adds spacing between items */
+        }
 
-    .owl-dots{
-        display:none
-    }
+        .owl-dots {
+            display: none
+        }
     </style>
 
 </head>
@@ -305,42 +305,42 @@ include './server/payment/index.php';
         </div>
         <div class="container">
             <div class="wedo-items text-center">
-            <div class="container">
-    <div class="row">
-        <!-- Single Item -->
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="item" style="height: 520px; display: flex; flex-direction: column; justify-content: space-between;">
-                <i style="color: #3bcf93;" class="fas fa-graduation-cap fa-3x"></i>
-                <h4>Education Empowerment</h4>
-                <p>
-                    Supporting the education of over 500,000 students, from primary to university level, by covering tuition fees and supplying critical learning resources such as textbooks, exercise books, classroom furniture, smart boards, and other essential materials. Our aim is to ensure that every child has the resources needed to excel academically and reach their full potential.
-                </p>
-            </div>
-        </div>
+                <div class="container">
+                    <div class="row">
+                        <!-- Single Item -->
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="item" style="height: 520px; display: flex; flex-direction: column; justify-content: space-between;">
+                                <i style="color: #3bcf93;" class="fas fa-graduation-cap fa-3x"></i>
+                                <h4>Education Empowerment</h4>
+                                <p>
+                                    Supporting the education of over 500,000 students, from primary to university level, by covering tuition fees and supplying critical learning resources such as textbooks, exercise books, classroom furniture, smart boards, and other essential materials. Our aim is to ensure that every child has the resources needed to excel academically and reach their full potential.
+                                </p>
+                            </div>
+                        </div>
 
-        <!-- Single Item -->
-        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="item" style="height: 520px; display: flex; flex-direction: column; justify-content: space-between;">
-                <i style="color: #3bcf93;" class="fas fa-heartbeat fa-3x"></i>
-                <h4>Healthcare Assistance</h4>
-                <p>
-                    Providing financial support to cover essential medical expenses, helping underprivileged individuals and families access the healthcare services they need to lead healthy, fulfilling lives.
-                </p>
-            </div>
-        </div>
+                        <!-- Single Item -->
+                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="item" style="height: 520px; display: flex; flex-direction: column; justify-content: space-between;">
+                                <i style="color: #3bcf93;" class="fas fa-heartbeat fa-3x"></i>
+                                <h4>Healthcare Assistance</h4>
+                                <p>
+                                    Providing financial support to cover essential medical expenses, helping underprivileged individuals and families access the healthcare services they need to lead healthy, fulfilling lives.
+                                </p>
+                            </div>
+                        </div>
 
-        <!-- Single Item -->
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="item" style="height: 520px; display: flex; flex-direction: column; justify-content: space-between;">
-                <i style="color: #3bcf93;" class="fas fa-user fa-3x"></i>
-                <h4>Housing Support</h4>
-                <p>
-                    Offering safe and stable housing solutions for vulnerable members of our community, including widows and widowers. By providing secure living environments, we enable individuals to rebuild their lives with dignity and hope.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
+                        <!-- Single Item -->
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="item" style="height: 520px; display: flex; flex-direction: column; justify-content: space-between;">
+                                <i style="color: #3bcf93;" class="fas fa-user fa-3x"></i>
+                                <h4>Housing Support</h4>
+                                <p>
+                                    Offering safe and stable housing solutions for vulnerable members of our community, including widows and widowers. By providing secure living environments, we enable individuals to rebuild their lives with dignity and hope.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -519,9 +519,9 @@ include './server/payment/index.php';
                         </p>
 
                         <style>
-                        .nice-select {
-                            display: none
-                        }
+                            .nice-select {
+                                display: none
+                            }
                         </style>
                         <?php
 
@@ -577,7 +577,7 @@ include './server/payment/index.php';
                                 Explore opportunities to create impact through events focused on healthcare, sports, and
                                 education. Together, we can uplift lives and transform communities.
                             </p>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -605,10 +605,10 @@ include './server/payment/index.php';
                                 facilities. These camps are often set up in rural or remote areas, where healthcare
                                 resources are scarce or difficult to reach. The primary goal is to deliver essential
                                 medical care, offer preventive health screenings, and raise awareness about health
-                                issues. 
-                               
+                                issues.
 
-                               
+
+
 
                         </div>
                     </div>
@@ -633,9 +633,9 @@ include './server/payment/index.php';
                                 various causes while enjoying the excitement of the beautiful game. These events are
                                 often organized with the goal of raising funds for charitable organizations, supporting
                                 local communities, or raising awareness for important social issues.
-                              
 
-                               
+
+
                             </p>
 
                         </div>
@@ -663,11 +663,11 @@ include './server/payment/index.php';
                                 management, career development, leadership, or social skills. The goal is to equip
                                 participants with the tools they need to succeed and break down barriers to education
                                 and economic opportunities.
-                      
 
-                            
 
-                             
+
+
+
                             </p>
 
                         </div>
@@ -903,7 +903,7 @@ include './server/payment/index.php';
                                             <h4>Chinwe Uche</h4>
                                             <span>Single Mother</span>
                                         </div>
-                                    </div>
+                                    </div> I
                                     <p>
                                         HEO Eziokwu Foundation helped me start over. With their support, I can now
                                         provide food and education for my children. Their kindness has changed our lives
@@ -1257,30 +1257,30 @@ include './server/payment/index.php';
                         <!-- End Single Item -->
                         <!-- Single Item -->
                         <style>
-                        .image-grid {
-                            display: grid;
-                            grid-template-columns: repeat(2, 1fr);
-                            gap: 16px;
-                            /* Space between items */
-                        }
-
-                        .single-item {
-                            width: 100%;
-                            /* Ensure each item fills the column */
-                        }
-
-                        .single-item img {
-                            height: 100%;
-                        }
-
-                        @media(max-width:700px) {
                             .image-grid {
-
-                                grid-template-columns: repeat(1, 1fr);
-
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                gap: 16px;
+                                /* Space between items */
                             }
 
-                        }
+                            .single-item {
+                                width: 100%;
+                                /* Ensure each item fills the column */
+                            }
+
+                            .single-item img {
+                                height: 100%;
+                            }
+
+                            @media(max-width:700px) {
+                                .image-grid {
+
+                                    grid-template-columns: repeat(1, 1fr);
+
+                                }
+
+                            }
                         </style>
                     </div>
                 </div>
@@ -1433,15 +1433,15 @@ include './server/payment/index.php';
 
 
             <script>
-            let discoverBtn = document.querySelectorAll('#discoverBtn')
+                let discoverBtn = document.querySelectorAll('#discoverBtn')
 
-            discoverBtn.forEach(el => {
-                el.onclick = function() {
+                discoverBtn.forEach(el => {
+                    el.onclick = function() {
 
-                    window.location.href = 'videos.php'
+                        window.location.href = 'videos.php'
 
-                }
-            })
+                    }
+                })
             </script>
 
 </body>

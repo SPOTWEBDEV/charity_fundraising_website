@@ -1,4 +1,4 @@
-<?php include '../server/connection.php'?>
+<?php include '../server/connection.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +52,7 @@
 
     <!-- Start Header Top
     ============================================= -->
-    <?php include '../include/nav.php'?>
+    <?php include '../include/nav.php' ?>
     <!-- End Header -->
 
     <!-- Start Breadcrumb
@@ -63,13 +63,13 @@
             <div class="breadcrumb-items">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>Latest Event</h2>
+                        <h2>About us</h2>
                     </div>
                 </div>
                 <ul class="breadcrumb">
                     <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="#">Page</a></li>
-                    <li class="active">Event</li>
+                    <li class="active">About</li>
                 </ul>
             </div>
         </div>
@@ -78,64 +78,109 @@
 
     <!-- Start Event Area
     ============================================= -->
-    <div class="event-area carousel-shadow default-padding bg-gray">
+    <div class="about-area default-padding">
         <div class="container">
-            <div class="event-grid-items">
-    <!-- Fetch All Events -->
-    <?php
-        $select = mysqli_query($connection, "SELECT * FROM `event` ORDER BY date DESC");
+            <div class="row align-center">
 
-        if (mysqli_num_rows($select) > 0) {
-            while ($row = mysqli_fetch_assoc($select)) {
-                $imagePath = '../upload/event/' . htmlspecialchars($row['image']);
-            ?>
-            <div class="item">
-                <div class="row">
-                    <!-- Event Image with Background -->
-                    <div class="thumb col-lg-5" style="background-image: url('<?php echo $imagePath; ?>');">
-                        <div class="date">
-                            <strong><?php echo date("F j, Y", strtotime($row['date'])); ?></strong>
+                <div class="col-lg-6 popular-causes">
+                    <div class="causes-box">
+                        <h4> <i class="fas fa-bolt"></i> Popular Causes</h4>
+                        <div style="display: flex;gap:10px;" class="item">
+                            <div class="thumb">
+                                <img src="<?php echo $domain ?>assets/img/school-4.jpg" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <a href="<?php echo $domain ?>education/">
+                                    <span class="cats">
+                                        Education
+                                    </span>
+                                </a>
+                                <h4>
+                                    <a href="#">Empower Education in Africa</a>
+                                </h4>
+                                <!-- <div class="progress-box">
+                                <p>Raised : $6,230 <span class="float-right">Goal : $8,400</span></p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" data-width="87"></div>
+                                </div>
+                                <span>Fund collected: 87%</span>
+                            </div> -->
+                            </div>
+                        </div>
+                        <div style="display: flex;gap:10px;" class="item">
+                            <div class="thumb">
+                                <img src="<?php echo $domain ?>assets/img/9.jpg" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <a href="<?php echo $domain ?>health/">
+                                    <span class="cats">
+                                        Healthcare
+                                    </span>
+                                </a>
+                                <h4>
+                                    <a href="#">Affordable Healthcare for All</a>
+                                </h4>
+                                <!-- <div class="progress-box">
+                                <p>Raised : $970 <span class="float-right">Goal : $1,800</span></p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" data-width="55"></div>
+                                </div>
+                                <span>Fund collected: 55%</span>
+                            </div> -->
+                            </div>
+                        </div>
+                        <div style="display: flex;gap:10px;" class="item">
+                            <div class="thumb">
+                                <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <a href="<?php echo $domain ?>housing/">
+                                    <span class="cats">
+                                        Housing
+                                    </span>
+                                </a>
+                                <h4>
+                                    <a href="#">Safe Housing for Vulnerable Families</a>
+                                </h4>
+                                <!-- <div class="progress-box">
+                                <p>Raised : $2,400 <span class="float-right">Goal : $4,300</span></p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" data-width="77"></div>
+                                </div>
+                                <span>Fund collected: 77%</span>
+                            </div> -->
+                            </div>
                         </div>
                     </div>
-                    <!-- Event Information -->
-                    <div class="info col-lg-7">
-                        <h4>
-                            <a href="#"><?php echo htmlspecialchars($row['title']); ?></a>
-                        </h4>
-                        <p>
-                            <?php echo nl2br(htmlspecialchars($row['write_up'])); ?>
-                        </p>
-                        <ul class="date">
-                            <li>
-                                <i class="fas fa-clock"></i>
-                                10:00 AM - 18:00 PM
-                            </li>
-                            <li>
-                                <i class="fas fa-calendar-alt"></i>
-                                <?php echo htmlspecialchars($row['venue']); ?>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-            </div>
-    <?php
-        }
-        } else {
-            echo "<div class='alert alert-warning text-center'>No events available.</div>";
-        }
-    ?>
-</div>
 
-            
+                <div class="col-lg-6 info">
+                    <h5>About Us</h5>
+                    <h2 class="text-blur">About</h2>
+                    <h2 class="area-title">HEO Eziokwu Foundation Organization</h2>
+                    <p>
+                        HEO Eziokwu Foundation organisation is dedicated to bridging the opportunity gap for less
+                        privileged communities, offering hope and resources that enable individuals to thrive. By
+                        addressing critical needs, we aim to create a foundation of support that empowers families to
+                        pursue better and more dignified lives. Our initiatives are tailored to connect families with
+                        the resources they deserve, ultimately strengthening entire communities and fostering long-term
+                        resilience.
+
+                    </p>
+
+
+                    <a class="btn circle btn-theme border btn-md" href="./payment">Sponsor us</a>
+                </div>
+
+            </div>
         </div>
     </div>
-
 
     <!-- End Event Area -->
 
     <!-- Start Footer
     ============================================= -->
-    <?php include '../include/footer.php'?>
+    <?php include '../include/footer.php' ?>
     <!-- End Footer -->
 
     <!-- jQuery Frameworks
