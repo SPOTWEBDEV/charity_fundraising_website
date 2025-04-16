@@ -132,20 +132,20 @@
                   <tbody class="table-border-bottom-0">
                     <?php
 
-                        $sql = mysqli_query($connection, "SELECT * FROM `donations`");
+                        $sql = mysqli_query($connection, "SELECT * FROM `donation`");
                         if (mysqli_num_rows($sql)) {
-                            $count = 1;
+                            $count = 1; <div class=""></div>
                             while ($details = mysqli_fetch_assoc($sql)) {
 
                                 $id = $details['id'];
                             ?>
                         <tr>
                           <td><?php echo $count ?></td>
-                          <td><?php echo $details['fullname'] ?></td>
+                          <td><?php echo $details['firstname'] ?></td>
 
                           <td><?php echo $details['email'] ?></td>
                           <td><?php echo $details['phone'] ?></td>
-                          <td><?php echo $details['created_at'] ?></td>
+                          <td><?php echo $details['date'] ?></td>
                           <td><?php echo($details['amount'] == '') ? '0.00' : number_format($details['amount'], 2) ?></td>
                           <td><?php
 

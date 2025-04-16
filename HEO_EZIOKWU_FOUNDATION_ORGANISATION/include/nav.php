@@ -71,8 +71,8 @@
                 <!-- End Atribute Navigation -->
 
                 <!-- Start Header Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                <div  class="navbar-header">
+                    <button style="padding-top:30px" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand">
@@ -91,10 +91,12 @@
                       
                         <li>
                             <a href="<?php echo $domain ?>">Home</a>
+                            
                         </li>
 
+
                         <li>
-                            <a href="<?php echo $domain ?>event">Event</a>
+                            <a href="<?php echo $domain ?>about">About Us</a>
                         </li>
 
                         <li>
@@ -102,12 +104,16 @@
                         </li>
 
                         <li>
+                            <a href="<?php echo $domain ?>event">Event</a>
+                        </li>
+
+                       
+
+                        <li>
                             <a href="<?php echo $domain ?>blog">Blog</a>
                         </li>
 
-                        <li>
-                            <a href="<?php echo $domain ?>about">About Us</a>
-                        </li>
+                       
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->

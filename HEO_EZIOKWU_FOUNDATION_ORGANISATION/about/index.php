@@ -82,90 +82,24 @@
         <div class="container">
             <div class="row align-center">
 
-                <div class="col-lg-6 popular-causes">
-                    <div class="causes-box">
-                        <h4> <i class="fas fa-bolt"></i> Popular Causes</h4>
-                        <div style="display: flex;gap:10px;" class="item">
-                            <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/school-4.jpg" alt="Thumb">
-                            </div>
-                            <div class="info">
-                                <a href="<?php echo $domain ?>education/">
-                                    <span class="cats">
-                                        Education
-                                    </span>
-                                </a>
-                                <h4>
-                                    <a href="#">Empower Education in Africa</a>
-                                </h4>
-                                <!-- <div class="progress-box">
-                                <p>Raised : $6,230 <span class="float-right">Goal : $8,400</span></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-width="87"></div>
-                                </div>
-                                <span>Fund collected: 87%</span>
-                            </div> -->
-                            </div>
-                        </div>
-                        <div style="display: flex;gap:10px;" class="item">
-                            <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/9.jpg" alt="Thumb">
-                            </div>
-                            <div class="info">
-                                <a href="<?php echo $domain ?>health/">
-                                    <span class="cats">
-                                        Healthcare
-                                    </span>
-                                </a>
-                                <h4>
-                                    <a href="#">Affordable Healthcare for All</a>
-                                </h4>
-                                <!-- <div class="progress-box">
-                                <p>Raised : $970 <span class="float-right">Goal : $1,800</span></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-width="55"></div>
-                                </div>
-                                <span>Fund collected: 55%</span>
-                            </div> -->
-                            </div>
-                        </div>
-                        <div style="display: flex;gap:10px;" class="item">
-                            <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb">
-                            </div>
-                            <div class="info">
-                                <a href="<?php echo $domain ?>housing/">
-                                    <span class="cats">
-                                        Housing
-                                    </span>
-                                </a>
-                                <h4>
-                                    <a href="#">Safe Housing for Vulnerable Families</a>
-                                </h4>
-                                <!-- <div class="progress-box">
-                                <p>Raised : $2,400 <span class="float-right">Goal : $4,300</span></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-width="77"></div>
-                                </div>
-                                <span>Fund collected: 77%</span>
-                            </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-6 info">
+
+                <div style="text-align: center;" class="col-lg-12  info">
                     <h5>About Us</h5>
                     <h2 class="text-blur">About</h2>
                     <h2 class="area-title">HEO Eziokwu Foundation Organization</h2>
                     <p>
-                        HEO Eziokwu Foundation organisation is dedicated to bridging the opportunity gap for less
-                        privileged communities, offering hope and resources that enable individuals to thrive. By
-                        addressing critical needs, we aim to create a foundation of support that empowers families to
-                        pursue better and more dignified lives. Our initiatives are tailored to connect families with
-                        the resources they deserve, ultimately strengthening entire communities and fostering long-term
-                        resilience.
+                        HEO Eziokwu Foundation Organization is committed to narrowing the opportunity gap experienced by underprivileged communities. We believe that every individual deserves access to essential resources that can help them grow, succeed, and live with dignity. By working closely with these communities, we aim to instill hope and foster environments where people can envision and build better futures.
 
+                    </p>
+
+
+                    <p>
+                        Our mission centers on addressing the most critical needs—whether it's food security, education, healthcare, or economic opportunities. We take a holistic approach to community upliftment, ensuring that families receive the tools and support necessary to overcome systemic barriers. Each initiative we launch is designed with long-term sustainability in mind, ensuring that support doesn't just meet immediate needs, but continues to empower.
+                    </p>
+
+                    <p>
+                    At the heart of our efforts is a desire to connect families to the opportunities they deserve. Through collaboration, compassion, and consistent action, HEO Eziokwu Foundation works to strengthen the fabric of entire communities. We believe that when families thrive, communities flourish—and together, we can build a more equitable and resilient future for all.
                     </p>
 
 
