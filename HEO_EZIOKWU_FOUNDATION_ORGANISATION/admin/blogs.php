@@ -1,9 +1,32 @@
 <?php
-
     include '../server/connection.php';
     if (! isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
         echo "<script> window.location.href = 'login.php'</script>";
     }
+
+    if (isset($_GET['del_id'])) {
+        // Get the ID from the URL query string
+        $id = $_GET['del_id'];
+
+        // Display an alert with the ID (for debugging)
+        echo "<script>alert('ID: $id')</script>";
+
+        // Sanitize the input to avoid SQL injection
+        $id = mysqli_real_escape_string($connection, $id);
+
+        // Prepare the delete query
+        $delete = mysqli_query($connection, "DELETE FROM event WHERE id = '$id'");
+
+        // Check if the query was successful
+        if ($delete) {
+            // Successful deletion alert
+            echo "<script>alert('Your delete request was successful.'); window.location.href='events.php';</script>";
+        } else {
+            // If deletion fails, display an error message
+            echo "<script>alert('Error: Could not delete the record.');</script>";
+        }
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en" class="light-style layout-menu-fixed " dir="ltr" data-theme="theme-default" data-assets-path="assets/" data-template="vertical-menu-template-free">
@@ -12,7 +35,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-  <title><?php echo $sitename ?>-- Booking History</title>
+  <title>Blog List --                        <?php echo $sitename ?></title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
@@ -106,92 +129,92 @@
           <div class="container-xxl flex-grow-1 container-p-y">
 
             <h4 class="fw-bold py-3 mb-4">
-              <span class="text-muted fw-light">Admin /</span> Donation
+              <span class="text-muted fw-light">Admin /</span> Blog
             </h4>
 
             <!-- Basic Bootstrap Table -->
             <div class="card">
-              <h5 class="card-header">All Donation</h5>
-              <div class="table-responsive text-nowrap">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>S/N</th>
-                      <th>Fullname</th>
-                      <th>Email</th>
-                      <th>Phonenumber</th>
-                      <th>Booked_Date</th>
-                      <th>Amount</th>
-
-                      <th>Status</th>
-                       <th>Action</th>
-
-
-                    </tr>
-                  </thead>
-                  <tbody class="table-border-bottom-0">
-                    <?php
-
-                        $sql = mysqli_query($connection, "SELECT * FROM `donations`");
-                        if (mysqli_num_rows($sql)) {
-                            $count = 1;
-                            while ($details = mysqli_fetch_assoc($sql)) {
-
-                                $id = $details['id'];
-                            ?>
+    <h5 class="card-header">All Blogs</h5>
+    <div class="table-responsive text-nowrap">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>S/N</th>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                    <th>Image</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="table-border-bottom-0">
+                <?php
+                    $sql = mysqli_query($connection, "SELECT * FROM `blog` ORDER BY date DESC");
+                    if (mysqli_num_rows($sql) > 0) {
+                        $count = 1;
+                        while ($details = mysqli_fetch_assoc($sql)) {
+                            $id        = $details['id'];
+                            $imagePath = "../upload/event/" . $details['image']; // Assuming images are stored in 'uploads/' directory
+                        ?>
                         <tr>
-                          <td><?php echo $count ?></td>
-                          <td><?php echo $details['fullname'] ?></td>
-
-                          <td><?php echo $details['email'] ?></td>
-                          <td><?php echo $details['phone'] ?></td>
-                          <td><?php echo $details['created_at'] ?></td>
-                          <td><?php echo($details['amount'] == '') ? '0.00' : number_format($details['amount'], 2) ?></td>
-                          <td><?php
-
-                                          if ($details['status'] == 'pending' || $details['status'] == 'ongoing') {
-                                              echo "<span class='badge bg-danger'>Pending</span>";
-                                          }
-                                          if ($details['status'] == 'cancelled' || $details['status'] == 'declined' || $details['status'] == 'failed' || $details['status'] == 'abandoned') {
-                                              echo "<span class='badge bg-warning'>Declined</span>";
-                                          }
-                                          if ($details['status'] == 'success' || $details['status'] == 'approved') {
-                                              echo "<span class='badge bg-success'>Success</span>";
-                                          }
-                                      ?>
-                          </td>
-
-                          <td>
-                            <?php
-
-                                        if ($details['status'] == 'pending' || $details['status'] == 'ongoing') {
-                                            echo "<a  href='?app_id=$id'><span  class='badge bg-primary'>click to approved</span></a>";
-                                            echo '<br>';
-                                            echo "<a  href='?del_id=$id'><span class='badge bg-primary ml-2'>click to declined</span></a>";
-                                        }else{
-                                          echo '--';
-                                        }
-
-                                    ?>
-
-                          </td>
-
-
+                            <td><?php echo $count; ?></td>
+                            <td><?php echo htmlspecialchars($details['title']); ?></td>
+                            <td><?php echo date("F j, Y", strtotime($details['date'])); ?></td>
+                            <td><?php echo htmlspecialchars($details['venue']); ?></td>
+                            <td>
+                                <img src="<?php echo $imagePath; ?>" alt="Blog Image"  height="100" style="border-radius: 5px;">
+                            </td>
+                            <td>
+                                <a onclick="return confirm('Are you sure you want to delete this event?')" href="?del_id=<?php echo $id; ?>">
+                                    <button class="btn btn-danger">Delete</button>
+                                </a>
+                            </td>
                         </tr>
-                    <?php $count++;
-                            }
-                        } else {
-                            echo "<td class='bg-danger text-white' colspan='10'>No Users</td>";
-                    }?>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+                <?php
+                    $count++;
+                        }
+                    } else {
+                        echo "<tr><td class='bg-danger text-white' colspan='6'>No Blogs Found</td></tr>";
+                    }
+                ?>
+            </tbody>
+        </table>
+    </div>
+</div>
+
             <!--/ Basic Bootstrap Table -->
           </div>
           <!-- / Content -->
 
 
+
+
+
+
+
+          <!-- Footer -->
+          <!-- <footer class="content-footer footer bg-footer-theme">
+            <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+              <div class="mb-2 mb-md-0">
+                © <script>
+                  document.write(new Date().getFullYear())
+                </script>
+                , made with ❤️ by <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
+              </div>
+              <div>
+
+                <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
+
+                <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/" target="_blank" class="footer-link me-4">Documentation</a>
+
+                <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank" class="footer-link me-4">Support</a>
+
+
+              </div>
+            </div>
+          </footer> -->
+          <!-- / Footer -->
           <div class="content-backdrop fade"></div>
         </div>
         <!-- Content wrapper -->
@@ -206,25 +229,7 @@
 
 
   </div>
-
-
-  <?php
-
-      if (isset($_GET['app_id'])) {
-          $app_id      = mysqli_real_escape_string($connection, $_GET['app_id']);
-          $updateQuery = "UPDATE `donations` SET `status`='approved', `updated_at`=NOW() WHERE `id`='$app_id'";
-          mysqli_query($connection, $updateQuery);
-          echo "<script>alert('Donation Approved!');;</script>";
-      }
-
-      if (isset($_GET['del_id'])) {
-          $del_id      = mysqli_real_escape_string($connection, $_GET['del_id']);
-          $updateQuery = "UPDATE `donations` SET `status`='declined', `updated_at`=NOW() WHERE `id`='$del_id'";
-          mysqli_query($connection, $updateQuery);
-          echo "<script>alert('Donation Declined!');</script>";
-      }
-
-  ?>
+  <!-- / Layout wrapper -->
 
 
 

@@ -175,7 +175,7 @@ if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
                         <span class="fw-semibold d-block mb-1">BookKeeping</span>
                         <h3 class="card-title mb-2">
                           <?php
-                          $get_all = mysqli_query($connection, "SELECT * FROM `donation`");
+                          $get_all = mysqli_query($connection, "SELECT * FROM `donations`");
                           echo mysqli_num_rows($get_all)
                           ?>
                         </h3>
@@ -204,7 +204,7 @@ if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
                         <h3 class="card-title text-nowrap mb-1">
 
                           <?php
-                          $get_all = mysqli_query($connection, "SELECT sum(amount) as total FROM `donation`");
+                          $get_all = mysqli_query($connection, "SELECT sum(amount) as total FROM `donations`");
                           $row =  mysqli_fetch_assoc($get_all);
                           echo number_format($row['total']) ?? 0;
                           ?>

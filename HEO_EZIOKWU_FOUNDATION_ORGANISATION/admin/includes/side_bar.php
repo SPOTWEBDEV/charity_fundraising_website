@@ -37,12 +37,23 @@
             </a>
         </li>
 
+
+         
         <li class="menu-item">
-            <a href="contact.php" class="menu-link">
+            <a href="blog.php" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Contact</div>
+                <div data-i18n="Analytics">Add Blog</div>
             </a>
         </li>
+
+
+        <li class="menu-item">
+            <a href="blogs.php" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Blog List</div>
+            </a>
+        </li>
+
 
         
 

@@ -103,7 +103,7 @@
                     </p>
 
 
-                    <a class="btn circle btn-theme border btn-md" href="./payment">Sponsor us</a>
+                    <a class="btn circle btn-theme border btn-md" href="<?php echo $domain ?>payment/">Sponsor us</a>
                 </div>
 
             </div>

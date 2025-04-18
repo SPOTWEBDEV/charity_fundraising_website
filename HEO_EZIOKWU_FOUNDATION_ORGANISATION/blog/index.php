@@ -82,7 +82,7 @@
             <div class="event-grid-items">
                 <!-- Fetch All Events -->
                 <?php
-        $select = mysqli_query($connection, "SELECT * FROM event ORDER BY date DESC");
+        $select = mysqli_query($connection, "SELECT * FROM blog ORDER BY date DESC");
 
         if (mysqli_num_rows($select) > 0) {
             while ($row = mysqli_fetch_assoc($select)) {

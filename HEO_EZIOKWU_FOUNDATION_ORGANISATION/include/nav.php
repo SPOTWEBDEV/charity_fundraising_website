@@ -113,6 +113,10 @@
                             <a href="<?php echo $domain ?>blog">Blog</a>
                         </li>
 
+                        <li>
+                            <a href="<?php echo $domain ?>gallery/">Gallery</a>
+                        </li>
+
                        
                     </ul>
                 </div>
