@@ -113,10 +113,14 @@
                                     <i class="fas fa-calendar-alt"></i>
                                     <?php echo htmlspecialchars($row['venue']); ?>
                                 </li> -->
-                                <li>
+                                <!-- <li>
                                     <i class="fas fa-user"></i>
                                     <?php echo htmlspecialchars($row['author']); ?>
+                                </li> -->
+                                <li>
+                                    <i class="fas fa-user"></i> John Doe
                                 </li>
+
 
                             </ul>
                         </div>
