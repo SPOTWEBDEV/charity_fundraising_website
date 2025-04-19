@@ -20,7 +20,7 @@
         // Check if the query was successful
         if ($delete) {
             // Successful deletion alert
-            echo "<script>alert('Your delete request was successful.'); window.location.href='events.php';</script>";
+            echo "<script>alert('Your delete request was successful.'); window.location.href='blogs.php';</script>";
         } else {
             // If deletion fails, display an error message
             echo "<script>alert('Error: Could not delete the record.');</script>";
