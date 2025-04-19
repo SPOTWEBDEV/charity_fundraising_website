@@ -136,7 +136,7 @@
                           $title   = mysqli_real_escape_string($connection, $_POST['title']);
                           $content = mysqli_real_escape_string($connection, $_POST['content']); // Content with HTML tags
                           $date    = mysqli_real_escape_string($connection, $_POST['date']);
-                          $venue   = mysqli_real_escape_string($connection, $_POST['venue']);
+                         
 
                           // Handle image upload
                           $target_dir  = "../upload/event/";
@@ -154,8 +154,8 @@
                               if (move_uploaded_file($image_tmp, $target_file)) {
                                   // Insert into database
                                   $insert_service = mysqli_query($connection,
-                                      "INSERT INTO blog (title, write_up, date, venue, image)
-                 VALUES ('$title', '$content', '$date', '$venue', '$new_image_name')"
+                                      "INSERT INTO blog (title, write_up, date,  image)
+                 VALUES ('$title', '$content', '$date',  '$new_image_name')"
                                   );
 
                                   if ($insert_service) {
@@ -183,13 +183,13 @@
 
     <div class="mb-3">
         <label class="form-label" for="basic-default-date">Blog Date</label>
-        <input type="date" class="form-control" name="date" id="basic-default-date" required />
+        <input type="date" class="form-control" name="date" id="basic-default-date"  />
     </div>
 
-    <div class="mb-3">
+    <!-- <div class="mb-3">
         <label class="form-label" for="basic-default-venue">Blog Venue</label>
         <input type="text" class="form-control" name="venue" id="basic-default-venue" placeholder="Enter Blog Venue" required />
-    </div>
+    </div> -->
 
     <div class="mb-3">
         <label class="form-label" for="basic-default-image">Blog Image</label>

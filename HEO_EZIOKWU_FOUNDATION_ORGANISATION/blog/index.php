@@ -75,7 +75,7 @@
     </div>
     <!-- End Breadcrumb -->
 
-     <!-- Start Event Area
+    <!-- Start Event Area
     ============================================= -->
     <div class="event-area carousel-shadow default-padding bg-gray">
         <div class="container">
@@ -105,14 +105,19 @@
                                 <?php echo nl2br(htmlspecialchars($row['write_up'])); ?>
                             </p>
                             <ul class="date">
-                                <li>
+                                <!-- <li>
                                     <i class="fas fa-clock"></i>
                                     10:00 AM - 18:00 PM
-                                </li>
-                                <li>
+                                </li> -->
+                                <!-- <li>
                                     <i class="fas fa-calendar-alt"></i>
                                     <?php echo htmlspecialchars($row['venue']); ?>
+                                </li> -->
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <?php echo htmlspecialchars($row['author']); ?>
                                 </li>
+
                             </ul>
                         </div>
                     </div>

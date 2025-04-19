@@ -60,7 +60,7 @@
                 <div class="col-md-6">
                     <p>Copyright <?php echo $siteemail ?> &copy; 2025. Designed by <a href="">SPOTWEBDEV</a></p>
                 </div>
-                <div class="col-md-6 text-right link">
+                <!-- <div class="col-md-6 text-right link">
                     <ul>
                         <li>
                             <a href="#">Terms</a>
@@ -72,7 +72,7 @@
                             <a href="#">Support</a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
