@@ -94,8 +94,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
+       
             <div class="wedo-items text-center">
                 <div class="container">
                     <div class="row">
@@ -259,6 +258,7 @@
 
                 </div>
             </div>
+        </div>
 
 
             <!-- End Event Area -->
