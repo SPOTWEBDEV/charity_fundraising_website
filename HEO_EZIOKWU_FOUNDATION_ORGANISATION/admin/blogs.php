@@ -11,11 +11,10 @@
         // Display an alert with the ID (for debugging)
         echo "<script>alert('ID: $id')</script>";
 
-        // Sanitize the input to avoid SQL injection
-        $id = mysqli_real_escape_string($connection, $id);
+        
 
         // Prepare the delete query
-        $delete = mysqli_query($connection, "DELETE FROM event WHERE id = '$id'");
+        $delete = mysqli_query($connection, "DELETE FROM blog WHERE id = '$id'");
 
         // Check if the query was successful
         if ($delete) {
