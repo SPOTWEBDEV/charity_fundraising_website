@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 19, 2025 at 06:59 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.12
+-- Generation Time: Apr 20, 2025 at 09:13 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,7 +31,7 @@ CREATE TABLE `admin` (
   `id` int(11) NOT NULL,
   `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `admin`
@@ -53,15 +53,16 @@ CREATE TABLE `blog` (
   `date` varchar(255) NOT NULL,
   `venue` varchar(255) NOT NULL,
   `image` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `blog`
 --
 
 INSERT INTO `blog` (`id`, `title`, `write_up`, `date`, `venue`, `image`) VALUES
-(0, 'football', 'i love football', '2025-04-04', 'garriki', '1744932054_football-5.jpg'),
-(0, 'rfghjk', 'zsxdfcgbhjnjhb  ', '2025-04-13', 'mmmm', '1745081657_0ec0b6bc240c689134631f8587b47ddd.jpg');
+(0, 'HEO Eziokwu Foundation Partners with Local Communities', '   We are making strides towards a brighter future, collaborating with local\r\n                                            communities to promote educational opportunities and better living\r\n                                            conditions.', '2025-02-13', '', '1745103157_1.jpg'),
+(0, 'HEO Eziokwu Foundation\'s Water Access Project', '  Our Water Access initiative is helping underprivileged areas gain reliable\r\n                                            access to clean drinking water, improving overall health and well-being.', '2025-04-08', '', '1745104166_2.jpg'),
+(0, 'Empowering the Next Generation: Education for All', '   Join us in the fight to ensure that every child receives quality education,\r\n                                            as we work towards providing free learning resources in underserved regions.', '2025-04-04', '', '1745104279_3.jpg');
 
 -- --------------------------------------------------------
 
@@ -75,7 +76,7 @@ CREATE TABLE `contact` (
   `email` varchar(255) NOT NULL,
   `phone` varchar(255) NOT NULL,
   `message` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `contact`
@@ -103,14 +104,14 @@ CREATE TABLE `donations` (
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `status` enum('pending','success','approved') DEFAULT NULL,
   `bank_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `donations`
 --
 
 INSERT INTO `donations` (`id`, `fullname`, `email`, `phone`, `amount`, `created_at`, `updated_at`, `status`, `bank_id`) VALUES
-(1, 'Ezea Ugochukwu', 'spotwebdev.com@gmail.com', '08108833188', '5005.00', '2025-02-10 11:46:59', '2025-02-10 11:46:59', 'pending', 1);
+(1, 'Ezea Ugochukwu', 'spotwebdev.com@gmail.com', '08108833188', 5005.00, '2025-02-10 11:46:59', '2025-02-10 11:46:59', 'pending', 1);
 
 -- --------------------------------------------------------
 
@@ -125,7 +126,7 @@ CREATE TABLE `event` (
   `date` varchar(255) NOT NULL,
   `venue` varchar(255) NOT NULL,
   `image` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `event`
@@ -133,7 +134,8 @@ CREATE TABLE `event` (
 
 INSERT INTO `event` (`id`, `title`, `write_up`, `date`, `venue`, `image`) VALUES
 (5, 'Education empowerment', 'Our mission is to provide quality education to underserved communities, empowering individuals to break the cycle of poverty and achieve their full potential.', '2024-12-09', 'gariki', 'IMG-20241114-WA0105.jpg'),
-(6, 'valinetina', 'nvnfnnnnnnnnnnnn', '2025-02-14', 'garriki', '1739185817_resume_craft.png');
+(7, 'Health Care Camps', '  Healthcare camps are organized events aimed at providing free or low-cost medical\r\n                                services to underserved communities, especially those with limited access to healthcare\r\n                                facilities. These', '2025-08-12', 'okpara square, new layout Enugu state', '1745096310_hospital.jpg'),
+(8, 'Charity Football Matches', '\r\n                                Charity football matches have become a popular and meaningful way for people to support\r\n                                various causes while enjoying the excitement of the beautiful game. These events are\r\n              ', '2025-12-25', 'Gariki akwunanu Enugu State', '1745096488_football-4.jpg');
 
 -- --------------------------------------------------------
 
@@ -145,7 +147,7 @@ CREATE TABLE `newsletter` (
   `id` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
   `subscribed_at` timestamp NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Indexes for dumped tables
@@ -196,7 +198,7 @@ ALTER TABLE `donations`
 -- AUTO_INCREMENT for table `event`
 --
 ALTER TABLE `event`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `newsletter`
