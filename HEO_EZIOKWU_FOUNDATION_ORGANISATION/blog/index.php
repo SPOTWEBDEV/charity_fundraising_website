@@ -118,7 +118,7 @@
                                     <?php echo htmlspecialchars($row['author']); ?>
                                 </li> -->
                                 <li>
-                                    <i class="fas fa-user"></i> author
+                                    <i class="fas fa-user"></i> Author
                                 </li>
 
 
