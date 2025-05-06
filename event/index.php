@@ -1,4 +1,4 @@
-<?php include '../server/connection.php'?>
+<?php include '../server/connection.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +52,7 @@
 
     <!-- Start Header Top
     ============================================= -->
-    <?php include '../include/nav.php'?>
+    <?php include '../include/nav.php' ?>
     <!-- End Header -->
 
     <!-- Start Breadcrumb
@@ -79,55 +79,55 @@
     <!-- Start Event Area
     ============================================= -->
     <div class="event-area carousel-shadow default-padding bg-gray">
-        <div class="container">
+        
             <div class="event-grid-items">
-    <!-- Fetch All Events -->
-    <?php
-        $select = mysqli_query($connection, "SELECT * FROM `event` ORDER BY date DESC");
+                <!-- Fetch All Events -->
+                <?php
+                $select = mysqli_query($connection, "SELECT * FROM `event` ORDER BY date DESC");
 
-        if (mysqli_num_rows($select) > 0) {
-            while ($row = mysqli_fetch_assoc($select)) {
-                $imagePath = '../upload/event/' . htmlspecialchars($row['image']);
-            ?>
-            <div class="item">
-                <div class="row">
-                    <!-- Event Image with Background -->
-                    <div class="thumb col-lg-5" style="background-image: url('<?php echo $imagePath; ?>');">
-                        <div class="date">
-                            <strong><?php echo date("F j, Y", strtotime($row['date'])); ?></strong>
-                        </div>
-                    </div>
-                    <!-- Event Information -->
-                    <div class="info col-lg-7">
-                        <h4>
-                            <a href="#"><?php echo htmlspecialchars($row['title']); ?></a>
-                        </h4>
-                        <p>
-                            <?php echo nl2br(htmlspecialchars($row['write_up'])); ?>
-                        </p>
-                        <ul class="date">
-                            <!-- <li>
+                if (mysqli_num_rows($select) > 0) {
+                    while ($row = mysqli_fetch_assoc($select)) {
+                        $imagePath = '../upload/event/' . htmlspecialchars($row['image']);
+                ?>
+                        <div class="item">
+                            <div class="row">
+                                <!-- Event Image with Background -->
+                                <div class="thumb col-lg-5" style="background-image: url('<?php echo $imagePath; ?>');">
+                                    <div class="date">
+                                        <strong><?php echo date("F j, Y", strtotime($row['date'])); ?></strong>
+                                    </div>
+                                </div>
+                                <!-- Event Information -->
+                                <div class="info col-lg-7">
+                                    <h4>
+                                        <a><?php echo htmlspecialchars($row['title']); ?></a>
+                                    </h4>
+                                    <p>
+                                        <?php echo nl2br(htmlspecialchars($row['write_up'])); ?>
+                                    </p>
+                                    <ul class="date">
+                                        <!-- <li>
                                 <i class="fas fa-clock"></i>
                                 10:00 AM - 18:00 PM
                             </li> -->
-                            <li>
-                                <i class="fas fa-calendar-alt"></i>
-                                <?php echo htmlspecialchars($row['venue']); ?>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                                        <li>
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <?php echo htmlspecialchars($row['venue']); ?>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                <?php
+                    }
+                } else {
+                    echo "<div class='alert alert-warning text-center'>No events available.</div>";
+                }
+                ?>
             </div>
-    <?php
-        }
-        } else {
-            echo "<div class='alert alert-warning text-center'>No events available.</div>";
-        }
-    ?>
-</div>
 
-            
-        </div>
+
+        
     </div>
 
 
@@ -135,7 +135,7 @@
 
     <!-- Start Footer
     ============================================= -->
-    <?php include '../include/footer.php'?>
+    <?php include '../include/footer.php' ?>
     <!-- End Footer -->
 
     <!-- jQuery Frameworks

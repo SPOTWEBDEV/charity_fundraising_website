@@ -66,8 +66,8 @@
                     </div>
                 </div>
                 <ul class="breadcrumb">
-                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#">Page</a></li>
+                    <li><a><i class="fas fa-home"></i> Home</a></li>
+                    <li><a>Page</a></li>
                     <li class="active">Blog</li>
                 </ul>
             </div>
@@ -99,7 +99,7 @@
                         <!-- Event Information -->
                         <div class="info col-lg-7">
                             <h4>
-                                <a href="#"><?php echo htmlspecialchars($row['title']); ?></a>
+                                <a><?php echo htmlspecialchars($row['title']); ?></a>
                             </h4>
                             <p>
                                 <?php echo nl2br(htmlspecialchars($row['write_up'])); ?>

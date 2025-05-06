@@ -36,7 +36,7 @@ if ($request == 'https') {
     define("DATABASE", "pdicsrdj_heo");
 }
 elseif ($request == 'http') {
-    $domain = "http://localhost/charity_fundraising_website/HEO_EZIOKWU_FOUNDATION_ORGANISATION/";
+    $domain = "http://localhost/charity_fundraising_website/";
     define("USER", "root");
     define("PASSWORD", "");
     define("DATABASE", "heo");

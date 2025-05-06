@@ -55,7 +55,6 @@ include './server/payment/index.php';
 
         .single-item {
             display: flex;
-            flex: 1;
         }
 
         .item {
@@ -64,9 +63,7 @@ include './server/payment/index.php';
             justify-content: space-between;
             height: 100%;
             border: 1px solid #ddd;
-            padding: 15px;
             border-radius: 8px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .info {
@@ -204,7 +201,7 @@ include './server/payment/index.php';
                                     </span>
                                 </a>
                                 <h4>
-                                    <a href="#">Empower Education in Africa</a>
+                                    <a href="<?php echo $domain ?>education/">Empower Education in Africa</a>
                                 </h4>
                                 <!-- <div class="progress-box">
                                 <p>Raised : $6,230 <span class="float-right">Goal : $8,400</span></p>
@@ -226,7 +223,7 @@ include './server/payment/index.php';
                                     </span>
                                 </a>
                                 <h4>
-                                    <a href="#">Affordable Healthcare for All</a>
+                                    <a href="<?php echo $domain ?>health/">Affordable Healthcare for All</a>
                                 </h4>
                                 <!-- <div class="progress-box">
                                 <p>Raised : $970 <span class="float-right">Goal : $1,800</span></p>
@@ -248,7 +245,7 @@ include './server/payment/index.php';
                                     </span>
                                 </a>
                                 <h4>
-                                    <a href="#">Safe Housing for Vulnerable Families</a>
+                                    <a href="<?php echo $domain ?>housing/">Safe Housing for Vulnerable Families</a>
                                 </h4>
                                 <!-- <div class="progress-box">
                                 <p>Raised : $2,400 <span class="float-right">Goal : $4,300</span></p>
@@ -377,7 +374,7 @@ include './server/payment/index.php';
                     </p>
 
 
-                    <a class="btn circle btn-theme border btn-md" href="./payment/">Join With Us</a>
+                    <a class="btn circle btn-theme border btn-md" href="./payment/">Join Us</a>
                 </div>
             </div>
         </div>
@@ -415,14 +412,14 @@ include './server/payment/index.php';
                     <div class="col-lg-4 col-md-6">
                         <div style="" class="item">
                             <div class="thumb">
-                                <a href="#">
+                                <a>
                                     <img src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
 
                                 </a>
                             </div>
                             <div class="info">
                                 <h4>
-                                    <a href="#">Education empowerment</a>
+                                    <a>Education empowerment</a>
                                 </h4>
                                 <p>
                                     Our mission is to provide quality education to underserved communities, empowering
@@ -444,7 +441,7 @@ include './server/payment/index.php';
                     <div class=" col-lg-4 col-md-6">
                         <div style="" class="item">
                             <div class="thumb">
-                                <a href="#">
+                                <a>
                                     <img style="width:fit-content; "
                                         src="<?php echo $domain ?>assets/img/football-5.jpg" alt="Thumb">
                                     <!-- <div class="trend">
@@ -455,7 +452,7 @@ include './server/payment/index.php';
                             </div>
                             <div class="info">
                                 <h4>
-                                    <a href="#">Housing Support for Vulnerable Families</a>
+                                    <a>Housing Support for Vulnerable Families</a>
                                 </h4>
                                 <p>
                                     Helping to provide safe and stable housing for vulnerable families, including widows
@@ -471,14 +468,14 @@ include './server/payment/index.php';
                     <div class=" col-lg-4 col-md-6">
                         <div style="" class="item">
                             <div class="thumb">
-                                <a href="#">
+                                <a>
                                     <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
 
                                 </a>
                             </div>
                             <div class="info">
                                 <h4>
-                                    <a href="#">Healthcare Assistance for All</a>
+                                    <a>Healthcare Assistance for All</a>
                                 </h4>
                                 <p>
                                     Providing essential medical support and healthcare services to underprivileged
@@ -544,10 +541,12 @@ include './server/payment/index.php';
                         }
 
                         ?>
-                        <form method="POST">
-                            <input type="email" placeholder="Your Email" class="form-control" name="email">
-                            <button type="submit">Join Now</button>
-                        </form>
+                        <a href="<?php echo $domain ?>contact/">
+                            <form>
+                                <input type="email" placeholder="" class="form-control" name="email" readonly>
+                                <button>Join Now</button>
+                            </form>
+                        </a>
                     </div>
                 </div>
 
@@ -585,7 +584,7 @@ include './server/payment/index.php';
             <div class="container">
                 <div class="event-items event-carousel owl-carousel owl-theme">
                     <!-- Single Item  -->
-                    <div class="item">
+                    <div style="height: fit-content;" class="item">
                         <div class="thumb">
                             <img src="<?php echo $domain ?>assets/img/7.jpg" alt="Thumb">
                             <div class="date">
@@ -595,7 +594,7 @@ include './server/payment/index.php';
                         <div class="info">
                             <div class="time"><i class="fas fa-clock"></i> 8:00 am - 16:00 pm</div>
                             <h4>
-                                <a href="#">Healthcare Camps</a>
+                                <a>Healthcare Camps</a>
                             </h4>
                             <p>
 
@@ -614,7 +613,7 @@ include './server/payment/index.php';
                     </div>
                     <!-- End Single Item  -->
                     <!-- Single Item  -->
-                    <div class="item">
+                    <div style="height: fit-content;" class="item">
                         <div class="thumb">
                             <img src="<?php echo $domain ?>assets/img/football-4.jpg" alt="Thumb">
                             <div class="date">
@@ -624,7 +623,7 @@ include './server/payment/index.php';
                         <div class="info">
                             <div class="time"><i class="fas fa-clock"></i> 10:00 am - 17:30 pm</div>
                             <h4>
-                                <a href="#">Charity Football Matches</a>
+                                <a>Charity Football Matches</a>
                             </h4>
                             <p>
 
@@ -642,7 +641,7 @@ include './server/payment/index.php';
                     </div>
                     <!-- End Single Item  -->
                     <!-- Single Item  -->
-                    <div class="item">
+                    <div style="height: fit-content;" class="item">
                         <div class="thumb">
                             <img src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
                             <div class="date">
@@ -652,7 +651,7 @@ include './server/payment/index.php';
                         <div class="info">
                             <div class="time"><i class="fas fa-clock"></i> 8:30 am - 16:45 pm</div>
                             <h4>
-                                <a href="#">Educational Empowerment Workshops</a>
+                                <a>Educational Empowerment Workshops</a>
                             </h4>
                             <p>
 
@@ -1153,140 +1152,133 @@ include './server/payment/index.php';
                 </div>
             </div>
 
+</div>
 
-            <div class="container">
-                <div class="causes-items">
-                    <div class="row">
 
-                        <div class="single-item col-12">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="#">
-                                        <img src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
 
-                                    </a>
-                                </div>
+            <div class="image-grid">
+                <div class="single-item">
+                    <div class="item">
 
-                            </div>
-                        </div>
-                        <div class="image-grid">
-                            <div class="single-item col-12">
-                                <div class="item">
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="single-item col-12">
-                                <div class="item">
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
 
-                            <div class="single-item col-12">
-                                <div class="item">
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="single-item col-12">
-                                <div class="item">
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="single-item col-12">
-                                <div class="item">
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="<?php echo $domain ?>assets/img/school-13.jpg" alt="Thumb">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="single-item col-12">
-                                <div class="item">
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="<?php echo $domain ?>assets/img/football-6.jpg" alt="Thumb">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="single-item col-12">
-                                <div class="item">
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="<?php echo $domain ?>assets/img/football-8.jpg" alt="Thumb">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="single-item col-12">
-                                <div class="item">
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="<?php echo $domain ?>assets/img/football-9.jpg" alt="Thumb">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <style>
-                            .image-grid {
-                                display: grid;
-                                grid-template-columns: repeat(2, 1fr);
-                                gap: 16px;
-                                /* Space between items */
-                            }
-
-                            .single-item {
-                                width: 100%;
-                                /* Ensure each item fills the column */
-                            }
-
-                            .single-item img {
-                                height: 100%;
-                            }
-
-                            @media(max-width:700px) {
-                                .image-grid {
-
-                                    grid-template-columns: repeat(1, 1fr);
-
-                                }
-
-                            }
-                        </style>
                     </div>
                 </div>
 
+                <div class="single-item">
+                    <div class="item">
 
+
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-13.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/football-6.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/football-8.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-item ">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/football-9.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- End Single Item -->
+            <!-- Single Item -->
+
+            <!-- End Single Item -->
+            <!-- Single Item -->
+            <style>
+                .image-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 16px;
+                    padding: 20px;
+                }
+
+                .single-item {
+                    width: 100%;
+                    /* Ensure each item fills the column */
+                }
+
+                .single-item img {
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .single-item .item {
+                    width: 100%;
+                }
+
+                .single-item img {
+                    width: 100%;
+                }
+
+                @media(max-width:700px) {
+                    .image-grid {
+
+                        grid-template-columns: repeat(1, 1fr);
+
+                    }
+
+                }
+            </style>
+
 
             <!-- End Gallery Area -->
 
@@ -1327,8 +1319,8 @@ include './server/payment/index.php';
                                         </h4>
                                         <div class="meta">
                                             <ul>
-                                                <li>By <a href="#">HEO Foundation</a></li>
-                                                <li><a href="#"><i class="fas fa-comments"></i> 12 Comments</a></li>
+                                                <li>By <a>HEO Foundation</a></li>
+                                                <li><a><i class="fas fa-comments"></i> 12 Comments</a></li>
                                             </ul>
                                         </div>
                                         <p>
@@ -1359,8 +1351,8 @@ include './server/payment/index.php';
                                         </h4>
                                         <div class="meta">
                                             <ul>
-                                                <li>By <a href="#">HEO Foundation</a></li>
-                                                <li><a href="#"><i class="fas fa-comments"></i> 26 Comments</a></li>
+                                                <li>By <a>HEO Foundation</a></li>
+                                                <li><a><i class="fas fa-comments"></i> 26 Comments</a></li>
                                             </ul>
                                         </div>
                                         <p>
@@ -1390,8 +1382,8 @@ include './server/payment/index.php';
                                         </h4>
                                         <div class="meta">
                                             <ul>
-                                                <li>By <a href="#">HEO Foundation</a></li>
-                                                <li><a href="#"><i class="fas fa-comments"></i> 05 Comments</a></li>
+                                                <li>By <a>HEO Foundation</a></li>
+                                                <li><a><i class="fas fa-comments"></i> 05 Comments</a></li>
                                             </ul>
                                         </div>
                                         <p>
