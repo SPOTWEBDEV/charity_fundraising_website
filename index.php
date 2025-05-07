@@ -1305,7 +1305,7 @@ include './server/payment/index.php';
                             <div class=" col-lg-4 col-md-6">
                                 <div class="item">
                                     <div class="thumb">
-                                        <a href="blog-single-with-sidebar.html">
+                                        <a>
                                             <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb">
                                             <span class="date">
                                                 24 <strong>Aug</strong>
@@ -1314,7 +1314,7 @@ include './server/payment/index.php';
                                     </div>
                                     <div class="info">
                                         <h4>
-                                            <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation Partners with
+                                            <a>HEO Eziokwu Foundation Partners with
                                                 Local Communities</a>
                                         </h4>
                                         <div class="meta">
@@ -1337,7 +1337,7 @@ include './server/payment/index.php';
                             <div class=" col-lg-4 col-md-6">
                                 <div class="item">
                                     <div class="thumb">
-                                        <a href="blog-single-with-sidebar.html">
+                                        <a>
                                             <img src="<?php echo $domain ?>assets/img/2.jpg" alt="Thumb">
                                             <span class="date">
                                                 18 <strong>Sep</strong>
@@ -1346,7 +1346,7 @@ include './server/payment/index.php';
                                     </div>
                                     <div class="info">
                                         <h4>
-                                            <a href="blog-single-with-sidebar.html">HEO Eziokwu Foundation's Water
+                                            <a>HEO Eziokwu Foundation's Water
                                                 Access Project</a>
                                         </h4>
                                         <div class="meta">
@@ -1365,10 +1365,16 @@ include './server/payment/index.php';
                             </div>
                             <!-- End Single Item -->
                             <!-- Single Item -->
+
+                             <style>
+                                .info{
+                                    padding: 10px;
+                                }
+                             </style>
                             <div class=" col-lg-4 col-md-6">
                                 <div class="item">
                                     <div class="thumb">
-                                        <a href="blog-single-with-sidebar.html">
+                                        <a>
                                             <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
                                             <span class="date">
                                                 05 <strong>Jul</strong>
@@ -1377,7 +1383,7 @@ include './server/payment/index.php';
                                     </div>
                                     <div class="info">
                                         <h4>
-                                            <a href="blog-single-with-sidebar.html">Empowering the Next Generation:
+                                            <a>Empowering the Next Generation:
                                                 Education for All</a>
                                         </h4>
                                         <div class="meta">

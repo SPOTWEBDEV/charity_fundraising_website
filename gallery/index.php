@@ -96,7 +96,7 @@
             </div>
        
             <div class="wedo-items text-center">
-                <div class="container">
+        
                     <div class="row">
                         <!-- Single Item -->
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
