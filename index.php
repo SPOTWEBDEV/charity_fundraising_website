@@ -1238,15 +1238,11 @@ include './server/payment/index.php';
                 </div>
             </div>
 
-            <!-- End Single Item -->
-            <!-- Single Item -->
-
-            <!-- End Single Item -->
-            <!-- Single Item -->
+          
             <style>
                 .image-grid {
                     display: grid;
-                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-columns: repeat(3, 1fr);
                     gap: 16px;
                     padding: 20px;
                 }
@@ -1269,7 +1265,16 @@ include './server/payment/index.php';
                     width: 100%;
                 }
 
-                @media(max-width:700px) {
+                @media(max-width:850px) {
+                    .image-grid {
+
+                        grid-template-columns: repeat(2, 1fr);
+
+                    }
+
+                }
+
+                @media(max-width:650px) {
                     .image-grid {
 
                         grid-template-columns: repeat(1, 1fr);

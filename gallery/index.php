@@ -94,202 +94,388 @@
                     </div>
                 </div>
             </div>
-       
-            <div class="wedo-items text-center">
-        
-                    <div class="row">
-                        <!-- Single Item -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="item" style=" display: flex; flex-direction: column; justify-content: space-between;">
-                                <img src="<?php echo $domain ?>assets/img/1.jpg" alt="">
-                            </div>
-                        </div>
-
-                        <!-- Single Item -->
-                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="item" style=" display: flex; flex-direction: column; justify-content: space-between;">
-                                <img src="<?php echo $domain ?>assets/img/2.jpg" alt="">
-                            </div>
-                        </div>
-
-                        <!-- Single Item -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="item" style=" display: flex; flex-direction: column; justify-content: space-between;">
-                                <img src="<?php echo $domain ?>assets/img/3.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
 
 
-                    <div class="container">
-                        <div class="row">
-                            <!-- Single Item -->
-                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                                <div class="item" style=" display: flex; flex-direction: column; justify-content: space-between;">
-                                    <img src="<?php echo $domain ?>assets/img/4.jpg" alt="">
-                                </div>
-                            </div>
-
-                            <!-- Single Item -->
-                            <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
-                                <div class="item" style=" display: flex; flex-direction: column; justify-content: space-between;">
-                                    <img src="<?php echo $domain ?>assets/img/5.jpg" alt="">
-                                </div>
-                            </div>
-
-                            <!-- Single Item -->
-                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                                <div class="item" style=" display: flex; flex-direction: column; justify-content: space-between;">
-                                    <img src="<?php echo $domain ?>assets/img/6.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
+            <div class="image-grid">
+                <div class="single-item">
+                    <div class="item">
 
 
-
-
-                        <div class="container">
-                            <div class="row">
-                                <!-- Single Item -->
-                                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                                    <div class="item" style=" display: flex; flex-direction: column; justify-content: space-between;">
-                                        <img src="<?php echo $domain ?>assets/img/7.jpg" alt="">
-                                    </div>
-                                </div>
-
-                                <!-- Single Item -->
-                                <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
-                                    <div class="item" style=" display: flex; flex-direction: column; justify-content: space-between;">
-                                        <img src="<?php echo $domain ?>assets/img/8.jpg" alt="">
-                                    </div>
-                                </div>
-
-                                <!-- Single Item -->
-                                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                                    <div class="item" style=" display: flex; flex-direction: column; justify-content: space-between;">
-                                        <img src="<?php echo $domain ?>assets/img/9.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-                            <div class="container">
-                                <div class="row">
-                                    <!-- Single Item -->
-                                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                                        <div class="item" style=" display: flex; flex-direction: column; justify-content: space-between;">
-                                            <img src="<?php echo $domain ?>assets/img/football-1.jpg" alt="">
-                                        </div>
-                                    </div>
-
-                                    <!-- Single Item -->
-                                    <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
-                                        <div class="item" style=" display: flex; flex-direction: column; justify-content: space-between;">
-                                            <img src="<?php echo $domain ?>assets/img/football-2.jpg" alt="">
-                                        </div>
-                                    </div>
-
-                                    <!-- Single Item -->
-                                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                                        <div class="item" style=" display: flex; flex-direction: column; justify-content: space-between;">
-                                            <img src="<?php echo $domain ?>assets/img/football-3.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-
-                                <div class="container">
-                                    <div class="row">
-                                        <!-- Single Item -->
-                                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                                            <div class="item" style=" display: flex; flex-direction: column; justify-content: space-between;">
-                                                <img src="<?php echo $domain ?>assets/img/football-4.jpg" alt="">
-                                            </div>
-                                        </div>
-
-                                        <!-- Single Item -->
-                                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
-                                            <div class="item" style=" display: flex; flex-direction: column; justify-content: space-between;">
-                                                <img src="<?php echo $domain ?>assets/img/football-5.jpg" alt="">
-                                            </div>
-                                        </div>
-
-                                        <!-- Single Item -->
-                                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                                            <div class="item" style=" display: flex; flex-direction: column; justify-content: space-between;">
-                                                <img src="<?php echo $domain ?>assets/img/football-6.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                </div>
-                            </div>
-                        </div>
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb">
 
 
                     </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
 
 
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/2.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+
+
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+
+
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/4.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+
+
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/5.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+
+
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/6.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+
+
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/7.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+
+
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/8.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+
+
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/9.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+
+
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/football-1.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+
+
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/football-2.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+
+
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/football-3.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+
+
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/football-4.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+
+
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/football-5.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+
+
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/football-6.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+
+
+                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/hospital.jpg" alt="Thumb">
+
+
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-13.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/hospital-1.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/hospital-2.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-item ">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/hospital-3.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="single-item ">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/hospital-4.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-item ">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-1.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-item ">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-2.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="single-item ">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-3.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-item ">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-4.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="single-item ">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-item ">
+                    <div class="item">
+                        <div class="thumb">
+                            <a>
+                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <style>
+                .image-grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 16px;
+                    padding: 20px;
+                }
+
+                .single-item {
+                    width: 100%;
+                    /* Ensure each item fills the column */
+                }
+
+                .single-item img {
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .single-item .item {
+                    width: 100%;
+                }
+
+                .single-item img {
+                    width: 100%;
+                }
+
+                @media(max-width:850px) {
+                    .image-grid {
+
+                        grid-template-columns: repeat(2, 1fr);
+
+                    }
+
+                }
+
+                @media(max-width:650px) {
+                    .image-grid {
+
+                        grid-template-columns: repeat(1, 1fr);
+
+                    }
+
+                }
+            </style>
+
+
         </div>
 
 
-            <!-- End Event Area -->
+        <!-- End Event Area -->
 
 
 
-            <!-- Start Footer
+        <!-- Start Footer
     ============================================= -->
-            <?php include '../include/footer.php' ?>
-            <!-- End Footer -->
+        <?php include '../include/footer.php' ?>
+        <!-- End Footer -->
 
-            <!-- jQuery Frameworks
+        <!-- jQuery Frameworks
     ============================================= -->
-            <script src="../assets/js/jquery-1.12.4.min.js"></script>
-            <script src="../assets/js/popper.min.js"></script>
-            <script src="../assets/js/bootstrap.min.js"></script>
-            <script src="../assets/js/equal-height.min.js"></script>
-            <script src="../assets/js/jquery.appear.js"></script>
-            <script src="../assets/js/jquery.easing.min.js"></script>
-            <script src="../assets/js/jquery.magnific-popup.min.js"></script>
-            <script src="../assets/js/modernizr.custom.13711.js"></script>
-            <script src="../assets/js/owl.carousel.min.js"></script>
-            <script src="../assets/js/wow.min.js"></script>
-            <script src="../assets/js/progress-bar.min.js"></script>
-            <script src="../assets/js/isotope.pkgd.min.js"></script>
-            <script src="../assets/js/imagesloaded.pkgd.min.js"></script>
-            <script src="../assets/js/count-to.js"></script>
-            <script src="../assets/js/YTPlayer.min.js"></script>
-            <script src="../assets/js/jquery.nice-select.min.js"></script>
-            <script src="../assets/js/bootsnav.js"></script>
-            <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/jquery-1.12.4.min.js"></script>
+        <script src="../assets/js/popper.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/equal-height.min.js"></script>
+        <script src="../assets/js/jquery.appear.js"></script>
+        <script src="../assets/js/jquery.easing.min.js"></script>
+        <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="../assets/js/modernizr.custom.13711.js"></script>
+        <script src="../assets/js/owl.carousel.min.js"></script>
+        <script src="../assets/js/wow.min.js"></script>
+        <script src="../assets/js/progress-bar.min.js"></script>
+        <script src="../assets/js/isotope.pkgd.min.js"></script>
+        <script src="../assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="../assets/js/count-to.js"></script>
+        <script src="../assets/js/YTPlayer.min.js"></script>
+        <script src="../assets/js/jquery.nice-select.min.js"></script>
+        <script src="../assets/js/bootsnav.js"></script>
+        <script src="../assets/js/main.js"></script>
 
 </body>
 
