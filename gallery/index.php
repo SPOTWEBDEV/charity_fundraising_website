@@ -97,305 +97,55 @@
 
 
             <div class="image-grid">
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/2.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/4.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/5.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/6.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/7.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/8.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/9.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/football-1.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/football-2.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/football-3.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/football-4.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/football-5.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/football-6.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/hospital.jpg" alt="Thumb">
-
-
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-13.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/hospital-1.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/hospital-2.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-item ">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/hospital-3.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
+                <?php
+                $images = [
+                    '1.jpg',
+                    '2.jpg',
+                    '3.jpg',
+                    '4.jpg',
+                    '5.jpg',
+                    '6.jpg',
+                    '7.jpg',
+                    '8.jpg',
+                    '9.jpg',
+                    'football-1.jpg',
+                    'football-2.jpg',
+                    'football-3.jpg',
+                    'football-4.jpg',
+                    'football-5.jpg',
+                    'football-6.jpg',
+                    'hospital.jpg',
+                    'school-5.jpg',
+                    'school-7.jpg',
+                    'school-13.jpg',
+                    'hospital-1.jpg',
+                    'hospital-2.jpg',
+                    'hospital-3.jpg',
+                    'hospital-4.jpg',
+                    'school-1.jpg',
+                    'school-2.jpg',
+                    'school-3.jpg',
+                    'school-4.jpg',
+                    'school-5.jpg',
+                    'school-6.jpg'
+                ];
+
+                foreach ($images as $img) {
+                    echo '
+        <div class="single-item">
+            <div class="item">
+                <div class="thumb">
+                    <a>
+                        <img style="height: 270px; width: 100%;" src="' . $domain . 'assets/img/' . $img . '" alt="Thumb">
+                    </a>
                 </div>
             </div>
-
-            <div class="single-item ">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/hospital-4.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="single-item ">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-1.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="single-item ">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-2.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        </div>';
+                }
+                ?>
             </div>
 
 
-            <div class="single-item ">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-3.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="single-item ">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-4.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="single-item ">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="single-item ">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-6.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
             <style>
