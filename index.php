@@ -1152,243 +1152,258 @@ include './server/payment/index.php';
                 </div>
             </div>
 
-</div>
+        </div>
 
 
 
-            <div class="image-grid">
-                <div class="single-item">
-                    <div class="item">
+        <div class="image-grid">
+            <div class="single-item">
+                <div class="item">
 
 
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+                    <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
 
 
-                    </div>
                 </div>
+            </div>
 
-                <div class="single-item">
-                    <div class="item">
-
-
-                        <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+            <div class="single-item">
+                <div class="item">
 
 
-                    </div>
+                    <img style="height: 270px; width: 100%;" src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
+
+
                 </div>
+            </div>
 
-                <div class="single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-13.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/football-6.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/football-8.jpg" alt="Thumb">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-item ">
-                    <div class="item">
-                        <div class="thumb">
-                            <a>
-                                <img style="height: 270px;" src="<?php echo $domain ?>assets/img/football-9.jpg" alt="Thumb">
-                            </a>
-                        </div>
+            <div class="single-item">
+                <div class="item">
+                    <div class="thumb">
+                        <a>
+                            <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-5.jpg" alt="Thumb">
+                        </a>
                     </div>
                 </div>
             </div>
 
-          
-            <style>
+            <div class="single-item">
+                <div class="item">
+                    <div class="thumb">
+                        <a>
+                            <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-7.jpg" alt="Thumb">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-item">
+                <div class="item">
+                    <div class="thumb">
+                        <a>
+                            <img style="height: 270px;" src="<?php echo $domain ?>assets/img/school-13.jpg" alt="Thumb">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-item">
+                <div class="item">
+                    <div class="thumb">
+                        <a>
+                            <img style="height: 270px;" src="<?php echo $domain ?>assets/img/football-6.jpg" alt="Thumb">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-item">
+                <div class="item">
+                    <div class="thumb">
+                        <a>
+                            <img style="height: 270px;" src="<?php echo $domain ?>assets/img/football-8.jpg" alt="Thumb">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-item ">
+                <div class="item">
+                    <div class="thumb">
+                        <a>
+                            <img style="height: 270px;" src="<?php echo $domain ?>assets/img/football-9.jpg" alt="Thumb">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <style>
+            .image-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+                padding: 20px;
+            }
+
+            .single-item {
+                width: 100%;
+                /* Ensure each item fills the column */
+            }
+
+            .single-item img {
+                height: 100%;
+                width: 100%;
+            }
+
+            .single-item .item {
+                width: 100%;
+            }
+
+            .single-item img {
+                width: 100%;
+            }
+
+            @media(max-width:850px) {
                 .image-grid {
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    gap: 16px;
-                    padding: 20px;
-                }
 
-                .single-item {
-                    width: 100%;
-                    /* Ensure each item fills the column */
-                }
-
-                .single-item img {
-                    height: 100%;
-                    width: 100%;
-                }
-
-                .single-item .item {
-                    width: 100%;
-                }
-
-                .single-item img {
-                    width: 100%;
-                }
-
-                @media(max-width:850px) {
-                    .image-grid {
-
-                        grid-template-columns: repeat(2, 1fr);
-
-                    }
+                    grid-template-columns: repeat(2, 1fr);
 
                 }
 
-                @media(max-width:650px) {
-                    .image-grid {
+            }
 
-                        grid-template-columns: repeat(1, 1fr);
+            @media(max-width:650px) {
+                .image-grid {
 
-                    }
+                    grid-template-columns: repeat(1, 1fr);
 
                 }
-            </style>
+
+            }
+        </style>
 
 
-            <!-- End Gallery Area -->
+        <!-- End Gallery Area -->
 
-            <!-- Start Blog
+        <!-- Start Blog
     ============================================= -->
-            <div class="blog-area default-padding bottom-less bg-gray">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
-                            <div class="site-heading text-center">
-                                <h5>Latest News</h5>
-                                <h2>
-                                    Stay Updated with Us on the Latest & Popular Causes by HEO Eziokwu Foundation
-                                </h2>
-                                <div class="heading-divider"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="blog-items">
-                        <div class="row">
-                            <!-- Single Item -->
-                            <div class=" col-lg-4 col-md-6">
-                                <div class="item">
-                                    <div class="thumb">
-                                        <a>
-                                            <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb">
-                                            <span class="date">
-                                                24 <strong>Aug</strong>
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <h4>
-                                            <a>HEO Eziokwu Foundation Partners with
-                                                Local Communities</a>
-                                        </h4>
-                                        <div class="meta">
-                                            <ul>
-                                                <li>By <a>HEO Foundation</a></li>
-                                                
-                                            </ul>
-                                        </div>
-                                        <p>
-                                            We are making strides towards a brighter future, collaborating with local
-                                            communities to promote educational opportunities and better living
-                                            conditions.
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Item -->
-                            <!-- Single Item -->
-                            <!-- End Single Item -->
-                            <!-- Single Item -->
-
-                             <style>
-                                .info{
-                                    padding: 10px;
-                                }
-                             </style>
-                            
-                            <!-- End Single Item -->
+        <div class="blog-area default-padding bottom-less bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center">
+                            <h5>Latest News</h5>
+                            <h2>
+                                Stay Updated with Us on the Latest & Popular Causes by HEO Eziokwu Foundation
+                            </h2>
+                            <div class="heading-divider"></div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <div class="blog-items">
+                    <div class="row">
+                        <!-- Single Item --><?php
 
-            <?php include('./include/footer.php') ?>
-            <script>
+                                            $select = mysqli_query($connection, "SELECT * FROM `latest` ORDER BY date DESC");
 
-            </script>
-            <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
-            <script src="<?php echo $domain ?>assets/js/popper.min.js"></script>
-            <script src="<?php echo $domain ?>assets/js/bootstrap.min.js"></script>
-            <script src="<?php echo $domain ?>assets/js/equal-height.min.js"></script>
-            <script src="<?php echo $domain ?>assets/js/jquery.appear.js"></script>
-            <script src="<?php echo $domain ?>assets/js/jquery.easing.min.js"></script>
-            <script src="<?php echo $domain ?>assets/js/jquery.magnific-popup.min.js"></script>
-            <script src="<?php echo $domain ?>assets/js/modernizr.custom.13711.js"></script>
-            <script src="<?php echo $domain ?>assets/js/owl.carousel.min.js"></script>
-            <script src="<?php echo $domain ?>assets/js/wow.min.js"></script>
-            <script src="<?php echo $domain ?>assets/js/progress-bar.min.js"></script>
-            <script src="<?php echo $domain ?>assets/js/isotope.pkgd.min.js"></script>
-            <script src="<?php echo $domain ?>assets/js/imagesloaded.pkgd.min.js"></script>
-            <script src="<?php echo $domain ?>assets/js/count-to.js"></script>
-            <script src="<?php echo $domain ?>assets/js/YTPlayer.min.js"></script>
-            <script src="<?php echo $domain ?>assets/js/jquery.nice-select.min.js"></script>
-            <script src="<?php echo $domain ?>assets/js/bootsnav.js"></script>
-            <script src="<?php echo $domain ?>assets/js/main.js"></script>
+                                            if (mysqli_num_rows($select) > 0) {
+                                                while ($row = mysqli_fetch_assoc($select)) {
+                                                    $imagePath = '../upload/event/' . htmlspecialchars($row['image']);
+?>
+                                                    <div class=" col-lg-4 col-md-6">
+                                                    <div class="item">
+                                                        <div class="thumb">
+                                                            <a>
+                                                                <img src="<?php echo $domain ?>assets/img/1.jpg" alt="Thumb">
+                                                                <span class="date">
+                                                                     <strong><?php echo date("F j, Y", strtotime($row['date'])); ?></strong>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="info">
+                                                            <h4>
+                                                                <a><?php echo $row['title'] ?></a>
+                                                            </h4>
+                                                            <div class="meta">
+                                                                <ul>
+                                                                    <li>By <a>HEO Foundation</a></li>
+                        
+                                                                </ul>
+                                                            </div>
+                                                            <p>
+                                                            <?php echo $row['write_up']; ?>
+                                                            </p>
+                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               <?php }
+                                            }
+                                            ?>
 
 
-            <script>
-                let discoverBtn = document.querySelectorAll('#discoverBtn')
+                     
 
-                discoverBtn.forEach(el => {
-                    el.onclick = function() {
 
-                        window.location.href = 'videos.php'
 
-                    }
-                })
-            </script>
+
+
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+
+                        <style>
+                            .info {
+                                padding: 10px;
+                            }
+                        </style>
+
+                        <!-- End Single Item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <?php include('./include/footer.php') ?>
+        <script>
+
+        </script>
+        <script src="<?php echo $domain ?>assets/js/jquery-1.12.4.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/popper.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/bootstrap.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/equal-height.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/jquery.appear.js"></script>
+        <script src="<?php echo $domain ?>assets/js/jquery.easing.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/modernizr.custom.13711.js"></script>
+        <script src="<?php echo $domain ?>assets/js/owl.carousel.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/wow.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/progress-bar.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/isotope.pkgd.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/count-to.js"></script>
+        <script src="<?php echo $domain ?>assets/js/YTPlayer.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/jquery.nice-select.min.js"></script>
+        <script src="<?php echo $domain ?>assets/js/bootsnav.js"></script>
+        <script src="<?php echo $domain ?>assets/js/main.js"></script>
+
+
+        <script>
+            let discoverBtn = document.querySelectorAll('#discoverBtn')
+
+            discoverBtn.forEach(el => {
+                el.onclick = function() {
+
+                    window.location.href = 'videos.php'
+
+                }
+            })
+        </script>
 
 </body>
 
