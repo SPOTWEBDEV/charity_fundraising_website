@@ -1325,7 +1325,7 @@ include './server/payment/index.php';
                                         <div class="meta">
                                             <ul>
                                                 <li>By <a>HEO Foundation</a></li>
-                                                <li><a><i class="fas fa-comments"></i> 12 Comments</a></li>
+                                                
                                             </ul>
                                         </div>
                                         <p>
@@ -1339,35 +1339,6 @@ include './server/payment/index.php';
                             </div>
                             <!-- End Single Item -->
                             <!-- Single Item -->
-                            <div class=" col-lg-4 col-md-6">
-                                <div class="item">
-                                    <div class="thumb">
-                                        <a>
-                                            <img src="<?php echo $domain ?>assets/img/2.jpg" alt="Thumb">
-                                            <span class="date">
-                                                18 <strong>Sep</strong>
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <h4>
-                                            <a>HEO Eziokwu Foundation's Water
-                                                Access Project</a>
-                                        </h4>
-                                        <div class="meta">
-                                            <ul>
-                                                <li>By <a>HEO Foundation</a></li>
-                                                <li><a><i class="fas fa-comments"></i> 26 Comments</a></li>
-                                            </ul>
-                                        </div>
-                                        <p>
-                                            Our Water Access initiative is helping underprivileged areas gain reliable
-                                            access to clean drinking water, improving overall health and well-being.
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </div>
                             <!-- End Single Item -->
                             <!-- Single Item -->
 
@@ -1376,35 +1347,7 @@ include './server/payment/index.php';
                                     padding: 10px;
                                 }
                              </style>
-                            <div class=" col-lg-4 col-md-6">
-                                <div class="item">
-                                    <div class="thumb">
-                                        <a>
-                                            <img src="<?php echo $domain ?>assets/img/3.jpg" alt="Thumb">
-                                            <span class="date">
-                                                05 <strong>Jul</strong>
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <h4>
-                                            <a>Empowering the Next Generation:
-                                                Education for All</a>
-                                        </h4>
-                                        <div class="meta">
-                                            <ul>
-                                                <li>By <a>HEO Foundation</a></li>
-                                                <li><a><i class="fas fa-comments"></i> 05 Comments</a></li>
-                                            </ul>
-                                        </div>
-                                        <p>
-                                            Join us in the fight to ensure that every child receives quality education,
-                                            as we work towards providing free learning resources in underserved regions.
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <!-- End Single Item -->
                         </div>
                     </div>

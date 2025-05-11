@@ -1,5 +1,5 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-    
+
 
     <div class="menu-inner-shadow"></div>
 
@@ -11,9 +11,9 @@
                 <div data-i18n="Analytics">Dashboard</div>
             </a>
         </li>
-        
-        
-        
+
+
+
         <li class="menu-item">
             <a href="book.php" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
@@ -21,15 +21,15 @@
             </a>
         </li>
 
-        
+
         <li class="menu-item">
             <a href="event.php" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Add Event</div>
             </a>
         </li>
-        
-        
+
+
         <li class="menu-item">
             <a href="events.php" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
@@ -38,7 +38,7 @@
         </li>
 
 
-         
+
         <li class="menu-item">
             <a href="blog.php" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
@@ -55,11 +55,27 @@
         </li>
 
 
-        
+        <li class="menu-item">
+            <a href="latest.php" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Add latest</div>
+            </a>
+        </li>
 
 
-              
-      
+        <li class="menu-item">
+            <a href="lastests.php" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Latest List</div>
+            </a>
+        </li>
+
+
+
+
+
+
+
 
         <!-- Layouts -->
         <!-- <li class="menu-item">
@@ -94,8 +110,8 @@
                         <div data-i18n="Blank">Blank</div>
                     </a>
                 </li> -->
-            <!-- </ul>
-        </li> --> 
+        <!-- </ul>
+        </li> -->
 
         <!-- Layouts -->
         <!-- <li class="menu-item">
@@ -165,16 +181,16 @@
                         <div data-i18n="Basic">Forgot Password</div>
                     </a>
                 </li>  -->
-            </ul>
-        <!-- </li>  -->
+    </ul>
+    <!-- </li>  -->
 
-        <!-- <li class="menu-item">
+    <!-- <li class="menu-item">
             <a href="logout.php" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Logout</div>
             </a>
         </li> -->
-        <!-- <li class="menu-item">
+    <!-- <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-cube-alt"></i>
                 <div data-i18n="Misc">Misc</div>
@@ -192,17 +208,17 @@
                 </li>
             </ul>
         </li> -->
-        <!-- Components -->
-        <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li> -->
-        <!-- Cards -->
-        <!-- <li class="menu-item">
+    <!-- Components -->
+    <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li> -->
+    <!-- Cards -->
+    <!-- <li class="menu-item">
             <a href="cards-basic.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Basic">Cards</div>
             </a>
         </li> -->
-        <!-- User interface -->
-        <!-- <li class="menu-item">
+    <!-- User interface -->
+    <!-- <li class="menu-item">
             <a href="javascript:void(0)" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-box"></i>
                 <div data-i18n="User interface">User interface</div>
@@ -306,8 +322,8 @@
             </ul>
         </li> -->
 
-        <!-- Extended components -->
-        <!-- <li class="menu-item">
+    <!-- Extended components -->
+    <!-- <li class="menu-item">
             <a href="javascript:void(0)" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-copy"></i>
                 <div data-i18n="Extended UI">Extended UI</div>
@@ -326,17 +342,17 @@
             </ul>
         </li> -->
 
-        <!-- <li class="menu-item">
+    <!-- <li class="menu-item">
             <a href="icons-boxicons.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-crown"></i>
                 <div data-i18n="Boxicons">Boxicons</div>
             </a>
         </li> -->
 
-        <!-- Forms & Tables -->
-        <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Forms &amp; Tables</span></li> -->
-        <!-- Forms -->
-        <!-- <li class="menu-item">
+    <!-- Forms & Tables -->
+    <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Forms &amp; Tables</span></li> -->
+    <!-- Forms -->
+    <!-- <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Form Elements">Form Elements</div>
@@ -354,7 +370,7 @@
                 </li>
             </ul>
         </li> -->
-        <!-- <li class="menu-item">
+    <!-- <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Form Layouts">Form Layouts</div>
@@ -372,22 +388,22 @@
                 </li>
             </ul>
         </li> -->
-        <!-- Tables -->
-        <!-- <li class="menu-item">
+    <!-- Tables -->
+    <!-- <li class="menu-item">
             <a href="tables-basic.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
                 <div data-i18n="Tables">Tables</div>
             </a>
         </li> -->
-        <!-- Misc -->
-        <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li> -->
-        <!-- <li class="menu-item">
+    <!-- Misc -->
+    <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li> -->
+    <!-- <li class="menu-item">
             <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-support"></i>
                 <div data-i18n="Support">Support</div>
             </a>
         </li> -->
-        <!-- <li class="menu-item">
+    <!-- <li class="menu-item">
             <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/" target="_blank" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-file"></i>
                 <div data-i18n="Documentation">Documentation</div>
